@@ -1,2 +1,12 @@
 # learn_java
-Learning Java projects
+Este repositório contém conteúdos teóricos e projetos referentes a minha aprendizagem pessoal sobre a linguagem de programação Java.
+
+## Curso 1
+
+Este curso foi feito com base no conteúdo disponibilizado pelo curso Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808, disponibilizado através do site Udemy, criado por Andrii Piatakha e Learn IT University.
+
+- Site: [Udemy](https://www.udemy.com/)
+- Curso: [Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/)
+- Criador(es)
+    - [Andrii Piatakha](https://www.udemy.com/user/andrii-piatakha/)
+    - [Learn IT University](https://www.udemy.com/user/learn-it-university/)
