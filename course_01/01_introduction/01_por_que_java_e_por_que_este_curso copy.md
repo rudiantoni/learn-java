@@ -3,9 +3,15 @@
 # Por que Java e por que este curso? O que é JDK, JRE e JVM?
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
+- Diretório de arquivos: [01_arquivos](./01_arquivos/)
+- Homework: [HW - What is Java and JDK](./01_arquivos/homework/HW%20-%20What%20is%20Java%20and%20JDK.pdf)
 - Conteúdo
-  - []()
-  - []()
+  - [História do Java](#história-do-java)
+  - [Por que Java?](#por-que-java)
+  - [O que você pode implementar com Java?](#o-que-você-pode-implementar-com-java)
+  - [O que é JVM?](#o-que-é-jvm)
+  - [O que é JRE?](#o-que-é-jre)
+  - [O que é JDK?](#o-que-é-jdk)
 
 ### História do Java
 [[Topo]](#)<br />
@@ -24,7 +30,7 @@ O Java é coinsiderado uma das linguagens de programação mais populares hoje e
 - Orientação a Objetos nativo
 - Robustez
 
-Sun Microsystems foi comprada pela Oracle em 2010. 
+Sun Microsystems foi comprada pela Oracle em 2010.
 
 ### Por que Java?
 [[Topo]](#)<br />
@@ -44,50 +50,41 @@ Por que você deve começar a aprender Java e quais vantagens ele tras sob outra
 - JVM
   - Java Virtual Machine, permite que o código desenvolvido para um computador Windows possa ser executado na Linux e no MAC.
 - Independência de plataforma
-  - 
 
 ### O que você pode implementar com Java?
 [[Topo]](#)<br />
 
-
+É possível implementar aplicações desktop, mobile e web.
 
 ### O que é JVM?
 [[Topo]](#)<br />
 
+JVM significa Java Virtual Machine, em português Máquina Virtual Java.
 
+É um programa escrito em C++ que é o responsável por converter código de bytes (bytecode) para o código de uma máquina específica.
+
+A JVM é a razão pela qual o Java é conhecido por ser independente de plataforma.
+
+O código fonte desenvolvido é compilado em um bytecode, esse bytecode é então executado na JVM.
+
+A JVM é usada para ambos:
+- Traduzir o bytecode no código de máquina de um computador em particular
+- Executar as instruções correspondentes na linguagem de máquina específica
+
+> Sem uma JVM você não pode executar uma aplicação Java.
 
 ### O que é JRE?
 [[Topo]](#)<br />
 
+JRE significa Java Runtime Environment, em português Ambiente de Execução Java.
 
+O JRE inclui a JVM em si com a adição de binários e classes java os quais são necessários para executar os programas.
 
 ### O que é JDK?
 [[Topo]](#)<br />
 
+JDK significa Java Development Kit, em português Kit de Desenvolvimento Java.
 
+O JDK inclui a JVM e o JRE com a adição de todas as ferramentas que são necessárias para o desenvolvimento de programas Java.
 
-Se projeto:
-- Ver projeto: [Projeto N](pasta_projeto-proj_nn)
-
-Lista ordenada
-1. Lista item 1
-2. Lista item 2
-3. Lista item 3
-
-Lista desordenada
-- Lista item 1
-- Lista item 2
-- Lista item 3
-
-`linha de codigo`
-
-Bloco de código
-
-```
-bloco de código {
-
-}
-```
-
-Se exercício:
-> Exercício N ((nome do vídeo, aula, etc)): [caminho](pasta_exercicio-exercicio_nn)
+Por exemplo o compilador *javac*, o depurador *jdb*, e o gerador de documentação *javadoc*.
