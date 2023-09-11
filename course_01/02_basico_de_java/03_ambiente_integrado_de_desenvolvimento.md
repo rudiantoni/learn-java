@@ -7,8 +7,11 @@
 - Projetos
   - [Projeto 1](./03_arquivos/proj_01/) [(iniciado em)](#download-instalação-do-intellij-idea-e-primeiro-projeto-na-ide)
 - Conteúdo
-  - []()
-  - []()
+  - [O que é uma IDE?](#o-que-é-uma-ide)
+  - [Download, instalação do IntelliJ Idea e primeiro projeto na IDE](#download-instalação-do-intellij-idea-e-primeiro-projeto-na-ide)
+  - [O que são comentários?](#o-que-são-comentários)
+  - [Quais os tipos de comentários no código fonte Java?](#quais-os-tipos-de-comentários-no-código-fonte-java)
+  - [Dicas e boas práticas](#dicas-e-boas-práticas)
 
 ### O que é uma IDE?
 [[Topo]](#)<br />
@@ -66,9 +69,9 @@ Pode ser usado como um lembrete TODO.
 ### Quais os tipos de comentários no código fonte Java?
 [[Topo]](#)<br />
 
-**Uma linha**: `// comente aqui `. Tudo a direita de `//` é ignorado pela JVM.
+**Uma linha**: `// comente aqui`. Tudo a direita de `//` é ignorado pela JVM.
 
-**Várias linhas**: `/* comente aqui */ `. Tudo entre `/*` e `*/` é ignorado pela JVM.
+**Várias linhas**: `/* comente aqui */`. Tudo entre `/*` e `*/` é ignorado pela JVM.
 
 **JavaDoc**: `/** comente aqui */`. Tudo entre `/**` e `*/` será automaticamente atribuído a uma documentação que pode ser acessada através de um arquivo *.html*.
 - Para gerar o JavaDoc, vá em *Tools* > *Generate JavaDoc*
@@ -83,81 +86,3 @@ Pode ser usado como um lembrete TODO.
 - Comentários requerem manutenção e eles podem induzir a erro.
 - No futuro - Os testes unitários atuarão no papel de documentação.
 - Para melhorar a legibilidade do código, não dependa exclusivamente da documentação. Escreva código de acordo com as convenções de Código Java e escolha nomes significativos para métodos e variáveis.
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-Se projeto:
-- Ver projeto: [Projeto N](pasta_projeto-proj_nn)
-
-Lista ordenada
-1. Lista item 1
-2. Lista item 2
-3. Lista item 3
-
-Lista desordenada
-- Lista item 1
-- Lista item 2
-- Lista item 3
-
-`linha de codigo`
-
-Bloco de código
-
-```
-bloco de código {
-
-}
-```
-
-Se exercício:
-> Exercício N ((nome do vídeo, aula, etc)): [caminho](pasta_exercicio-exercicio_nn)
