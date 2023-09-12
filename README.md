@@ -18,38 +18,19 @@ Aplicações utilizadas:
 
 ### Conteúdo
 
-- [1. Introdução](./course_01/01_introducao/README.md)
-  - [1.1. Por que Java e por que este curso? O que é JDK, JRE e JVM?](./course_01/01_introducao/01_por_que_java_e_por_que_este_curso.md)
-    - [História do Java](./course_01/01_introducao/01_por_que_java_e_por_que_este_curso.md#história-do-java)
-    - [Por que Java?](./course_01/01_introducao/01_por_que_java_e_por_que_este_curso.md#por-que-java)
-    - [O que você pode implementar com Java?](./course_01/01_introducao/01_por_que_java_e_por_que_este_curso.md#o-que-você-pode-implementar-com-java)
-    - [O que é JVM?](./course_01/01_introducao/01_por_que_java_e_por_que_este_curso.md#o-que-é-jvm)
-    - [O que é JRE?](./course_01/01_introducao/01_por_que_java_e_por_que_este_curso.md#o-que-é-jre)
-    - [O que é JDK?](./course_01/01_introducao/01_por_que_java_e_por_que_este_curso.md#o-que-é-jdk)
-- [2. Básico de Java](./course_01/02_basico_de_java/README.md)
-  - [2.1. Instalação do JDK](./course_01/02_basico_de_java/README.md)
-    - [Versões do JDK - Qual versão escolher?](./course_01/02_basico_de_java/01_instalacao_do_jdk.md#versões-do-jdk---qual-versão-escolher)
-    - [OracleJDK vs OpenJDK](./course_01/02_basico_de_java/01_instalacao_do_jdk.md#oraclejdk-vs-openjdk)
-    - [Instalação no Windows](./course_01/02_basico_de_java/01_instalacao_do_jdk.md#instalação-no-windows)
-    - [Instalação no Linux](./course_01/02_basico_de_java/01_instalacao_do_jdk.md#instalação-no-linux)
-    - [Instalação no macOS](./course_01/02_basico_de_java/01_instalacao_do_jdk.md#instalação-no-macos)
-  - [2.2. Primeira aplicação: Hello World App](./course_01/02_basico_de_java/02_first_application.md)
-    - [O que são aplicações de console?](./course_01/02_basico_de_java/02_first_application.md#o-que-são-aplicações-de-console)
-    - [Aplicação de console em Java](./course_01/02_basico_de_java/02_first_application.md#aplicação-de-console-em-java)
-    - [Sintaxe básica: Convenção de nomenclatura](./course_01/02_basico_de_java/02_first_application.md#sintaxe-básica-convenção-de-nomenclatura)
-    - [Como criar uma aplicação "Hello World" com Java](./course_01/02_basico_de_java/02_first_application.md#como-criar-uma-aplicação-hello-world-com-java)
-    - [Como compilar arquivos .java para bytecode?](./course_01/02_basico_de_java/02_first_application.md#como-compilar-arquivos-java-para-bytecode)
-    - [Como executar nossos programas na JVM?](./course_01/02_basico_de_java/02_first_application.md#como-executar-nossos-programas-na-jvm)
-    - [O que são erros de compilação e de execução?](./course_01/02_basico_de_java/02_first_application.md#o-que-são-erros-de-compilação-e-de-execução)
-    - [Criação de arquivo .bat ou .sh](./course_01/02_basico_de_java/02_first_application.md#criação-de-arquivo-bat-ou-sh)
-  - [2.3. Básico de Java](./course_01/02_basico_de_java/03_ambiente_integrado_de_desenvolvimento.md)
-    - [O que é uma IDE?](./course_01/02_basico_de_java/03_ambiente_integrado_de_desenvolvimento.md#o-que-é-uma-ide)
-    - [Download, instalação do IntelliJ Idea e primeiro projeto na IDE](./course_01/02_basico_de_java/03_ambiente_integrado_de_desenvolvimento.md#download-instalação-do-intellij-idea-e-primeiro-projeto-na-ide)
-    - [O que são comentários?](./course_01/02_basico_de_java/03_ambiente_integrado_de_desenvolvimento.md#o-que-são-comentários)
-    - [Quais os tipos de comentários no código fonte Java?](./course_01/02_basico_de_java/03_ambiente_integrado_de_desenvolvimento.md#quais-os-tipos-de-comentários-no-código-fonte-java)
-    - [Dicas e boas práticas](./course_01/02_basico_de_java/03_ambiente_integrado_de_desenvolvimento.md#dicas-e-boas-práticas)
-- [nome_seçcao](xxx)
-  - [aula 1](xxx)
-    - [assunto1](xxx)
+1. Introdução
+- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793500)]
+    [1.1. Por que Java e por que este curso? O que é JDK, JRE e JVM?](xxx.md)
 
-TODO: atualizar
+2. Básico de Java
+- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793508)][2.1. Instalação do JDK](xxx.md)
+- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793512)][2.2. Primeira aplicação: Hello World App](xxx.md)
+- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793526)][2.3. Ambiente Integrado de Desenvolvimento - IDE](xxx.md)
+
+3. Tipos Primitivos e Variáveis
+- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793536)][3.1. Tipos Primitivos e Variáveis](xxx.md)
+- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793538)][3.2. Sistemas Numéricos](xxx.md)
+- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793544)][3.3. Arrays](xxx.md)
+
+
+TODO: atualizar com os arquivos md se a estrutura continuar a mesma
