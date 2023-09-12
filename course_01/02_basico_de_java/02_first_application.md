@@ -5,6 +5,7 @@
 
 - Diretório de arquivos: [02_arquivos](./02_arquivos/)
 - Homework: [HW - Hello World App](./02_arquivos/homework/HW%20-%20Hello%20World%20App.pdf)
+  - [Homework: Criação de arquivo .bat ou .sh](#homework-criação-de-arquivo-bat-ou-sh)
 - Projetos
   - [Projeto 1](./02_arquivos/proj_01/) [(iniciado em)](#como-criar-uma-aplicação-hello-world-com-java)
     - `javac HelloWorld.java`
@@ -20,7 +21,6 @@
   - [Como compilar arquivos .java para bytecode?](#como-compilar-arquivos-java-para-bytecode)
   - [Como executar nossos programas na JVM?](#como-executar-nossos-programas-na-jvm)
   - [O que são erros de compilação e de execução?](#o-que-são-erros-de-compilação-e-de-execução)
-  - [Criação de arquivo .bat ou .sh](#criação-de-arquivo-bat-ou-sh)
 
 ### O que são aplicações de console?
 [[Topo]](#)<br />
@@ -160,7 +160,7 @@ public class TestError {
 
 Pronto, agora, ao recompilar e executar, você deve estar visualizando a mensagem `Testing errors` e já sem mais erros.
 
-### Criação de arquivo .bat ou .sh
+### Homework: Criação de arquivo .bat ou .sh
 [[Topo]](#)<br />
 
 - Ver homework: [HW - Hello World App](./02_arquivos/homework/HW%20-%20Hello%20World%20App.pdf)

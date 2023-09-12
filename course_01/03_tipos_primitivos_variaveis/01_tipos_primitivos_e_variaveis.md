@@ -4,7 +4,9 @@
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Diretório de arquivos: [01_arquivos](./01_arquivos/)
-- Homework: [HW - Primitive Types.pdf](./01_arquivos/homework/HW%20-%20Primitive%20Types.pdf)
+- Homework: [HW - Primitive Types](./01_arquivos/homework/HW%20-%20Primitive%20Types.pdf)
+  - [Homework: Palavras-chave do Java](#homework-palavras-chave-do-java)
+  - [Homework: Conversões e promoções](#homework-conversões-e-promoções)
 - Projetos
   - [Projeto 1](./01_arquivos/proj_01/) [(iniciado em)](#variáves)
 - Conteúdo
@@ -55,7 +57,6 @@ A principal diferença é que os tipos primitivos armazenam um valor, e os tipos
 ### Variáves
 [[Topo]](#)<br />
 
-- Ver homework: [HW - Primitive Types.pdf](./01_arquivos/homework/HW%20-%20Primitive%20Types.pdf)
 - Ver projeto: [Projeto 1](./01_arquivos/proj_01/)
 
 Java é uma linguagem fortemente tipada (strongly typed)
@@ -71,8 +72,9 @@ Java é uma linguagem fortemente tipada (strongly typed)
 - Todas as variáveis têm um escopo, o qual define a sua visibilidade.
 - Você não pode nomear uma variável com uma palavra-chave Java.
 
-### Palavras-chave do Java
+### Homework: Palavras-chave do Java
 
+- Ver homework: [HW - Primitive Types.pdf](./01_arquivos/homework/HW%20-%20Primitive%20Types.pdf)
 - Ver na wikipédia: https://en.wikipedia.org/wiki/List_of_Java_keywords
 
 Na linguagem de programação Java, uma palavra-chave é qualquer uma das 48 palavras reservadas que têm um significado predefinido na linguagem. Devido a isso, os programadores não podem usar palavras-chave em alguns contextos, como nomes de variáveis, métodos, classes ou como qualquer outro identificador. Dessas 67 palavras-chave, 16 delas são apenas contextualmente reservadas e às vezes podem ser usadas como identificadores, ao contrário das palavras reservadas padrão. Devido às suas funções especiais na linguagem, a maioria dos ambientes de desenvolvimento integrado para Java usa destaque de sintaxe para exibir palavras-chave em uma cor diferente para fácil identificação.
@@ -209,8 +211,9 @@ Os seguintes identificadores são palavras-chave contextuais e só são restrito
 - **goto**: Mesmo sendo uma palavra reservada no Java, const não é utilizado e não há função.
 - **strictfp**: Mesmo sendo uma palavra reservada no Java, strictfp está obsoleto, e não possui mais função. Anteriormente esta palavra-chave era usada para restringir a precisão e arredondamento em cálculos com pontos flutuantes para se certificar da portabilidade.
 
-### Conversões e promoções
+### Homework: Conversões e promoções
 
+- Ver homework: [HW - Primitive Types.pdf](./01_arquivos/homework/HW%20-%20Primitive%20Types.pdf)
 - Ver na Oracle: https://docs.oracle.com/javase/specs/jls/se7/html/jls-5.html
 
 Cada expressão escrita na linguagem de programação Java possui um tipo que pode ser deduzido a partir da estrutura da expressão e dos tipos dos literais, variáveis e métodos mencionados na expressão. No entanto, é possível escrever uma expressão em um contexto onde o tipo da expressão não seja apropriado. Em alguns casos, isso leva a um erro na compilação. Em outros casos, o contexto pode ser capaz de aceitar um tipo relacionado ao tipo da expressão; como conveniência, em vez de exigir que o programador indique uma conversão de tipo explicitamente, a linguagem de programação Java realiza uma conversão implícita do tipo da expressão para um tipo aceitável para seu contexto circundante.
