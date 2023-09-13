@@ -4,9 +4,10 @@
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Diretório de arquivos: [02_arquivos](./02_arquivos/)
-- Homework: [HW - Number Systems](./02_arquivos/homework/HW%20-%20Number%20Systems.pdf)
+- Homework
+  - [Arquivo: HW - Number Systems](./02_arquivos/homework/HW%20-%20Number%20Systems.pdf)
   - [Homework: Conversão de hexadecimal](#homework-conversão-de-hexadecimal)
-- Projetos:
+- Projetos
   - [Projeto 1](./02_arquivos/proj_01/) [(iniciado em)](#sistema-numérico-hexadecimal)
 - Conteúdo
   - [Bases](#bases)

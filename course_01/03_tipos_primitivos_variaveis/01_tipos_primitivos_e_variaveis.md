@@ -4,7 +4,8 @@
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Diretório de arquivos: [01_arquivos](./01_arquivos/)
-- Homework: [HW - Primitive Types](./01_arquivos/homework/HW%20-%20Primitive%20Types.pdf)
+- Homework
+  - [Arquivo: HW - Primitive Types](./01_arquivos/homework/HW%20-%20Primitive%20Types.pdf)
   - [Homework: Palavras-chave do Java](#homework-palavras-chave-do-java)
   - [Homework: Conversões e promoções](#homework-conversões-e-promoções)
 - Projetos

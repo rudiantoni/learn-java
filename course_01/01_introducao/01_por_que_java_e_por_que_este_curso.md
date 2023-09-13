@@ -4,7 +4,8 @@
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Diretório de arquivos: [01_arquivos](./01_arquivos/)
-- Homework: [HW - What is Java and JDK](./01_arquivos/homework/HW%20-%20What%20is%20Java%20and%20JDK.pdf)
+- Homework
+  - [Arquivo: HW - What is Java and JDK](./01_arquivos/homework/HW%20-%20What%20is%20Java%20and%20JDK.pdf)
 - Conteúdo
   - [História do Java](#história-do-java)
   - [Por que Java?](#por-que-java)
