@@ -32,5 +32,14 @@ Aplicações utilizadas:
 - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793538)][3.2. Sistemas Numéricos](xxx.md)
 - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793544)][3.3. Arrays](xxx.md)
 
+4. IntelliJ IDEA: Dicas e Truques
+  - [[Ref](xxx)][x.x. xxx](xxx.md)
+  - [[Ref](xxx)][x.x. xxx](xxx.md)
+  - [[Ref](xxx)][x.x. xxx](xxx.md)
+  - [[Ref](xxx)][x.x. xxx](xxx.md)
+  - [[Ref](xxx)][x.x. xxx](xxx.md)
+
+x. xxx
+  - [[Ref](xxx)][x.x. xxx](xxx.md)
 
 TODO: atualizar com os arquivos md se a estrutura continuar a mesma
