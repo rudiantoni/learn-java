@@ -33,11 +33,18 @@ Aplicações utilizadas:
 - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793544)][3.3. Arrays](xxx.md)
 
 4. IntelliJ IDEA: Dicas e Truques
-  - [[Ref](xxx)][x.x. xxx](xxx.md)
-  - [[Ref](xxx)][x.x. xxx](xxx.md)
-  - [[Ref](xxx)][x.x. xxx](xxx.md)
-  - [[Ref](xxx)][x.x. xxx](xxx.md)
-  - [[Ref](xxx)][x.x. xxx](xxx.md)
+- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/30316678)][4.1. Pacotes: criação e apresentação de pacotes](xxx.md)
+- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/30316700)][4.2. Plugins: como instalar plugins gratuitos, loja de plugins e estilos de workspaces](xxx.md)
+- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/30316716)][4.3. Refatoração de código no IntelliJ](xxx.md)
+
+5. Operadores e operações com tipos primitivos
+- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793556)][5.1. Operadores no Java](xxx.md)
+- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793566)][5.2. Operadores com integers e números floating-point, tipo BigDecimal](xxx.md)
+- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793590)][5.3. Classe Math, NaN, Infinity](xxx.md)
+- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793594)][5.4. Tipo de expressão no Java](xxx.md)
+- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793598)][5.5. Comparar tipos primitivos e tipos de referência e Java Memory Model (Modelo de Memória Java)](xxx.md)
+- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793606)][5.6. Ler entrada do usuário pelo console](xxx.md)
+
 
 x. xxx
   - [[Ref](xxx)][x.x. xxx](xxx.md)
