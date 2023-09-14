@@ -3,8 +3,6 @@
 # Refatoração de código no IntelliJ
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
-- (se existir diretório de arquivos com documentos, etc) Diretório de arquivos: [xxx](xxx)
-- (se existir doc de homework) Homework: [xxx](xxx)
 - Conteúdo
   - [Refatoração](#refatoração)
   - [Como acessar as ferramentas de refatoração](#como-acessar-as-ferramentas-de-refatoração)
