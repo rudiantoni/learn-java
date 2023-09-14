@@ -1,13 +1,19 @@
 # Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808
 
-# (nome do capítulo, aula, nome do vídeo)
+## (nome do capítulo, aula, nome do vídeo)
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - (se existir diretório de arquivos com documentos, etc) Diretório de arquivos: [xxx](xxx)
-- (se existir doc de homework) Homework: [xxx](xxx)
+- (se existir homework) Homework
+  - [file_name](file_link)
+  - [content_title](content_link)
+  - ...
+- (se existir projeto) Projetos
+  - [project_number](project_folder_link) [(iniciado em)](#content_link)
+  - ...
 - Conteúdo
   - []()
-  - []()
+  - ...
 
 ### (nome do vídeo, aula, etc)
 [[Topo]](#)<br />

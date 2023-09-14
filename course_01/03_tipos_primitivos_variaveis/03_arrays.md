@@ -1,6 +1,6 @@
 # Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808
 
-# Arrays
+## Arrays
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Diretório de arquivos: [03_arquivos](./03_arquivos//)
@@ -17,7 +17,7 @@
   - [ArrayIndexOutOfBoundsException](#arrayindexoutofboundsexception)
   - [Array Literal](#array-literal)
   - [Arrays Multidimensionais](#arrays-multidimensionais)
-2
+
 ### Visão geral
 [[Topo]](#)<br />
 

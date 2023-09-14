@@ -1,10 +1,11 @@
 # Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808
 
-# Primeira aplicação: Hello World App
+## Primeira aplicação: Hello World App
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Diretório de arquivos: [02_arquivos](./02_arquivos/)
-- Homework: [HW - Hello World App](./02_arquivos/homework/HW%20-%20Hello%20World%20App.pdf)
+- Homework
+  - [HW - Hello World App](./02_arquivos/homework/HW%20-%20Hello%20World%20App.pdf)
   - [Homework: Criação de arquivo .bat ou .sh](#homework-criação-de-arquivo-bat-ou-sh)
 - Projetos
   - [Projeto 1](./02_arquivos/proj_01/) [(iniciado em)](#como-criar-uma-aplicação-hello-world-com-java)

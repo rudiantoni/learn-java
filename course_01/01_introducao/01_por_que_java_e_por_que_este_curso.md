@@ -14,7 +14,7 @@
   - [O que é JRE?](#o-que-é-jre)
   - [O que é JDK?](#o-que-é-jdk)
 
-### História do Java
+## História do Java
 [[Topo]](#)<br />
 
 Java foi concebido em 1991 por James Gosling na empresa Sun Microsystems, sob o projeto ainda chamado de *Oak*.

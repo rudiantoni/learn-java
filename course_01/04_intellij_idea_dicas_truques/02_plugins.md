@@ -1,6 +1,6 @@
 # Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808
 
-# Plugins: como instalar plugins gratuitos, loja de plugins e estilos de workspaces
+## Plugins: como instalar plugins gratuitos, loja de plugins e estilos de workspaces
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Conteúdo

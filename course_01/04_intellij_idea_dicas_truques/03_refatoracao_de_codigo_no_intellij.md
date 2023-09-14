@@ -1,6 +1,6 @@
 # Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808
 
-# Refatoração de código no IntelliJ
+## Refatoração de código no IntelliJ
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Conteúdo
