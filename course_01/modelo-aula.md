@@ -3,13 +3,13 @@
 ## (nome do capítulo, aula, nome do vídeo)
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
-- (se existir diretório de arquivos com documentos, etc) Diretório de arquivos: [xxx](xxx)
+- (se existir diretório de arquivos com documentos, etc) Diretório de arquivos: [folder_name-nn_arquivos](folder_link)
 - (se existir homework) Homework
-  - [file_name](file_link)
+  - [Arquivo: file_name_no_extension](file_link)
   - [content_title](content_link)
   - ...
 - (se existir projeto) Projetos
-  - [project_number](project_folder_link) [(iniciado em)](#content_link)
+  - [Projeto N](folder_name-proj_nn) [(iniciado em)](#started_in_content_link)
   - ...
 - Conteúdo
   - []()
@@ -81,7 +81,7 @@
 
 
 Se projeto:
-- Ver projeto: [Projeto N](pasta_projeto-proj_nn)
+- Ver projeto: [Projeto N](folder_name-proj_nn)
 
 Lista ordenada
 1. Lista item 1
