@@ -9,7 +9,7 @@
   - [content_title](content_link)
   - ...
 - (se existir projeto) Projetos
-  - [Projeto N](folder_name-proj_nn) [(iniciado em)](#started_in_content_link)
+  - [Projeto N](folder_link-proj_nn) [(iniciado em)](#started_in_content_link)
   - ...
 - Conteúdo
   - []()
@@ -81,7 +81,7 @@
 
 
 Se projeto:
-- Ver projeto: [Projeto N](folder_name-proj_nn)
+- Ver projeto: [Projeto N](folder_link-proj_nn)
 
 Lista ordenada
 1. Lista item 1
