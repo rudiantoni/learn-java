@@ -20,6 +20,6 @@ public class Main {
     System.out.println((int) (Math.random() * 100));       // entre 0 e 100
     System.out.println((int) (Math.random() * 100) + 100); // entre 100 e 200
 
-    
+
   }
 }
