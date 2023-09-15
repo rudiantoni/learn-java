@@ -25,9 +25,5 @@ public class Main {
     System.out.println("Hello " + 1); // Hello 1
     System.out.println("Hello " + null); // Hello null
 
-//    Diferença entre expression e statement
-    // O que são tipos de expressões aritméticos
-    // Quais os tipos de expressões aritméticos
-
   }
 }
