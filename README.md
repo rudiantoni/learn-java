@@ -45,7 +45,7 @@ Aplicações utilizadas:
 - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793598)][5.5. Comparar tipos primitivos e tipos de referência e Java Memory Model (Modelo de Memória Java)](xxx.md)
 - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793606)][5.6. Ler entrada do usuário pelo console](xxx.md)
 
-6. Strings no Java
+6. Strings em Java
 - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793892)][6.1. Visão geral](xxx.md)
 - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793896)][6.2. Comparação de Strings e o String Pool](xxx.md)
 - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793900)][6.3. Sequências de Escape em Java](xxx.md)
