@@ -82,7 +82,8 @@
 [[Topo]](#)<br />
 
 
-
+Se homework:
+- Ver homework: [file_name_no_extension](file_link)
 Se projeto:
 - Ver projeto: [Projeto N](folder_link-proj_nn)
 
