@@ -6,7 +6,7 @@
 - Diretório de arquivos: [03_arquivos](./03_arquivos//)
 - Homework
   - [Arquivo: HW - Arrays](./03_arquivos/homework/HW%20-%20Arrays.pdf)
-  - [Homework: Informações adicionais sobre arrays](#homework-additional-information-about-arrays)
+  - [Homework: Informações adicionais sobre arrays](#homework-informações-adicionais-sobre-arrays)
 - Projetos
   - [Projeto 1](./03_arquivos/proj_01/) [(iniciado em)](#visão-geral)
 - Conteúdo

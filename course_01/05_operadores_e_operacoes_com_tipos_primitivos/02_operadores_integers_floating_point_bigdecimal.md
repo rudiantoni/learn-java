@@ -6,7 +6,6 @@
 - Diretório de arquivos: [02_arquivos](./02_arquivos/)
 - Projetos
   - [Projeto 1](./02_arquivos/proj_01/) [(iniciado em)](#visão-geral)
-  - ...
 - Conteúdo
   - [Visão geral](#visão-geral)
   - [Números inteiros](#números-inteiros)
