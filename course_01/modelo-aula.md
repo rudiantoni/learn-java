@@ -11,6 +11,9 @@
 - (se existir projeto) Projetos
   - [Projeto N](folder_link-proj_nn) [(iniciado em)](#started_in_content_link)
   - ...
+- (se existir exercícios) Exercícios
+  - [Exercício N](folder_link-exercicio_nn) ([enunciado](#statement_content_link))
+  ...
 - Conteúdo
   - []()
   - ...
