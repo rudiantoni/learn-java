@@ -56,6 +56,9 @@ Aplicações utilizadas:
   - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793946)][7.1. Construção de if-else](xxx.md)
   - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793996)][7.2. Construção de switch](xxx.md)
 
+8. Miscelânea
+  - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794012)][8.1. Números aleatórios](xxx.md)
+
 x. xxx
   - [[Ref](xxx)][x.x. xxx](xxx.md)
 
