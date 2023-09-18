@@ -78,3 +78,4 @@ String result2 = str1.concat(" ").concat(str2); // Usando o método concat()
 - **trim()**: Remove espaços em branco no início e no final da string e retorna uma nova string.
 - **split(String regex) (Java 11+)**: Divide a string em um array de substrings com base no delimitador especificado pela expressão regular.
 - **join(CharSequence delimiter, CharSequence... elements)**: Une os elementos fornecidos em uma única string, separando-os com o delimitador especificado.
+- **intern()**: Retorna uma representação canônica para o objeto de string. Ou seja, ele coloca (se não existir) o objeto no String pool, e retorna uma referência para o objeto.
