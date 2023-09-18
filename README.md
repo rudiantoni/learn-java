@@ -52,7 +52,9 @@ Aplicações utilizadas:
 - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793904)][6.4. Formatação de strings](xxx.md)
 - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793914)][6.5. Expressões regulares em Java](xxx.md)
 
-
+7. Instruções de controle
+  - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793946)][7.1. Construção de if-else](xxx.md)
+  - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793996)][7.2. Construção de switch](xxx.md)
 
 x. xxx
   - [[Ref](xxx)][x.x. xxx](xxx.md)
