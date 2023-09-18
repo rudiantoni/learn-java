@@ -47,20 +47,10 @@ Aplicações utilizadas:
 
 6. Strings em Java
 - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793892)][6.1. Visão geral](xxx.md)
-- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793896)][6.2. Comparação de Strings e o String Pool](xxx.md)
-- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793900)][6.3. Sequências de Escape em Java](xxx.md)
-- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793904)][6.4. Formatação de Strings](xxx.md)
+- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793896)][6.2. Comparação de strings e o String pool](xxx.md)
+- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793900)][6.3. Sequências de escape em Java](xxx.md)
+- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793904)][6.4. Formatação de strings](xxx.md)
 - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793914)][6.5. Expressões regulares em Java](xxx.md)
-
-
-
-
-
-
-
-
-
-
 
 
 

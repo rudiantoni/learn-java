@@ -1,6 +1,6 @@
 # Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808
 
-## Comparação de Strings e o String Pool
+## Comparação de strings e o String pool
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Diretório de arquivos: [02_arquivos](./02_arquivos/)
