@@ -242,4 +242,4 @@ Implemente um programa de console que atenda aos seguintes requisitos:
 1. O programa inicia e solicita ao usuário que insira qualquer texto.
 2. O programa imprime um array de palavras inseridas pelo usuário sem espaços ou sinais de pontuação.
 
-> Exercício 2 (Expressões regulares em Java): [05_arquivos/exercicio_02](./05_arquivos/exercicio_01/)
+> Exercício 2 (Expressões regulares em Java): [05_arquivos/exercicio_02](./05_arquivos/exercicio_02/)
