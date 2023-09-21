@@ -67,6 +67,13 @@ Aplicações utilizadas:
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794036)\] [9.6. Instruções de salto - break e continue](xxx.md)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794260)\] [9.7. Labels](xxx.md)
 
+10. Métodos
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794318)\] [10.1. Visão geral](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794324)\] [10.2. Parâmetros](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794330)\] [10.3. Métodos recursivos](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794336)\] [10.4. Argumentos de comprimento variável](xxx.md)
+
+
 x. xxx
   - \[[Ref](xxx)\] [x.x. xxx](xxx.md)
 
