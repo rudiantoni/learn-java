@@ -19,56 +19,55 @@ Aplicações utilizadas:
 ### Conteúdo
 
 1. Introdução
-- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793500)]
-    [1.1. Por que Java e por que este curso? O que é JDK, JRE e JVM?](xxx.md)
+- \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793500)\] [1.1. Por que Java e por que este curso? O que é JDK, JRE e JVM?](xxx.md)
 
 2. Básico de Java
-- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793508)][2.1. Instalação do JDK](xxx.md)
-- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793512)][2.2. Primeira aplicação: Hello World App](xxx.md)
-- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793526)][2.3. Ambiente Integrado de Desenvolvimento - IDE](xxx.md)
+- \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793508)\] [2.1. Instalação do JDK](xxx.md)
+- \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793512)\] [2.2. Primeira aplicação: Hello World App](xxx.md)
+- \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793526)\] [2.3. Ambiente Integrado de Desenvolvimento - IDE](xxx.md)
 
 3. Tipos Primitivos e Variáveis
-- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793536)][3.1. Tipos Primitivos e Variáveis](xxx.md)
-- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793538)][3.2. Sistemas Numéricos](xxx.md)
-- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793544)][3.3. Arrays](xxx.md)
+- \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793536)\] [3.1. Tipos Primitivos e Variáveis](xxx.md)
+- \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793538)\] [3.2. Sistemas Numéricos](xxx.md)
+- \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793544)\] [3.3. Arrays](xxx.md)
 
 4. IntelliJ IDEA: Dicas e Truques
-- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/30316678)][4.1. Pacotes: criação e apresentação de pacotes](xxx.md)
-- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/30316700)][4.2. Plugins: como instalar plugins gratuitos, loja de plugins e estilos de workspaces](xxx.md)
-- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/30316716)][4.3. Refatoração de código no IntelliJ](xxx.md)
+- \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/30316678)\] [4.1. Pacotes: criação e apresentação de pacotes](xxx.md)
+- \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/30316700)\] [4.2. Plugins: como instalar plugins gratuitos, loja de plugins e estilos de workspaces](xxx.md)
+- \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/30316716)\] [4.3. Refatoração de código no IntelliJ](xxx.md)
 
 5. Operadores e operações com tipos primitivos
-- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793556)][5.1. Operadores no Java](xxx.md)
-- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793566)][5.2. Operadores com integers e números floating-point, tipo BigDecimal](xxx.md)
-- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793590)][5.3. Classe Math, NaN, Infinity](xxx.md)
-- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793594)][5.4. Tipo de expressão no Java](xxx.md)
-- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793598)][5.5. Comparar tipos primitivos e tipos de referência e Java Memory Model (Modelo de Memória Java)](xxx.md)
-- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793606)][5.6. Ler entrada do usuário pelo console](xxx.md)
+- \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793556)\] [5.1. Operadores no Java](xxx.md)
+- \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793566)\] [5.2. Operadores com integers e números floating-point, tipo BigDecimal](xxx.md)
+- \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793590)\] [5.3. Classe Math, NaN, Infinity](xxx.md)
+- \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793594)\] [5.4. Tipo de expressão no Java](xxx.md)
+- \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793598)\] [5.5. Comparar tipos primitivos e tipos de referência e Java Memory Model (Modelo de Memória Java)](xxx.md)
+- \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793606)\] [5.6. Ler entrada do usuário pelo console](xxx.md)
 
 6. Strings em Java
-- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793892)][6.1. Visão geral](xxx.md)
-- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793896)][6.2. Comparação de strings e o String pool](xxx.md)
-- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793900)][6.3. Sequências de escape em Java](xxx.md)
-- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793904)][6.4. Formatação de strings](xxx.md)
-- [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793914)][6.5. Expressões regulares em Java](xxx.md)
+- \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793892)\] [6.1. Visão geral](xxx.md)
+- \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793896)\] [6.2. Comparação de strings e o String pool](xxx.md)
+- \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793900)\] [6.3. Sequências de escape em Java](xxx.md)
+- \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793904)\] [6.4. Formatação de strings](xxx.md)
+- \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793914)\] [6.5. Expressões regulares em Java](xxx.md)
 
 7. Instruções de controle
-  - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793946)][7.1. Construção de if-else](xxx.md)
-  - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793996)][7.2. Construção de switch](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793946)\] [7.1. Construção de if-else](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27793996)\] [7.2. Construção de switch](xxx.md)
 
 8. Miscelânea
-  - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794012)][8.1. Números aleatórios](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794012)\] [8.1. Números aleatórios](xxx.md)
 
 9. Loops
-  - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794014)][9.1. Loop while](xxx.md)
-  - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794016)][9.2. Loop do-while](xxx.md)
-  - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794020)][9.3. Loop de condição for](xxx.md)
-  - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794024)][9.4. Loop foreach](xxx.md)
-  - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794026)][9.5. Loops aninhados](xxx.md)
-  - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794036)][9.6. Instruções de salto - break e continue](xxx.md)
-  - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794260)][9.7. Labels](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794014)\] [9.1. Loop while](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794016)\] [9.2. Loop do-while](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794020)\] [9.3. Loop de condição for](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794024)\] [9.4. Loop foreach](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794026)\] [9.5. Loops aninhados](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794036)\] [9.6. Instruções de salto - break e continue](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794260)\] [9.7. Labels](xxx.md)
 
 x. xxx
-  - [[Ref](xxx)][x.x. xxx](xxx.md)
+  - \[[Ref](xxx)\] [x.x. xxx](xxx.md)
 
 TODO: atualizar com os arquivos md se a estrutura continuar a mesma
