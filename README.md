@@ -66,7 +66,7 @@ Aplicações utilizadas:
   - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794024)][9.4. Loop foreach](xxx.md)
   - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794026)][9.5. Loops aninhados](xxx.md)
   - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794036)][9.6. Instruções de salto - break e continue](xxx.md)
-  - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794260)][9.x. Labels](xxx.md)
+  - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794260)][9.7. Labels](xxx.md)
 
 x. xxx
   - [[Ref](xxx)][x.x. xxx](xxx.md)
