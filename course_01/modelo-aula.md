@@ -111,5 +111,5 @@ Se exercício:
 > Exercício N ((nome do vídeo, aula, etc)): [caminho](pasta_exercicio-exercicio_nn)
 
 Enunciado de pesquisa:
-Usando Java 8, me forneça conteúdo sobre o seguintes tópico dando exemplo de código se aplicável:
-- Tópico...
+Usando Java 8, me forneça conteúdo sobre o seguintes tópico com exemplos apenas onde solicitado:
+- Tópico (com exemplos de código)...
