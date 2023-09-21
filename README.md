@@ -59,6 +59,15 @@ Aplicações utilizadas:
 8. Miscelânea
   - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794012)][8.1. Números aleatórios](xxx.md)
 
+9. Loops
+  - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794014)][9.1. Loop while](xxx.md)
+  - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794016)][9.2. Loop do-while](xxx.md)
+  - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794020)][9.3. Loop de condição for](xxx.md)
+  - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794024)][9.4. Loop foreach](xxx.md)
+  - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794026)][9.5. Loops aninhados](xxx.md)
+  - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794036)][9.6. Instruções de salto - break e continue](xxx.md)
+  - [[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794260)][9.x. Labels](xxx.md)
+
 x. xxx
   - [[Ref](xxx)][x.x. xxx](xxx.md)
 
