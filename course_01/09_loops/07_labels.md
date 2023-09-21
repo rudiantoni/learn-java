@@ -4,18 +4,20 @@
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Diretório de arquivos: [07_arquivos](./07_arquivos/)
-- (se existir homework) Homework
-  - [Arquivo: file_name_no_extension](file_link)
-  - [content_title](content_link)
-  - ...
+- Homework
+  - [Arquivo: HW - Loops](./07_arquivos/homework/HW%20-%20Loops.pdf)
+  - [Homework: Imprimir entradas em novas linhas](#homework-imprimir-entradas-em-novas-linhas)
+  - [Homework: Pirâmide no console](#homework-pirâmide-no-console)
+  - [Homework: Matriz tabulada](#homework-matriz-tabulada)
 - Projetos
   - [Projeto 1](./07_arquivos/proj_01/) [(iniciado em)](#o-que-são-labels)
-- (se existir exercícios) Exercícios
-  - [Exercício N](folder_link-exercicio_nn) ([enunciado](#statement_content_link))
-  - ...
+- Exercícios
+  - [Exercício 1](./07_arquivos/exercicio_01/) ([enunciado](#homework-imprimir-entradas-em-novas-linhas))
+  - [Exercício 2](./07_arquivos/exercicio_02/) ([enunciado](#homework-pirâmide-no-console))
+  - [Exercício 3](./07_arquivos/exercicio_03/) ([enunciado](#homework-matriz-tabulada))
 - Conteúdo
-  - []()
-  - ...
+  - [O que são labels](#o-que-são-labels)
+  - [Como utilizar labels](#como-utilizar-labels)
 
 ### O que são labels
 [[Topo]](#)<br />
@@ -60,35 +62,74 @@ i: 1, j: 2
 
 Observe que o uso de labels permite que você controle qual loop será afetado pela instrução break ou continue. Isso é útil em situações de loops aninhados quando você precisa sair de um loop específico ou continuar em um loop específico.
 
+### Homework: Imprimir entradas em novas linhas
+[[Topo]](#)<br />
 
-Se homework:
-- Ver homework: [file_name_no_extension](file_link)
+- Ver homework: [HW - Loops](./07_arquivos/homework/HW%20-%20Loops.pdf)
 
+Implemente um programa de console que atenda aos seguintes requisitos:
+- O programa inicia e solicita ao usuário que digite um número inteiro.
+- O programa imprime cada dígito em uma nova linha.
 
-Lista ordenada
-1. Lista item 1
-2. Lista item 2
-3. Lista item 3
+Exemplo:
 
-Lista desordenada
-- Lista item 1
-- Lista item 2
-- Lista item 3
-
-`linha de codigo`
-
-Bloco de código
-
+- Entrada do usuário: "12345"
+- Saída do console do programa:
 ```
-bloco de código {
+1
+2
+3
+4
+5
+```
 
+> Exercício 1 (Labels): [07_arquivos/exercicio_01](./07_arquivos/exercicio_01/)
+
+### Homework: Pirâmide no console
+[[Topo]](#)<br />
+
+- Ver homework: [HW - Loops](./07_arquivos/homework/HW%20-%20Loops.pdf)
+
+Implemente um programa de console que atenda aos seguintes requisitos:
+- O programa inicia e pede ao usuário que insira a altura da pirâmide.
+- O programa desenha a figura de uma pirâmide horizontalmente no console:
+
+Exemplo:
+
+- Entrada do usuário: "4"
+- Saída do console do programa:
+```
+*
+**
+***
+****
+***
+**
+*
+```
+
+> Exercício 2 (Labels): [07_arquivos/exercicio_02](./07_arquivos/exercicio_02/)
+
+### Homework: Matriz tabulada
+[[Topo]](#)<br />
+
+- Ver homework: [HW - Loops](./07_arquivos/homework/HW%20-%20Loops.pdf)
+
+Implemente um programa de console que atenda aos seguintes requisitos:
+- O programa inicia e imprime uma matriz no console.
+- Matriz a ser impressa:
+```
+{
+  {1, 2, 3, 4, 5},
+  {6, 7},
+  {8, 9, 10}
 }
 ```
+- A saída deve se parecer com isso:
+```
+	1	2	3	4	5
+	6	7
+	8	9	10
+```
 
-Se exercício:
-> Exercício N ((nome do vídeo, aula, etc)): [caminho](pasta_exercicio-exercicio_nn)
-
-Enunciado de pesquisa:
-Usando Java 8, me forneça conteúdo sobre o seguintes tópico com exemplos de código apenas onde solicitado:
-- De maneira mais aprofundada, o que são labels
-- Como utilizar labels (com exemplos de código)
+> Exercício 3 (Labels): [07_arquivos/exercicio_03](./07_arquivos/exercicio_03/)
