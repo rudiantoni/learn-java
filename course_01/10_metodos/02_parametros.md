@@ -3,113 +3,158 @@
 ## Parâmetros
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
-- (se existir diretório de arquivos com documentos, etc) Diretório de arquivos: [folder_name-nn_arquivos](folder_link)
-- (se existir homework) Homework
-  - [Arquivo: file_name_no_extension](file_link)
-  - [content_title](content_link)
-  - ...
-- (se existir projeto) Projetos
-  - [Projeto N](folder_link-proj_nn) [(iniciado em)](#started_in_content_link)
-  - ...
-- (se existir exercícios) Exercícios
-  - [Exercício N](folder_link-exercicio_nn) ([enunciado](#statement_content_link))
-  - ...
+- Diretório de arquivos: [02_arquivos](./02_arquivos/)
+- Projetos
+  - [Projeto 1](./02_arquivos/proj_01/) [(iniciado em)](#o-que-são-parâmetros)
 - Conteúdo
-  - []()
-  - ...
+  - [O que são parâmetros](#o-que-são-parâmetros)
+  - [Parâmetros por valor](#parâmetros-por-valor)
+  - [Parâmetros por referência](#parâmetros-por-referência)
+  - [Passando tipos primitivos](#passando-tipos-primitivos)
+  - [Passando tipos de referência](#passando-tipos-de-referência)
 
-### (nome do vídeo, aula, etc)
+### O que são parâmetros
 [[Topo]](#)<br />
 
+Os parâmetros são valores que podem ser passados para um método para que ele possa realizar seu trabalho.
 
+Eles permitem que você forneça dados de entrada para um método.
 
-### (nome do vídeo, aula, etc)
+Em Java, os parâmetros são declarados na lista de parâmetros de um método.
+
+### Parâmetros por valor
 [[Topo]](#)<br />
 
+- Ver projeto: [Projeto 1](./02_arquivos/proj_01/)
 
+Em Java, todos os argumentos de método são passados por valor.
 
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
+Isso significa que uma cópia do valor do argumento é passada para o método, e qualquer modificação feita no parâmetro dentro do método não afeta a variável original fora do método.
 
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-Se homework:
-- Ver homework: [file_name_no_extension](file_link)
-Se projeto:
-- Ver projeto: [Projeto N](folder_link-proj_nn)
-
-Lista ordenada
-1. Lista item 1
-2. Lista item 2
-3. Lista item 3
-
-Lista desordenada
-- Lista item 1
-- Lista item 2
-- Lista item 3
-
-`linha de codigo`
-
-Bloco de código
-
-```
-bloco de código {
-
+```java
+public class ExemploPassagemPorValor {
+  public static void main(String[] args) {
+    int numero = 10;
+    System.out.println("Antes do método: " + numero);
+    
+    modificarNumero(numero);
+    
+    System.out.println("Depois do método: " + numero);
+  }
+  
+  public static void modificarNumero(int numero) {
+    numero = 20; // Isso modifica apenas a cópia do valor, não o valor original
+  }
 }
 ```
 
-Se exercício:
-> Exercício N ((nome do vídeo, aula, etc)): [caminho](pasta_exercicio-exercicio_nn)
+A saída será:
 
-Enunciado de pesquisa:
-Usando Java 8, me forneça conteúdo sobre o seguintes tópico com exemplos de código apenas onde solicitado:
-- Tópico (com exemplos de código)...
+```ython
+Antes do método: 10
+Depois do método: 10
+```
+
+### Parâmetros por referência
+[[Topo]](#)<br />
+
+- Ver projeto: [Projeto 1](./02_arquivos/proj_01/)
+
+Em Java, todos os argumentos de método são passados por valor.
+
+Isso significa que mesmo quando você passa um objeto como argumento, você está passando uma cópia da referência do objeto, não o próprio objeto. 
+
+Isso pode dar a ilusão de que os objetos estão sendo passados por referência, mas eles não estão.
+
+
+```java
+public class ExemploPassagemPorReferencia {
+  public static void main(String[] args) {
+    StringBuilder texto = new StringBuilder("Olá");
+    System.out.println("Antes do método: " + texto);
+    
+    modificarTexto(texto);
+    
+    System.out.println("Depois do método: " + texto);
+  }
+  
+  public static void modificarTexto(StringBuilder texto) {
+    texto.append(", mundo!"); // Isso modifica o objeto referenciado pela cópia da referência
+  }
+}
+```
+
+A saída será:
+
+```
+Antes do método: Olá
+Depois do método: Olá, mundo!
+```
+
+### Passando tipos primitivos
+[[Topo]](#)<br />
+
+- Ver projeto: [Projeto 1](./02_arquivos/proj_01/)
+
+Os tipos primitivos, como int, float, char, etc., são passados por valor.
+
+Isso significa que uma cópia do valor é passada para o método, e qualquer modificação no parâmetro dentro do método não afeta a variável original fora do método.
+
+```java
+public class ExemploPassagemTiposPrimitivos {
+  public static void main(String[] args) {
+    int numero = 5;
+    System.out.println("Antes do método: " + numero);
+    
+    modificarNumero(numero);
+    
+    System.out.println("Depois do método: " + numero);
+  }
+  
+  public static void modificarNumero(int numero) {
+    numero = 10; // Isso modifica apenas a cópia do valor, não o valor original
+  }
+}
+```
+
+A saída será:
+
+```
+Antes do método: 5
+Depois do método: 5
+```
+
+### Passando tipos de referência
+[[Topo]](#)<br />
+
+- Ver projeto: [Projeto 1](./02_arquivos/proj_01/)
+
+Em Java, mesmo quando você passa objetos como argumentos para um método, você está passando uma cópia da referência do objeto, não o próprio objeto.
+
+Portanto, qualquer modificação feita no objeto referenciado dentro do método afetará o objeto original fora do método.
+
+```java
+public class ExemploPassagemTiposPorReferencia {
+  public static void main(String[] args) {
+    StringBuilder texto = new StringBuilder("Olá");
+    System.out.println("Antes do método: " + texto);
+    
+    modificarTexto(texto);
+    
+    System.out.println("Depois do método: " + texto);
+  }
+  
+  public static void modificarTexto(StringBuilder texto) {
+    texto.append(", mundo!"); // Isso modifica o objeto referenciado
+  }
+}
+```
+
+A saída será:
+
+```
+Antes do método: Olá
+Depois do método: Olá, mundo!
+```
+
+Lembre-se de que, em todos os casos, a passagem por valor significa que você está passando uma cópia do valor (ou referência), e qualquer modificação no parâmetro dentro do método não afetará a variável original fora do método.
