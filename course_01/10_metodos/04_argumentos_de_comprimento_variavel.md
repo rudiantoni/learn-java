@@ -3,83 +3,70 @@
 ## Argumentos de comprimento variável
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
-- (se existir diretório de arquivos com documentos, etc) Diretório de arquivos: [folder_name-nn_arquivos](folder_link)
+- Diretório de arquivos: [04_arquivos](./04_arquivos/)
 - (se existir homework) Homework
   - [Arquivo: file_name_no_extension](file_link)
   - [content_title](content_link)
   - ...
-- (se existir projeto) Projetos
-  - [Projeto N](folder_link-proj_nn) [(iniciado em)](#started_in_content_link)
-  - ...
+- Projetos
+  - [Projeto 1](./04_arquivos/proj_01/) [(iniciado em)](#varargs)
 - (se existir exercícios) Exercícios
   - [Exercício N](folder_link-exercicio_nn) ([enunciado](#statement_content_link))
   - ...
 - Conteúdo
-  - []()
-  - ...
+  - [Varargs](#varargs)
 
-### (nome do vídeo, aula, etc)
+### Varargs
 [[Topo]](#)<br />
 
+- Ver projeto: [Projeto 1](./04_arquivos/proj_01/)
 
+Em Java, você pode criar métodos que aceitam um número variável de argumentos usando o recurso de "Argumentos de Comprimento Variável", ou Varargs.
 
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
+Isso permite que você chame um método com um número arbitrário de argumentos do mesmo tipo.
 
+Os argumentos de comprimento variável são representados como um array no interior do método.
 
+```java
+public class ExemploArgumentosVariaveis {
+  public static void main(String[] args) {
+    imprimirNomes("Alice", "Bob", "Carol");
+    imprimirNomes("David", "Eva");
+  }
 
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
+  public static void imprimirNomes(String... nomes) {
+    System.out.print("Nomes: ");
+    for (String nome : nomes) {
+      System.out.print(nome + " ");
+    }
+    System.out.println();
+  }
+}
+```
 
+Neste exemplo, a função imprimirNomes aceita um número variável de argumentos do tipo String.
 
+Você pode chamar essa função com qualquer número de argumentos de string, separados por vírgulas.
 
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
+A função itera sobre os argumentos e os imprime na saída.
 
+Aqui estão algumas chamadas possíveis para o método imprimirNomes:
 
+```java
+imprimirNomes("Alice", "Bob", "Carol");
+// Saída: Nomes: Alice Bob Carol
 
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
+imprimirNomes("David", "Eva");
+// Saída: Nomes: David Eva
 
+imprimirNomes(); // Você também pode chamar o método sem argumentos
+// Saída: Nomes:
+```
 
+Observe que os argumentos de comprimento variável devem ser o último parâmetro na lista de parâmetros de um método, e você pode ter apenas um único parâmetro de comprimento variável em um método.
 
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
+Além disso, o parâmetro de comprimento variável é tratado como um array dentro do método, permitindo que você acesse os valores individualmente.
 
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
 
 
 Se homework:
@@ -87,29 +74,5 @@ Se homework:
 Se projeto:
 - Ver projeto: [Projeto N](folder_link-proj_nn)
 
-Lista ordenada
-1. Lista item 1
-2. Lista item 2
-3. Lista item 3
-
-Lista desordenada
-- Lista item 1
-- Lista item 2
-- Lista item 3
-
-`linha de codigo`
-
-Bloco de código
-
-```
-bloco de código {
-
-}
-```
-
 Se exercício:
 > Exercício N ((nome do vídeo, aula, etc)): [caminho](pasta_exercicio-exercicio_nn)
-
-Enunciado de pesquisa:
-Usando Java 8, me forneça conteúdo sobre o seguintes tópico com exemplos de código apenas onde solicitado:
-- Tópico (com exemplos de código)...
