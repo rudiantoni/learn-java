@@ -3,113 +3,64 @@
 ## Recursividade
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
-- (se existir diretório de arquivos com documentos, etc) Diretório de arquivos: [folder_name-nn_arquivos](folder_link)
-- (se existir homework) Homework
-  - [Arquivo: file_name_no_extension](file_link)
-  - [content_title](content_link)
-  - ...
-- (se existir projeto) Projetos
-  - [Projeto N](folder_link-proj_nn) [(iniciado em)](#started_in_content_link)
-  - ...
-- (se existir exercícios) Exercícios
-  - [Exercício N](folder_link-exercicio_nn) ([enunciado](#statement_content_link))
-  - ...
+- Diretório de arquivos: [03_arquivos](./03_arquivos/)
+- Projetos
+  - [Projeto 1](./03_arquivos/proj_01/) [(iniciado em)](#o-que-são-métodos-recursivos)
 - Conteúdo
-  - []()
-  - ...
+  - [O que são métodos recursivos](#o-que-são-métodos-recursivos)
+  - [Como usar métodos recursivos](#como-usar-métodos-recursivos)
 
-### (nome do vídeo, aula, etc)
+### O que são métodos recursivos
 [[Topo]](#)<br />
 
+- Ver projeto: [Projeto 1](./03_arquivos/proj_01/)
 
+Métodos recursivos são métodos que chamam a si mesmos para resolver um problema em partes menores e, eventualmente, chegar a uma solução.
 
-### (nome do vídeo, aula, etc)
+Essa técnica é conhecida como recursão. Ela é usada quando um problema pode ser decomposto em instâncias menores do mesmo problema.
+
+A recursão envolve dois componentes essenciais:
+- Caso Base: É a condição em que a recursão para. É importante definir um caso base para evitar que a recursão continue indefinidamente.
+- Caso Recursivo: É a chamada recursiva ao próprio método com uma instância menor do problema.
+
+Os métodos recursivos são amplamente utilizados em algoritmos de busca, ordenação, árvores, entre outros.
+
+### Como usar métodos recursivos
 [[Topo]](#)<br />
 
+- Ver projeto: [Projeto 1](./03_arquivos/proj_01/)
 
+Vamos criar um exemplo simples de um método recursivo que calcula o fatorial de um número.
 
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
+O fatorial de um número n é o produto de todos os números inteiros positivos de 1 até n.
 
+```java
+public class ExemploRecursao {
+  public static void main(String[] args) {
+    int numero = 5;
+    int resultado = calcularFatorial(numero);
+    System.out.println("O fatorial de " + numero + " é " + resultado);
+  }
 
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-Se homework:
-- Ver homework: [file_name_no_extension](file_link)
-Se projeto:
-- Ver projeto: [Projeto N](folder_link-proj_nn)
-
-Lista ordenada
-1. Lista item 1
-2. Lista item 2
-3. Lista item 3
-
-Lista desordenada
-- Lista item 1
-- Lista item 2
-- Lista item 3
-
-`linha de codigo`
-
-Bloco de código
-
-```
-bloco de código {
-
+  public static int calcularFatorial(int n) {
+    // Caso base: O fatorial de 0 é 1
+    if (n == 0) {
+        return 1;
+    }
+    // Caso recursivo: Chamada recursiva com um problema menor
+    return n * calcularFatorial(n - 1);
+  }
 }
 ```
 
-Se exercício:
-> Exercício N ((nome do vídeo, aula, etc)): [caminho](pasta_exercicio-exercicio_nn)
+Neste exemplo, temos a função calcularFatorial, que é chamada recursivamente. Quando n é igual a 0, a função retorna 1 (caso base), caso contrário, ela multiplica n pelo resultado da chamada recursiva com n - 1 (caso recursivo). Isso continua até que n seja 0, momento em que a recursão para.
 
-Enunciado de pesquisa:
-Usando Java 8, me forneça conteúdo sobre o seguintes tópico com exemplos de código apenas onde solicitado:
-- Tópico (com exemplos de código)...
+Ao executar este código, você obterá a saída:
+
+```
+O fatorial de 5 é 120
+```
+
+Observe que a recursão deve sempre ter um caso base bem definido para evitar um loop infinito.
+
+Além disso, é importante garantir que o problema seja decomposto em instâncias menores para que a recursão faça progresso em direção ao caso base.
