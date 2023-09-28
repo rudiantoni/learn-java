@@ -325,7 +325,7 @@ Implemente um programa de console que atenda aos seguintes requisitos:
 - O programa contém métodos que podem processar uma string de entrada de acordo com os requisitos abaixo.
 - Você tem uma string de entrada como esta:
 ```
-Login;Nome;Email
+Login;Name;Email
 peterson;Chris Peterson;peterson@outlook.com
 james;Derek James;james@gmail.com
 jackson;Walter Jackson;jackson@gmail.com
