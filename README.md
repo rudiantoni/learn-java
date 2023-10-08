@@ -73,6 +73,10 @@ Aplicações utilizadas:
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794330)\] [10.3. Recursividade](xxx.md)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794336)\] [10.4. Argumentos de comprimento variável](xxx.md)
 
+11. Enums
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794554)\] [11.1. O Enum](xxx.md)
+
+
 
 x. xxx
   - \[[Ref](xxx)\] [x.x. xxx](xxx.md)
