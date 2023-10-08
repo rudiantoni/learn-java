@@ -9,8 +9,8 @@
   - [Homework: Enum por propriedade](#homework-enum-por-propriedade)
 - Projetos
   - [Projeto 1](./01_arquivos/proj_01/) [(iniciado em)](#o-tipo-enum)
-- (se existir exercícios) Exercícios
-  - [Exercício N](folder_link-exercicio_nn) ([enunciado](#statement_content_link))
+- Exercícios
+  - [Exercício 1](./01_arquivos/exercicio_01/) ([enunciado](#homework-enum-por-propriedade))
 - Conteúdo
   - [O tipo Enum](#o-tipo-enum)
   - [Declaração](#declaração)
@@ -168,5 +168,4 @@ public Priority getPriority() {
 }
 ```
 
-Se exercício:
-> Exercício N ((nome do vídeo, aula, etc)): [caminho](pasta_exercicio-exercicio_nn)
+> Exercício 1 (O Enum): [01_arquivos/exercicio_01](./01_arquivos/exercicio_01/)
