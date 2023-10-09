@@ -3,113 +3,95 @@
 ## Introdução
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
-- (se existir diretório de arquivos com documentos, etc) Diretório de arquivos: [folder_name-nn_arquivos](folder_link)
-- (se existir homework) Homework
-  - [Arquivo: file_name_no_extension](file_link)
-  - [content_title](content_link)
-  - ...
-- (se existir projeto) Projetos
-  - [Projeto N](folder_link-proj_nn) [(iniciado em)](#started_in_content_link)
-  - ...
-- (se existir exercícios) Exercícios
-  - [Exercício N](folder_link-exercicio_nn) ([enunciado](#statement_content_link))
-  - ...
 - Conteúdo
-  - []()
-  - ...
+  - [Introdução à Orientação a Objetos](#introdução-à-orientação-a-objetos)
+  - [O que é um objeto](#o-que-é-um-objeto)
+  - [O que é uma classe](#o-que-é-uma-classe)
+  - [Por que usar POO](#por-que-usar-poo)
+  - [POO vs programação funcional](#poo-vs-programação-funcional)
+  - [Vantagens da POO](#vantagens-da-poo)
+  - [Herança](#herança)
+  - [Encapsulamento](#encapsulamento)
+  - [Polimorfismo](#polimorfismo)
+  - [Abstração](#abstração)
 
-### (nome do vídeo, aula, etc)
+### Introdução à Orientação a Objetos
 [[Topo]](#)<br />
 
+A Programação Orientada a Objetos (POO) é um paradigma de programação que se baseia no conceito de "objetos".
 
+Ele organiza o código em unidades autônomas chamadas objetos, que representam entidades do mundo real e possuem características (atributos) e comportamentos (métodos).
 
-### (nome do vídeo, aula, etc)
+Java é uma linguagem de programação que segue os princípios da POO.
+
+POO é um paradigma de programação que se concentra na modelagem do mundo real por meio de objetos.
+
+Ele permite a criação de software mais modular, reutilizável e fácil de entender.
+
+A POO é uma abordagem poderosa para desenvolver software, permitindo uma representação eficaz do mundo real e promovendo a modularidade e a reutilização de código.
+
+Java é uma linguagem amplamente utilizada que segue os princípios da POO e oferece suporte sólido para sua implementação.
+
+### O que é um objeto
 [[Topo]](#)<br />
 
+Um objeto é uma instância de uma classe e representa uma entidade do mundo real.
 
+Um objeto tem atributos (dados) e métodos (funções) que definem seu comportamento.
 
-### (nome do vídeo, aula, etc)
+### O que é uma classe
 [[Topo]](#)<br />
 
+Uma classe é um modelo ou molde para criar objetos.
 
+Ela define os atributos e métodos que os objetos de uma classe terão em comum.
 
-### (nome do vídeo, aula, etc)
+As classes são as estruturas fundamentais na POO.
+
+### Por que usar POO
 [[Topo]](#)<br />
 
+POO oferece benefícios como reutilização de código, organização, modularidade, manutenção facilitada e abstração do mundo real para o mundo digital.
 
-
-### (nome do vídeo, aula, etc)
+### POO vs programação funcional
 [[Topo]](#)<br />
 
+A programação funcional é outro paradigma de programação que se concentra em funções e imutabilidade, enquanto a POO se concentra em objetos e encapsulamento. Ambos os paradigmas têm suas vantagens e são frequentemente usados em conjunto.
 
-
-### (nome do vídeo, aula, etc)
+### Vantagens da POO
 [[Topo]](#)<br />
 
+- Reutilização de código.
+- Modularidade e organização.
+- Facilita a manutenção.
+- Abstrai complexidade.
+- Modelagem mais próxima do mundo real.
+- Polimorfismo e herança permitem flexibilidade.
 
-
-### (nome do vídeo, aula, etc)
+### Herança
 [[Topo]](#)<br />
 
+Herança é um mecanismo que permite que uma classe (subclasse) herde os atributos e métodos de outra classe (superclasse).
 
+Isso promove a reutilização de código e permite a criação de hierarquias de classes.
 
-### (nome do vídeo, aula, etc)
+### Encapsulamento
 [[Topo]](#)<br />
 
+Encapsulamento é o princípio de ocultar os detalhes internos de uma classe e fornecer uma interface pública para interagir com ela.
 
+Isso melhora a segurança e a manutenção do código.
 
-### (nome do vídeo, aula, etc)
+### Polimorfismo
 [[Topo]](#)<br />
 
+Polimorfismo permite que objetos de diferentes classes sejam tratados de maneira uniforme.
 
+Isso é alcançado por meio de herança e interfaces, permitindo que diferentes objetos respondam de maneira específica aos mesmos métodos.
 
-### (nome do vídeo, aula, etc)
+### Abstração
 [[Topo]](#)<br />
 
+Abstração é o processo de simplificar entidades complexas do mundo real em representações mais simples e manipuláveis em código.
 
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-Se homework:
-- Ver homework: [file_name_no_extension](file_link)
-Se projeto:
-- Ver projeto: [Projeto N](folder_link-proj_nn)
-
-Lista ordenada
-1. Lista item 1
-2. Lista item 2
-3. Lista item 3
-
-Lista desordenada
-- Lista item 1
-- Lista item 2
-- Lista item 3
-
-`linha de codigo`
-
-Bloco de código
-
-```
-bloco de código {
-
-}
-```
-
-Se exercício:
-> Exercício N ((nome do vídeo, aula, etc)): [caminho](pasta_exercicio-exercicio_nn)
-
-Enunciado de pesquisa:
-Usando Java 8, me forneça conteúdo sobre o seguintes tópico com exemplos de código apenas onde solicitado:
-- Tópico (com exemplos de código)...
+Classes abstratas e interfaces são usadas para definir abstrações em POO.
