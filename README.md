@@ -79,7 +79,24 @@ Aplicações utilizadas:
 12. Depuração (Debug)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27797316?start=0)\] [12.1. Ferramentas de depuração](xxx.md)
 
+13. Programação Orientada a OBjetos
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794606)\] [13.1. Introdução](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794616)\] [13.2. Classes e objetos](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794626)\] [13.3. Tipos de classes e abstracts](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794632)\] [13.4. Interfaces](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794644)\] [13.5. Herança](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794680)\] [13.6. Polimorfismo e final](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794686)\] [13.7. Static](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794688)\] [13.8. Encapsulamento](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794698)\] [13.9. Objeto, JNI e classe Object](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794706)\] [13.10. SOLID: Single Responsibility](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794718)\] [13.11. SOLID: Open/close](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794728)\] [13.12. SOLID: Liskov Substitution](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794732)\] [13.13. SOLID: Interface Segregation](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794740)\] [13.14. SOLID: Dependency Inversion](xxx.md)
+
 x. xxx
   - \[[Ref](xxx)\] [x.x. xxx](xxx.md)
+
 
 TODO: atualizar com os arquivos md se a estrutura continuar a mesma
