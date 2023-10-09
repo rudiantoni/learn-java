@@ -76,7 +76,8 @@ Aplicações utilizadas:
 11. Enums
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794554)\] [11.1. O Enum](xxx.md)
 
-
+12. Depuração (Debug)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27797316?start=0)\] [12.1. Ferramentas de depuração](xxx.md)
 
 x. xxx
   - \[[Ref](xxx)\] [x.x. xxx](xxx.md)
