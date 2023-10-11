@@ -3,122 +3,219 @@
 ## Classes e objetos
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
-- (se existir diretório de arquivos com documentos, etc) Diretório de arquivos: [folder_name-nn_arquivos](folder_link)
-- (se existir homework) Homework
-  - [Arquivo: file_name_no_extension](file_link)
-  - [content_title](content_link)
-  - ...
-- (se existir projeto) Projetos
-  - [Projeto N](folder_link-proj_nn) [(iniciado em)](#started_in_content_link)
-  - ...
-- (se existir exercícios) Exercícios
-  - [Exercício N](folder_link-exercicio_nn) ([enunciado](#statement_content_link))
-  - ...
+- Diretório de arquivos: [02_arquivos](./02_arquivos/)
+- Projetos
+  - [Projeto 1](./02_arquivos/proj_01/) [(iniciado em)](#conteúdo-de-uma-classe)
 - Conteúdo
-  - []()
-  - ...
+  - [Conteúdo de uma classe](#conteúdo-de-uma-classe)
+  - [Propriedades (ou campos)](#propriedades-ou-campos)
+  - [Bloco de inicialização](#bloco-de-inicialização)
+  - [Construtores](#construtores)
+  - [Métodos](#métodos)
+  - [Classes aninhadas](#classes-aninhadas)
+  - [Getters e setters](#getters-e-setters)
+  - [Método toString()](#método-tostring)
+  - [Criar um objeto](#criar-um-objeto)
 
-### (nome do vídeo, aula, etc)
+### Conteúdo de uma classe
 [[Topo]](#)<br />
 
+- Ver projeto: [Projeto 1](./02_arquivos/proj_01/)
 
+Uma classe em Java pode conter campos (variáveis), blocos de inicialização, construtores, métodos e classes aninhadas.
 
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
+Aqui está um exemplo básico de uma classe em Java:
 
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-Se homework:
-- Ver homework: [file_name_no_extension](file_link)
-Se projeto:
-- Ver projeto: [Projeto N](folder_link-proj_nn)
-
-Lista ordenada
-1. Lista item 1
-2. Lista item 2
-3. Lista item 3
-
-Lista desordenada
-- Lista item 1
-- Lista item 2
-- Lista item 3
-
-`linha de codigo`
-
-Bloco de código
-
-```
-bloco de código {
-
+```java
+public class MinhaClasse {
+  // Campos
+  private int numero;
+  
+  // Construtor
+  public MinhaClasse(int numero) {
+    this.numero = numero;
+  }
+  
+  // Método
+  public void exibirNumero() {
+    System.out.println("O número é: " + numero);
+  }
+  
+  // Classe aninhada
+  public class ClasseAninhada {
+    // Conteúdo da classe aninhada
+  }
 }
 ```
 
-Se exercício:
-> Exercício N ((nome do vídeo, aula, etc)): [caminho](pasta_exercicio-exercicio_nn)
+### Propriedades (ou campos)
+[[Topo]](#)<br />
 
-Enunciado de pesquisa:
-Usando Java 8, me forneça conteúdo sobre o seguintes tópicos:
-- O que uma classe pode conter
-- Campos
-- Blocos de inicialização
-- Construtores
-- Métodos
-- Classes aninhadas
-- Getters e setters
-- Método toString()
-- Como criar um objeto
-(com exemplos de código)...
+- Ver projeto: [Projeto 1](./02_arquivos/proj_01/)
+
+Propriedades são variáveis dentro de uma classe que representam o estado da classe. Aqui está um exemplo:
+
+```java
+public class Pessoa {
+  private String nome; // Campo
+  private int idade;    // Campo
+
+  // Construtor
+  public Pessoa(String nome, int idade) {
+    this.nome = nome;
+    this.idade = idade;
+  }
+}
+```
+
+### Bloco de inicialização
+[[Topo]](#)<br />
+
+- Ver projeto: [Projeto 1](./02_arquivos/proj_01/)
+
+Blocos de inicialização são usados para executar código durante a inicialização de uma instância da classe.
+
+Eles podem ser blocos estáticos ou de instância.
+
+Aqui está um exemplo de bloco de inicialização de instância:
+
+```java
+public class Exemplo {
+  private int valor;
+
+  // Bloco de inicialização de instância
+  {
+    valor = 42;
+  }
+}
+```
+
+### Construtores
+[[Topo]](#)<br />
+
+- Ver projeto: [Projeto 1](./02_arquivos/proj_01/)
+
+Construtores são métodos especiais que são usados para criar e inicializar objetos de uma classe.
+
+Aqui está um exemplo de construtor:
+
+```java
+public class Carro {
+  private String marca;
+  private String modelo;
+
+  // Construtor
+  public Carro(String marca, String modelo) {
+    this.marca = marca;
+    this.modelo = modelo;
+  }
+}
+```
+
+### Métodos
+[[Topo]](#)<br />
+
+- Ver projeto: [Projeto 1](./02_arquivos/proj_01/)
+
+Métodos são funções que podem ser chamadas em objetos da classe.
+
+Aqui está um exemplo de método:
+
+```java
+public class Calculadora {
+  // Método para somar dois números
+  public int somar(int a, int b) {
+    return a + b;
+  }
+}
+```
+
+### Classes aninhadas
+[[Topo]](#)<br />
+
+- Ver projeto: [Projeto 1](./02_arquivos/proj_01/)
+
+Classes aninhadas são classes definidas dentro de outras classes.
+
+Aqui está um exemplo de classe aninhada:
+
+```java
+public class ClasseExterna {
+  // Classe aninhada
+  public class ClasseAninhada {
+    // Conteúdo da classe aninhada
+  }
+}
+```
+
+### Getters e setters
+[[Topo]](#)<br />
+
+- Ver projeto: [Projeto 1](./02_arquivos/proj_01/)
+
+Getters e setters são métodos usados para acessar e modificar os campos (variáveis) de uma classe de forma controlada.
+
+Aqui está um exemplo de getters e setters:
+
+```java
+public class Pessoa {
+  private String nome;
+
+  // Getter
+  public String getNome() {
+    return nome;
+  }
+
+  // Setter
+  public void setNome(String nome) {
+    this.nome = nome;
+  }
+}
+```
+
+### Método toString()
+[[Topo]](#)<br />
+
+- Ver projeto: [Projeto 1](./02_arquivos/proj_01/)
+
+O método toString() é usado para fornecer uma representação de string de um objeto.
+
+É frequentemente sobrescrito para fornecer informações úteis sobre o objeto.
+
+Aqui está um exemplo:
+
+```java
+public class Pessoa {
+  private String nome;
+  private int idade;
+
+  // Outros membros da classe
+
+  // Método toString() sobrescrito
+  @Override
+  public String toString() {
+    return "Pessoa [nome=" + nome + ", idade=" + idade + "]";
+  }
+}
+```
+
+### Criar um objeto
+[[Topo]](#)<br />
+
+- Ver projeto: [Projeto 1](./02_arquivos/proj_01/)
+
+Você pode criar objetos de uma classe usando o operador new.
+
+Aqui está um exemplo:
+
+```java
+public class Main {
+  public static void main(String[] args) {
+    // Criando um objeto da classe MinhaClasse
+    MinhaClasse objeto = new MinhaClasse(10);
+      
+    // Chamando um método no objeto
+    objeto.exibirNumero();
+  }
+}
+```
