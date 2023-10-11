@@ -205,7 +205,7 @@ Neste exemplo, uma classe anônima é criada e implementa a interface Runnable. 
 
 Classes anônimas são convenientes, mas são limitadas em termos de reutilização, uma vez que não podem ser referenciadas novamente depois de sua criação. Com o Java 8 e versões posteriores, as expressões lambda fornecem uma sintaxe mais concisa e poderosa para criar implementações de interfaces 
 
-### Palavra-chave abstrata
+### Palavra-chave abstract
 [[Topo]](#)<br />
 
 - Ver projeto: [Projeto 1](./03_arquivos/proj_01/)
