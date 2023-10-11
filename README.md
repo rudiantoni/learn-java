@@ -82,7 +82,7 @@ Aplicações utilizadas:
 13. Programação Orientada a OBjetos
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794606)\] [13.1. Introdução](xxx.md)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794616)\] [13.2. Classes e objetos](xxx.md)
-  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794626)\] [13.3. Tipos de classes e abstracts](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794626)\] [13.3. Tipos de classes e abstract](xxx.md)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794632)\] [13.4. Interfaces](xxx.md)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794644)\] [13.5. Herança](xxx.md)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794680)\] [13.6. Polimorfismo e final](xxx.md)
