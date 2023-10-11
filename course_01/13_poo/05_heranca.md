@@ -1,6 +1,6 @@
 # Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808
 
-## (nome do capítulo, aula, nome do vídeo)
+## Herança
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - (se existir diretório de arquivos com documentos, etc) Diretório de arquivos: [folder_name-nn_arquivos](folder_link)
