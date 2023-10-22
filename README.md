@@ -79,7 +79,7 @@ Aplicações utilizadas:
 12. Depuração (Debug)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27797316?start=0)\] [12.1. Ferramentas de depuração](xxx.md)
 
-13. Programação Orientada a OBjetos
+13. Programação Orientada a Objetos
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794606)\] [13.1. Introdução](xxx.md)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794616)\] [13.2. Classes e objetos](xxx.md)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794626)\] [13.3. Tipos de classes e abstract](xxx.md)
@@ -94,6 +94,14 @@ Aplicações utilizadas:
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794728)\] [13.12. SOLID: Liskov Substitution](xxx.md)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794732)\] [13.13. SOLID: Interface Segregation](xxx.md)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794740)\] [13.14. SOLID: Dependency Inversion](xxx.md)
+
+
+14. Programação Orientada a Objetos - Preparação para a entrevista
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35007510#overview)\] [14.1. Como se preparar](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35007540#overview)\] [14.2. POO parte 1: Perguntas e respostas](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35007690#overview)\] [14.3. POO parte 2: Perguntas e respostas](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35327884#overview)\] [14.4. POO e Design Patterns: Perguntas e respostas](xxx.md)
+
 
 x. xxx
   - \[[Ref](xxx)\] [x.x. xxx](xxx.md)
