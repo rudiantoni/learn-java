@@ -8,10 +8,12 @@
   - [Arquivo: HW - OOP](./01_arquivos/homework/HW%20-%20OOP.pdf)
   - [Classes](#classes)
   - [Herança e Polimorfismo](#herança-e-polimorfismo)
+  - [Classes internas e aninhadas](#classes-internas-e-aninhadas)
   - ...
 - Exercícios
   - [Exercício 1](./01_arquivos/exercicio_01/) ([enunciado](#classes))
   - [Exercício 2](./01_arquivos/exercicio_02/) ([enunciado](#herança-e-polimorfismo))
+  - [Exercício 3](./01_arquivos/exercicio_03//) ([enunciado](#classes-internas-e-aninhadas))
   - ...
 - Conteúdo
   - [Classes](#classes)
@@ -148,6 +150,8 @@ Implemente a classe Transaction (Transação) aninhada, que possui os seguintes 
 - StandardAccountOperations operation (operação padrão da conta)
 
 Na classe Account, implemente os seguintes métodos:
+
+> Exercício 3 (Exame e homework para o tópico POO): [01_arquivos/exercicio_03](./01_arquivos/exercicio_03/)
 
 ```java
 public void sendMoneyToAccount(Account accountTo, double moneyAmount) {

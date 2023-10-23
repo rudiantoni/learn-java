@@ -1,9 +1,12 @@
+import java.util.Arrays;
+
 public class Account {
   private int id;
   private Transaction[] transactions;
 
   public Account(int id) {
     this.id = id;
+    this.transactions = new Transaction[]{};
   }
 
   public static class Transaction {
@@ -50,6 +53,16 @@ public class Account {
     public void setOperation(StandardAccountOperations operation) {
       this.operation = operation;
     }
+
+    @Override
+    public String toString() {
+      return "Transaction{" +
+        "accountFrom=" + accountFrom +
+        ", accountTo=" + accountTo +
+        ", moneyAmount=" + moneyAmount +
+        ", operation=" + operation +
+        '}';
+    }
   }
 
   private void addTransaction(Transaction transaction) {
@@ -71,14 +84,16 @@ public class Account {
 
   public void sendMoneyToAccount(Account accountTo, double moneyAmount) {
     Account originAccount = this;
-    Account destinationAccount = accountTo;
-    Transaction sendTransaction = new Transaction(originAccount, destinationAccount, moneyAmount, StandardAccountOperations.MONEY_TRANSFER_SEND);
-    Transaction receiveTransaction = new Transaction(originAccount, destinationAccount, moneyAmount, StandardAccountOperations.MONEY_TRANSFER_SEND);
-    
+    Transaction sendTransaction = new Transaction(originAccount, accountTo, moneyAmount, StandardAccountOperations.MONEY_TRANSFER_SEND);
+    originAccount.addTransaction(sendTransaction);
+    Transaction receiveTransaction = new Transaction(originAccount, accountTo, moneyAmount, StandardAccountOperations.MONEY_TRANSFER_RECEIVE);
+    accountTo.addTransaction(receiveTransaction);
   }
 
   public void withdrawMoney(double moneyAmount) {
-    // <write your code here>
+    Account originAccount = this;
+    Transaction withdrawTransaction = new Transaction(originAccount, null, moneyAmount, StandardAccountOperations.WITHDRAW);
+    originAccount.addTransaction(withdrawTransaction);
   }
 
   public int getId() {
@@ -92,5 +107,19 @@ public class Account {
   }
   public Transaction[] getTransactions() {
     return transactions;
+  }
+
+  @Override
+  public String toString() {
+    return "Account{" +
+      "id=" + id +
+      '}';
+  }
+
+  public String toStringComplete() {
+    return "Account{" +
+      "id=" + id +
+      ", transactions=" + Arrays.toString(transactions) +
+      '}';
   }
 }
