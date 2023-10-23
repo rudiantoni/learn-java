@@ -102,6 +102,10 @@ Aplicações utilizadas:
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35007690#overview)\] [14.3. POO parte 2: Perguntas e respostas](xxx.md)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35327884#overview)\] [14.4. POO e Design Patterns: Perguntas e respostas](xxx.md)
 
+15. Exames de Programação Orientada a Objetos - Aplicações de console comerciais
+  - 
+  \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794752#overview)\] [15.1. Exame e homework para o tópico POO](xxx.md)
+
 
 x. xxx
   - \[[Ref](xxx)\] [x.x. xxx](xxx.md)
