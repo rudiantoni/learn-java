@@ -169,9 +169,52 @@ public Transaction[] getTransactions() {
 
 Preste atenção que quando dinheiro é enviado de uma conta para outra, uma transação MONEY_TRANSFER_SEND (Enviar dinheiro) é criada em uma conta, e a segunda transação MONEY_TRANSFER_RECEIVE (Receber dinheiro) é criada na outra conta.
 
-### (nome do vídeo, aula, etc)
+### EXAME: Loja Online
 [[Topo]](#)<br />
 
+Você tem que implementar um backend para uma loja online. O sistema deve suportar operações básicas, tais como:
+
+- Registro de usuários
+- Login e Logout de usuários
+- Navegação no catálogo de produtos
+- Adicionar produtos ao carrinho
+- Enviar um pedido
+- Realizar o checkout
+- Gerenciamento de usuários
+- E outros
+
+Este código será usado na educação continuada e nos próximos tópicos e acabará com a criação do seu aplicativo de comércio eletrônico na web.
+
+**NAVEGAÇÃO DO MENU**
+
+*Cenário: menu principal*
+- DADO: Sou um usuário do app
+- QUANDO: Executo o programa
+- ENTÃO: Vejo o menu principal
+
+- Notas técnicas:
+  - O menu principal consiste nos itens:
+    - "1. Sign Up"
+    - "2. Login / Logout"
+    - "3. Catálogo de Produtos"
+    - "4. Meus Pedidos"
+    - "5. Configurações"
+    - "6. Lista de Clientes"
+  - Quando o usuário estiver logado, então o item 2 deve ser alterado para Logout.
+
+*Cenário: parar o programa*
+- DADO: Sou um usuário do app
+- E: Estou no menu principal
+- QUANDO: Digito `exit` no console
+- ENTÃO: A execução do programa é finalizada
+
+*Cenário: manipulação de entrada incorreta*
+- DADO: Sou um usuário do app
+- QUANDO: Digito qualquer digito exceto 1, 2, 3, 4, 5 ou 6.
+- ENTÃO: Vejo a mensagem de erro: "Apenas 1, 2, 3, 4, 5, 6 é permitido. Tente novamente."
+- E: Sou redirecionado para o menu principal
+
+**SIGN UP**
 
 
 ### (nome do vídeo, aula, etc)
