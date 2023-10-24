@@ -174,8 +174,8 @@ Preste atenção que quando dinheiro é enviado de uma conta para outra, uma tra
 
 Você tem que implementar um backend para uma loja online. O sistema deve suportar operações básicas, tais como:
 
-- Registro de usuários
-- Login e Logout de usuários
+- Registro de usuários (sign up)
+- Entrada e saída de usuários (login e logout)
 - Navegação no catálogo de produtos
 - Adicionar produtos ao carrinho
 - Enviar um pedido
@@ -185,36 +185,140 @@ Você tem que implementar um backend para uma loja online. O sistema deve suport
 
 Este código será usado na educação continuada e nos próximos tópicos e acabará com a criação do seu aplicativo de comércio eletrônico na web.
 
-**NAVEGAÇÃO DO MENU**
+#### NAVEGAÇÃO DO MENU
 
-*Cenário: menu principal*
+##### Cenário: menu principal
 - DADO: Sou um usuário do app
 - QUANDO: Executo o programa
 - ENTÃO: Vejo o menu principal
 
 - Notas técnicas:
   - O menu principal consiste nos itens:
-    - "1. Sign Up"
-    - "2. Login / Logout"
+    - "1. Registrar"
+    - "2. Entrar / Sair"
     - "3. Catálogo de Produtos"
     - "4. Meus Pedidos"
     - "5. Configurações"
     - "6. Lista de Clientes"
   - Quando o usuário estiver logado, então o item 2 deve ser alterado para Logout.
 
-*Cenário: parar o programa*
+##### Cenário: parar o programa
 - DADO: Sou um usuário do app
 - E: Estou no menu principal
 - QUANDO: Digito `exit` no console
 - ENTÃO: A execução do programa é finalizada
 
-*Cenário: manipulação de entrada incorreta*
+##### Cenário: manipulação de entrada incorreta
 - DADO: Sou um usuário do app
 - QUANDO: Digito qualquer digito exceto 1, 2, 3, 4, 5 ou 6.
 - ENTÃO: Vejo a mensagem de erro: "Apenas 1, 2, 3, 4, 5, 6 é permitido. Tente novamente."
 - E: Sou redirecionado para o menu principal
 
-**SIGN UP**
+#### REGISTRO DE USUÁRIO
+
+##### Cenário: registro de novo usuário
+- DADO: Sou um usuário do app
+- E: Vejo o menu principal no console
+- QUANDO: Digito 1 no console
+- E: Seleciono "Registrar" no menu principal
+- ENTÃO: O processo de registro se inicia
+- E: Solicitado meu primeiro nome
+- E: Solicitado meu último nome
+- E: Solicitado meu email
+- E: Solicitado minha senha
+- E: App me registra com sucesso
+- E: Vejo mensagem "Novo usuário criado"
+- E: Sou redirecionado para o menu principal
+- E: Ao invés de "Entrar" vejo o rótulo "Sair"
+
+- Notas técnicas:
+  - Cada novo usuário deve ter um ID.
+  - O número do ID deve ser automaticamente incrementado para cada novo usuário (campo contador static deve ser parte da classe DefaultUser)
+
+##### Cenário: registro de novo usuário - validação de email com sucesso: email é único 
+- DADO: Sou um usuário do app
+- E: Vejo o menu principal no console
+- QUANDO: Digito 1 no console
+- E: Seleciono "Registrar" no menu principal
+- ENTÃO: O processo de registro se inicia
+- E: Solicitado meu primeiro nome
+- E: Solicitado meu último nome
+- E: Solicitado meu email
+- E: Digito um email único
+- E: App me registra com sucesso
+- E: Vejo mensagem "Novo usuário criado"
+- E: Sou redirecionado para o menu principal
+- E: Ao invés de "Entrar" vejo o rótulo "Sair"
+
+##### Cenário: registro de novo usuário - validação de email com falha: email não é único 
+- DADO: Sou um usuário do app
+- E: Vejo o menu principal no console
+- QUANDO: Digito 1 no console
+- E: Seleciono "Registrar" no menu principal
+- ENTÃO: O processo de registro se inicia
+- E: Solicitado meu primeiro nome
+- E: Solicitado meu último nome
+- E: Solicitado meu email
+- E: Digito um email NÃO único
+- E: App não me registra
+- E: Vejo mensagem "Este email já está em uso por outro usuárioo. Por favor, use outro email."
+- E: Sou redirecionado para o menu principal
+
+##### Cenário: registro de novo usuário - validação de email com falha: email vazio
+- DADO: Sou um usuário do app
+- E: Vejo o menu principal no console
+- QUANDO: Digito 1 no console
+- E: Seleciono "Registrar" no menu principal
+- ENTÃO: O processo de registro se inicia
+- E: Solicitado meu primeiro nome
+- E: Solicitado meu último nome
+- E: Solicitado meu email
+- E: Digito um email vazio
+- E: App não me registra
+- E: Vejo mensagem "Você deve inserir um email para se registrar. Por favor, tente novamente."
+- E: Sou redirecionado para o menu principal
+
+#### ENTRAR
+
+##### Cenário: entrar com sucesso
+- DADO: Sou um usuário do app
+- E: Vejo o menu principal no console
+- QUANDO: Digito 2 no console
+- E: Seleciono "Entrar" no menu principal
+- ENTÃO: O processo para entrar se inicia
+- E: Solicitado meu email
+- E: Solicitado minha senha
+- E: Credenciais do app são validas
+- E: Vejo mensagem "Feliz em ter você de volta [primeiro nome] [último nome]!"
+- E: Vejo o menu principal
+- E: Ao invés de "Entrar" vejo o rótulo "Sair"
+
+##### Cenário: entrar com falha
+- DADO: Sou um usuário do app
+- E: Vejo o menu principal no console
+- QUANDO: Digito 2 no console
+- E: Seleciono "Entrar" no menu principal
+- ENTÃO: O processo para entrar se inicia
+- E: Solicitado meu email
+- E: Solicitado minha senha
+- E: Credenciais do app NÃO são validas
+- E: Vejo mensagem "Infelizmente, esse login e senha não existem."
+- E: Vejo o menu principal
+
+- Notas técnicas:
+  - Credencians "NÃO válidas" significa que ou o usuário não existe, ou a senha está errada.
+
+#### SAIR
+
+##### Cenário: Sair com sucesso
+- DADO: Sou um usuário do app
+- E: Entrei
+- E: Navego para o menu principal
+- QUANDO: Digito 2 no console
+- E: Seleciono "Sair" no menu principal
+- ENTÃO: Vejo mensagem "Tenha um bom dia! Esperamos que você volte!"
+- E: Vejo o menu principal
+- E: Ao invés de "Sair" vejo o rótulo "Entrar"
 
 
 ### (nome do vídeo, aula, etc)
