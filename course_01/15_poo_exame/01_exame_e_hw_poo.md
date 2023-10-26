@@ -179,7 +179,7 @@ Você tem que implementar um backend para uma loja online. O sistema deve suport
 - Navegação no catálogo de produtos
 - Adicionar produtos ao carrinho
 - Enviar um pedido
-- Realizar o checkout
+- Finalizar compra
 - Gerenciamento de usuários
 - E outros
 
@@ -306,11 +306,11 @@ Este código será usado na educação continuada e nos próximos tópicos e aca
 - E: Vejo o menu principal
 
 - Notas técnicas:
-  - Credencians "NÃO válidas" significa que ou o usuário não existe, ou a senha está errada.
+  - Credenciais "NÃO válidas" significa que ou o usuário não existe, ou a senha está errada.
 
 #### SAIR
 
-##### Cenário: Sair com sucesso
+##### Cenário: sair com sucesso
 - DADO: Sou um usuário do app
 - E: Entrei
 - E: Navego para o menu principal
@@ -320,80 +320,324 @@ Este código será usado na educação continuada e nos próximos tópicos e aca
 - E: Vejo o menu principal
 - E: Ao invés de "Sair" vejo o rótulo "Entrar"
 
+#### CATÁLOGO DE PRODUTOS
 
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
+##### Cenário: listar produtos
+- DADO: Sou um usuário do app
+- QUANDO: Digito 3 no console
+- E: Seleciono "Catálogo de Produtos" no menu principal
+- ENTÃO: Vejo uma lista de produtos impressos no console.
+
+- Notas técnicas:
+  - Produto tem os seguintes campos:
+    - int id
+    - String productName
+    - String categoryName
+    - double price
+
+##### Cenário: navegar de volta ao menu principal
+- DADO: Sou um usuário do app
+- E: Naviguei para o menu "Catálogo de Produtos"
+- QUANDO: Digito "menu" no console
+- ENTÃO: Sou redirecionado para o menu principal.
+
+##### Cenário: adicionar um produto ao carrinho
+- DADO: Sou um usuário do app
+- E: Entrei
+- E: Digito 3 no console
+- E: Seleciono "Catálogo de Produtos" no menu principal
+- E: Vejo a lista de produtos
+- E: Vejo mensagem "Digite o id do produto para adicioná-lo ao carrinho ou "menu" se você quiser navegar de volta ao menu principal".
+- QUANDO: Digito algum id de produto existente
+- ENTÃO: Vejo mensagem "Produto [nome produto] foi adicionado ao seu carrinho. Se você quiser adicionar um novo produto, digite o id do produto. Se você quiser proceder com a finalização da compra, digite "checkout" no console
+- E: Vejo a lista de produtos novamente.
+
+##### Cenário: adicionar um produto ao carrinho: manipulação de erros
+- DADO: Sou um usuário do app
+- E: Entrei
+- E: Digito 3 no console
+- E: Seleciono "Catálogo de Produtos" no menu principal
+- E: Vejo a lista de produtos
+- E: Vejo mensagem "Digite o id do produto para adicioná-lo ao carrinho ou "menu" se você quiser navegar de volta ao menu principal".
+- QUANDO: Digito algum número aleatório qualquer que não corresponde a nenhum id de produto
+- ENTÃO: Vejo mensagem: "Por favor, digite um id de produto se você quiser adicionar um produto ao carrinho. Ou digite "checkout" se você quiser prosseguir com a finalização da compra. Ou digite "menu" se você quiser navegar de volta para o menu principal.
+- E: Vejo a lista de produtos novamente
+
+#### FINALIZAR COMPRA
+
+##### Cenário: finalização de compra bem-sucedida
+- DADO: Sou um usuário do app
+- E: Entrei
+- E: Digito 3 no console
+- E: Seleciono "Catálogo de Produtos" no menu principal
+- E: Vejo a lista de produtos
+- E: Vejo mensagem "Digite o id do produto para adicioná-lo ao carrinho ou "menu" se você quiser navegar de volta ao menu principal"
+- E: Adiciono produtos ao carrinho
+- QUANDO: Digito "checkout" no console
+- ENTÃO: Vejo mensagem "Digite o número do seu cartão de crédito sem espaços e pressione "Enter" se você confirmar a compra"
+- E: Insiro o número do cartão de crédito
+- E: Pressiono Enter
+- E: Vejo mensagem "Muito obrigado pela sua compra. Detalhes sobre a entrega do pedido foram enviados para o seu e-mail."
+- E: Retorno ao menu principal
+
+- Notas técnicas:
+  - O carrinho deve ser esvaziado após a criação do pedido
+
+##### Cenário: manipulação de erros: carrinho vazio
+- DADO: Sou um usuário do app
+- E: Entrei
+- E: Digito 3 no console
+- E: Seleciono "Catálogo de Produtos" no menu principal
+- E: Vejo a lista de produtos
+- E: Vejo mensagem "Digite o id do produto para adicioná-lo ao carrinho ou "menu" se você quiser navegar de volta ao menu principal"
+- E: Tenho um carrinho vazio porque ainda não adicionei produtos a ele.
+- QUANDO: Digito "checkout"
+- ENTÃO: Vejo a mensagem: "Seu carrinho está vazio. Por favor, adicione produtos ao seu carrinho antes de tentar finalizar a compra."
+- E: Vejo a lista de produtos novamente
+
+##### Cenário: manipulação de erros: usuário não logado
+- DADO: Sou um usuário do app
+- E: NÃO entrei
+- E: Digito 3 no console
+- E: Seleciono "Catálogo de Produtos" no menu principal
+- E: Vejo a lista de produtos
+- E: Vejo mensagem "Digite o id do produto para adicioná-lo ao carrinho ou "menu" se você quiser navegar de volta ao menu principal"
+- QUANDO: Adiciono produtos ao carrinho
+- ENTÃO: Vejo mensagem: "Você não entrou. Por favor entre ou crie uma nova conta.
+- E: Sou redirecionado para o menu principal.
+
+##### Cenário: manipulação de erros: cartão de crédito inválido
+- DADO: Sou um usuário do app
+- E: Entrei
+- E: Digito 3 no console
+- E: Seleciono "Catálogo de Produtos" no menu principal
+- E vejo a lista de produtos
+- E: Vejo mensagem "Digite o id do produto para adicioná-lo ao carrinho ou "menu" se você quiser navegar de volta ao menu principal"
+- E: Adiciono produtos ao carrinho
+- QUANDO: Digito "checkout" no console
+- ENTÃO: Vejo mensagem "Digite o número do seu cartão de crédito sem espaços e pressione "Enter" se você confirmar a compra"
+- E: Digito um cartão de crédito inválido
+- E: Pressiono "Enter"
+- E: Vejo mensagem: "Você digitou um cartão de crédito inválido. Cartões de créditos válidos devem possuir 16 dígitos. Por favor, tente novamente."
+- E: Sou solicitado a digitar o número do cartão de crédito novamente.
+
+- Notas técnicas
+  - Implementar a validação de um cartão de crédito: qualquer 16 dígitos.
+  - Por segurança, limitar a quantidade máxima de tentativas para 3. Caso falhe, não realizar o procedimento e retornar ao "Catálogo de Produtos".
+
+#### MEUS PEDIDOS
+
+##### Cenário: listar meus pedidos
+- DADO: Sou um usuário do app
+- E: Entrei
+- E: Digito 4 no console
+- E: Seleciono "Meus Pedidos" no menu principal
+- ENTÃO: Navego para "Meus Pedidos"
+- E: Vejo a lista de todas as minhas compras
+- E: Sou redirecionado para o menu principal.
+
+##### Cenário: listar meus pedidios - manipulação de erro - usuário não entrou
+- DADO: Sou um usuário do app
+- E: NÃO Entrei
+- E: Digito 4 no console
+- E: Seleciono "Meus Pedidos" no menu principal
+- ENTÃO: Vejo mensagem: "Por favor, entre ou crie uma nova conta para ver a listagem de seus pedidos."
+- E: Sou redirecionado para o menu principal.
+
+##### Cenário: listar meus pedidios - manipulação de erro - usuário não entrou
+- DADO: Sou um usuário do app
+- E: Entrei
+- E: Não tenho nenhuma compra registrada ainda
+- QUANDO: Digito 4 no console
+- E: Seleciono "Meus Pedidos" no menu principal
+- ENTÃO: Navego para "Meus Pedidos"
+- E: Vejo mensagem: "Infelizmente, você não realizou nenhum pedido ainda. Volte para o menu principal para fazer um pedido."
 
 
+#### CONFIGURAÇÕES
 
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
+##### Cenário: alterar senha
+- DADO: Sou um usuário do app
+- E: Entrei
+- QUANDO: Digito 5 no console
+- E: Seleciono "Configurações" no menu principal
+- E: Vejo a lista de opções disponíveis
+- E: Digito 1 no console
+- E: Seleciono "Mudar Senha"
+- E: Sou solicitado a digitar uma nova senha
+- QUANDO: Digito uma nova senha
+- ENTÃO: Vejo mensagem: "Sua senha foi alterada com sucesso".
+- E: Sou redirecionado para o menu principal.
+
+##### Cenário: alterar email
+- DADO: Sou um usuário do app
+- E: Entrei
+- QUANDO: Digito 5 no console
+- E: Seleciono "Configurações" no menu principal
+- E: Vejo a lista de opções disponíveis
+- E: Digito 2 no console
+- E: Seleciono "Mudar Email"
+- E: Sou solicitado a digitar um novo email
+- QUANDO: Digito um novo email
+- ENTÃO: Vejo mensagem: "Seu email foi alterado com sucesso".
+- E: Sou redirecionado para o menu principal.
+
+##### Cenário: configurações - manipulação de erros - opção inválida
+- DADO: Sou um usuário do app
+- E: Entrei
+- QUANDO: Digito 5 no console
+- E: Seleciono "Configurações" no menu principal
+- E: Vejo a lista de opções disponíveis
+- E: Digito qualquer opção exceto 1 ou 2.
+- ENTÃO: Vejo mensagem "Apenas 1 e 2 é permitido. Tente novamente."
+- E: Vejo o menu de configurações novamente.
+
+##### Cenário: configurações - navegar de volta ao menu principal
+- DADO: Sou um usuário do app
+- E: Entrei
+- QUANDO: Digito 5 no console
+- E: Seleciono "Configurações" no menu principal
+- QUANDO: Digito "menu"
+- ENTÃO: Navego de volta ao menu principal
+
+##### Cenário: configurações - manipulação de erros - usuário não entrou
+- DADO: Sou um usuário do app
+- E: NÃO Entrei
+- QUANDO: Digito 5 no console
+- E: Seleciono "Configurações" no menu principal
+- ENTÃO: Vejo mensagem: "Por favor, entre ou cria uma nova conta para alterar suas configurações."
+- E: Sou redirecionado para o menu principal.
+
+#### LISTA DE CLIENTES
+
+##### Cenário: Imprimir lista de clientes para o console
+- DADO: Sou um usuário do app
+- E: Entrei
+- QUANDO: Digito 6 no console
+- E: Seleciono "Lista de Clientes" no menu principal
+- ENTÃO: Vejo a lista dos clientes
+- QUANDO: Digito "menu"
+- E: Sou redirecionado para o menu principal.
+
+- Notas técnicas
+  - Nós não devemos imprimir a senha do cliente.
 
 
+#### Detalhes técnicos
 
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
+- A instância de cada serviço (UserManagementService, OrderManagementService, ProductManagementService, ApplicationContext) existem em uma única cópia durante a execução do programa. O acesso a esta cópia única é possível via o método estático getInstance() do tipo específico. E não posso criar objetos com estes tipos via um construtor.
 
+- Cada implementação de service deve possuir este método:
 
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-
-### (nome do vídeo, aula, etc)
-[[Topo]](#)<br />
-
-
-Se homework:
-- Ver homework: [file_name_no_extension](file_link)
-Se projeto:
-- Ver projeto: [Projeto N](folder_link-proj_nn)
-
-Lista ordenada
-1. Lista item 1
-2. Lista item 2
-3. Lista item 3
-
-Lista desordenada
-- Lista item 1
-- Lista item 2
-- Lista item 3
-
-`linha de codigo`
-
-Bloco de código
-
+```java
+void clearServiceState();
 ```
-bloco de código {
 
+Para fins de teste, Este método deve resetar o estado do serviço para o padrão. Leve em consideração a instância de cada serviço estará em uma cópia única, nossos testes têm que possuir este método que resetarão o estado do serviço para reproduzir diferentes casos de teste.
+
+Para resetar o contador de usuários, implemente o método `clearState()` na classe DefaultUser.
+
+- Durante a implementação desta tarefa, você tem que implementar seguintes interfaces:
+
+```java
+public interface Cart {
+  boolean isEmpty();
+  void addProduct(Product productById);
+  Product[] getProducts();
+  void clear();
+}
+
+public interface Order {
+  boolean isCreditCardNumberValid(String userInput);
+  void setCreditCardNumber(String userInput);
+  void setProducts(Product[] products);
+  void setCustomerId(int customerId);
+  int getCustomerId();
+}
+
+public interface Product {
+  int getId();
+  String getProductName();
+}
+
+public interface User {
+  String getFirstName();
+  String getLastName();
+  String getPassword();
+  String getEmail();
+  int getId();void setPassword(String newPassword);
+  void setEmail(String newEmail);
+}
+
+public interface Menu {
+  void start();
+  void printMenuHeader();
+}
+
+public interface OrderManagementService {
+  void addOrder(Order order);
+  Order[] getOrdersByUserId(int userId);
+  Order[] getOrders();
+}
+
+public interface ProductManagementService {
+  Product[] getProducts();
+  Product getProductById(int productIdToAddToCart);
+}
+
+public interface UserManagementService {
+  String registerUser(User user);
+  User[] getUsers();
+  User getUserByEmail(String userEmail);
 }
 ```
 
-Se exercício:
-> Exercício N ((nome do vídeo, aula, etc)): [caminho](pasta_exercicio-exercicio_nn)
+E aqui vai a classe ApplicationContext, o que o ajudará durante a implementação deste programa:
 
-Enunciado de pesquisa:
-- Em Java 8, o que é xxx?(com exemplos de código)...
-- Em Java 8, o que é xxx?(com exemplos de código)...
-- Em Java 8, o que é xxx?(com exemplos de código)...
+```java
+public class ApplicationContext {
+  private static ApplicationContext instance;
+  private User loggedInUser;
+  private Menu mainMenu;
+  private Cart sessionCart;
+  
+  private ApplicationContext() {}
+  
+  public static ApplicationContext getInstance() {
+    if (instance == null) {
+      instance = new ApplicationContext();
+    }
+    return instance;
+  }
+  public User getLoggedInUser() {
+    return this.loggedInUser;
+  }
+  public void setLoggedInUser(User user) {
+    if (this.sessionCart != null) {
+      this.sessionCart.clear(); // we have to clear session cart when new user is logged in
+    }
+    this.loggedInUser = user;
+  }
+  public Menu getMainMenu() {
+    return this.mainMenu;
+  }
+  public void setMainMenu(Menu menu) {
+    this.mainMenu = menu;
+  }
+  
+  public Cart getSessionCart() {
+    if (this.sessionCart == null) {
+      this.sessionCart = new DefaultCart();
+    }
+    return this.sessionCart;
+  }
+}
+```
+
+Para criar este programa, sinta-se livre para usar um modelo especial do programa que você pode achar aqui: https://github.com/AndriiPiatakha/learnit_java_core/tree/master/src/com/itbulls/learnit/
+javacore/oop/exam/templates/onlineshop
+
+
+A solução para essa tarefa do exame está aqui: https://github.com/AndriiPiatakha/learnit_java_core/tree/master/src/com/itbulls/learnit/javacor
+e/oop/exam/onlineshop
+
