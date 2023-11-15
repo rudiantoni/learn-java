@@ -1,53 +1,51 @@
 package service;
 
-import java.time.LocalDateTime;
+import config.AppConfig;
+import util.ConsoleUtil;
+
+import java.util.Objects;
+import java.util.Scanner;
 
 public class InitializingService {
-  private static boolean canClear = false;
+  private boolean canClear = false;
 
-  private InitializingService() {}
-
-  public static void initializeOS() {
-
-    LocalDateTime dt = LocalDateTime.now();
-    printDivider();
+  public void initialize() {
+    ConsoleUtil.printDivider();
+    startScanner();
+    defineOS();
     clearingConsoleTest();
     System.out.println("Initializing...");
-    if (canClear == true) {
+    if (this.canClear) {
       System.out.println("TEST PASSED: Your terminal supports text clearing");
     } else {
       System.out.println("WARNING: Detected your current terminal session doesn't support clear. No text will be removed from screen.");
     }
-    System.out.println("Now is " + dt + ". Using " + System.getProperty("os.name") + " OS.");
-    System.out.println("Welcome to the Online Shopping Application!");
-    printDivider();
+    AppConfig.setCleanable(this.canClear);
+    ConsoleUtil.printDivider();
   }
 
-  public static String divider() {
-    return "--------------------------------------------------";
+  private void startScanner() {
+    AppConfig.setSc(new Scanner(System.in));
   }
-  public static void printDivider() {
-    System.out.println(divider());
-  }
-
-  static void clearingConsoleTest() {
+  private void defineOS() {
     String os = System.getProperty("os.name");
-    String envTerm = System.getenv("TERM");
-    System.out.println("envterm");
-    System.out.println(envTerm);
-    try {
-      if (os.contains("Windows")) {
-        new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-        canClear = true;
-      } else if (os.contains("Linux")){
-        new ProcessBuilder("clear").inheritIO().start().waitFor();
-        canClear = true;
-
-      }
-    } catch (Exception ignored){
-      canClear = false;
+    if (os.contains("Windows")) {
+      AppConfig.setOsName("windows");
+    } else if (os.contains("Linux")) {
+      AppConfig.setOsName("linux");
     }
+  }
 
+  private void clearingConsoleTest() {
+    String envTerm = System.getenv("TERM");
+    if (Objects.nonNull(envTerm)) {
+      try {
+        ConsoleUtil.clean();
+        this.canClear = true;
+      } catch (Exception ignored) {
+        this.canClear = false;
+      }
+    }
   }
 
 }

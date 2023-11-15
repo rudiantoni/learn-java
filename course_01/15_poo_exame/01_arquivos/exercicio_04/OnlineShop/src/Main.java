@@ -1,30 +1,22 @@
+import config.AppConfig;
+import enums.Command;
 import service.InitializingService;
-
-import java.io.IOException;
+import service.MainMenuService;
+import util.ConsoleUtil;
+import util.InputUtil;
 
 public class Main {
   public static void main(String[] args) {
-    InitializingService.initializeOS();
-    System.out.println("Hello world!");
-    System.out.println("Hello world!");
-    System.out.println("Hello world!");
-    System.out.println("Hello world!");
-    System.out.println("Hello world!");
-    System.out.println("Hello world!");
-    System.out.println("Hello world!");
-    String os = System.getProperty("os.name");
-    System.out.println(os);
+    InitializingService initializingService = new InitializingService();
+    MainMenuService mainMenuService = new MainMenuService();
+    initializingService.initialize();
 
-    try {
-      new ProcessBuilder("clear").inheritIO().start().waitFor();
-    } catch (InterruptedException e) {
-      throw new RuntimeException(e);
-    } catch (IOException e) {
-      System.out.println("unable to clear console");
-      throw new RuntimeException(e);
-    } finally {
-      System.out.println("Console cleared");
-    }
+    AppConfig.addUser("Rudi", "Antoni", "rudi@email.com", "123");
+    AppConfig.addUser("Guilherme", "Cardoso", "guilherme@email.com", "123");
 
+    mainMenuService.initialize();
   }
+
+
+
 }
