@@ -82,7 +82,13 @@ public class MainMenuService {
       }
 
     } else if (input.equals("5")) {
-      System.out.println("Não implementado");
+      if (AppContext.hasLoggedUser()) {
+        settings();
+      } else {
+        System.out.println("Você ainda não entrou, entre ou crie uma conta nova.");
+        InputUtil.pause();
+        initialize();
+      }
 
     } else if (input.equals("6")) {
       System.out.println("Não implementado");
@@ -263,6 +269,50 @@ public class MainMenuService {
     System.out.println(String.join("\n", allOrders));
     InputUtil.pause();
     initialize();
+  }
+
+  private void settings() {
+    ConsoleUtil.clean();
+    ConsoleUtil.printHeader();
+    System.out.printf("%s - Configurações\n", Consts.APP_NAME);
+    ConsoleUtil.printDivider();
+    System.out.println("1 - Alterar senha");
+    System.out.println("2 - Alterar e-mail");
+    String input = InputUtil.waitForAllowedOption("Digite uma opção válida: ", Arrays.asList("1", "2"));
+    if (input.equals("1")) {
+      String password = InputUtil.waitForAnyInput("Digite sua senha: ");
+      int currentUserId = AppContext.getLoggedUser().getId();
+      User user = AppContext.getUserList().stream().filter(it -> it.getId() == currentUserId).findFirst().orElse(null);
+      if (user != null) {
+        user.setPassword(password);
+        System.out.println("Sua senha foi alterada com sucesso.");
+        InputUtil.pause();
+        initialize();
+        return;
+      }
+    } else if (input.equals("2")) {
+      int currentUserId = AppContext.getLoggedUser().getId();
+      String email = InputUtil.waitForAnyInput("Digite seu e-mail: ");
+      if (email.replaceAll("\\s+", "").isEmpty()) {
+        System.out.println("E-mail inválido: você deve inserir um e-mail para se registrar.");
+        InputUtil.pause();
+        initialize();
+        return;
+      } else if (AppContext.isEmailAlreadyInUse(email)) {
+        System.out.println("E-mail inválido: este e-mail já está sendo usado.");
+        InputUtil.pause();
+        initialize();
+        return;
+      }
+      User user = AppContext.getUserList().stream().filter(it -> it.getId() == currentUserId).findFirst().orElse(null);
+      if (user != null) {
+        user.setEmail(email);
+        System.out.println("Seu e-mail foi alterado com sucesso.");
+        InputUtil.pause();
+        initialize();
+        return;
+      }
+    }
   }
 
 }
