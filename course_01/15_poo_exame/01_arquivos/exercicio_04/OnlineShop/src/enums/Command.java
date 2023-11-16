@@ -5,8 +5,11 @@ import java.util.Arrays;
 public enum Command {
   UNKNOWN("desconhecido", "Erro: comando desconhecido"),
   EXIT("exit", "Fecha a aplicação"),
-  GET_LOGGED("adm-logged", "Imprime quem está logado"),
-  GET_USERS("adm-users", "Imprime os usuários");
+  MAIN_MENU("menu", "Retorna para o menu principal"),
+  CHECKOUT("checkout", "Finaliza a compra"),
+  GET_LOGGED("a", "Imprime quem está logado"),
+  GET_USERS("b", "Imprime os usuários"),
+  GET_PRODUCTS("c", "Imprime os produtos");
 
   Command(String name, String description) {
     this.name = name;

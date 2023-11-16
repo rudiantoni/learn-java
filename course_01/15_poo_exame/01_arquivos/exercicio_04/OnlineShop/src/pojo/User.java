@@ -12,12 +12,14 @@ public class User {
   private String lastName;
   private String email;
   private String password;
+  private Cart cart;
 
   public User(String firstName, String lastName, String email, String password) {
     this.firstName = firstName;
     this.lastName = lastName;
     this.email = email;
     this.password = password;
+    this.cart = new Cart();
   }
 
   public int getId() {
@@ -52,17 +54,25 @@ public class User {
     this.password = password;
   }
 
+  public Cart getCart() { return cart; }
+  public void setCart(Cart cart) { this.cart = cart; }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
     User user = (User) o;
-    return id == user.id && Objects.equals(firstName, user.firstName) && Objects.equals(lastName, user.lastName) && Objects.equals(email, user.email) && Objects.equals(password, user.password);
+    return id == user.id &&
+      Objects.equals(firstName, user.firstName) &&
+      Objects.equals(lastName, user.lastName) &&
+      Objects.equals(email, user.email) &&
+      Objects.equals(password, user.password) &&
+      Objects.equals(cart, user.cart);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, firstName, lastName, email, password);
+    return Objects.hash(id, firstName, lastName, email, password, cart);
   }
 
   @Override
@@ -73,7 +83,7 @@ public class User {
       ", lastName='" + lastName + '\'' +
       ", email='" + email + '\'' +
       ", password='" + password + '\'' +
+      ", cart=" + cart +
       '}';
   }
-
 }

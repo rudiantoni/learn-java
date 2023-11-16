@@ -1,63 +1,75 @@
 package service;
 
-import config.AppConfig;
+import config.AppContext;
 import enums.Command;
+import pojo.Product;
 import pojo.User;
 import util.ConsoleUtil;
 import util.Consts;
 import util.InputUtil;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Objects;
+import java.util.stream.Collectors;
 
 public class MainMenuService {
   public void initialize() {
     ConsoleUtil.clean();
     ConsoleUtil.printMainMenu();
-    ConsoleUtil.printAllowedCommands(Arrays.asList(Command.EXIT.getName(), Command.GET_USERS.getName(), Command.GET_LOGGED.getName()));
-    String input = InputUtil.waitForAllowedOption(
-      "Digite uma opção válida: ",
-      Arrays.asList("1", "2", "3", "4", "5", "6", Command.EXIT.getName(), Command.GET_USERS.getName(), Command.GET_LOGGED.getName())
-    );
+    List<String> allowedCommands = new ArrayList<>();
+    allowedCommands.add(Command.EXIT.getName());
+    allowedCommands.add(Command.GET_LOGGED.getName());
+    allowedCommands.add(Command.GET_USERS.getName());
+    allowedCommands.add(Command.GET_PRODUCTS.getName());
+    List<String> allowedOptions = new ArrayList<>(Arrays.asList("1", "2", "3", "4", "5", "6"));
+    allowedOptions.addAll(allowedCommands);
+    ConsoleUtil.printAllowedCommands(allowedCommands);
+    String input = InputUtil.waitForAllowedOption("Digite uma opção válida: ", allowedOptions);
+    if (input.equals(Command.EXIT.getName())) {
+      if (!AppContext.hasLoggedUser()) {
+        logout();
+      }
+      System.out.println("A aplicação será fechada. Até a próxima!");
+      InputUtil.pause();
+      System.exit(0);
 
-    if (Objects.equals(input, Command.EXIT.getName())) {
-      System.out.println("Sair da aplicação");
-
-      List<User> x = AppConfig.getUserList();
-      boolean z = true;
-
-
-    } else if (Objects.equals(input, Command.GET_LOGGED.getName())) {
-      System.out.println(AppConfig.getLoggedUser());
+    } else if (input.equals(Command.GET_LOGGED.getName())) {
+      System.out.println(AppContext.getLoggedUser());
       InputUtil.pause();
       initialize();
 
-    } else if (Objects.equals(input, Command.GET_USERS.getName())) {
-      System.out.println(AppConfig.getUserList());
+    } else if (input.equals(Command.GET_USERS.getName())) {
+      System.out.println(AppContext.getUserList());
       InputUtil.pause();
       initialize();
 
-    } else if (Objects.equals(input, "1")) {
+    }  else if (input.equals(Command.GET_PRODUCTS.getName())) {
+      System.out.println(AppContext.getProductList());
+      InputUtil.pause();
+      initialize();
+
+    } else if (input.equals("1")) {
       registerUser();
 
-    } else if (Objects.equals(input, "2")) {
-      if (AppConfig.getLoggedUser() == null) {
+    } else if (input.equals("2")) {
+
+      if (!AppContext.hasLoggedUser()) {
         requestLogin();
       } else {
         requestLogout();
       }
 
-    } else if (Objects.equals(input, "3")) {
+    } else if (input.equals("3")) {
+      productCatalog();
+
+    } else if (input.equals("4")) {
       System.out.println("Não implementado");
 
-    } else if (Objects.equals(input, "4")) {
+    } else if (input.equals("5")) {
       System.out.println("Não implementado");
 
-    } else if (Objects.equals(input, "5")) {
-      System.out.println("Não implementado");
-
-    } else if (Objects.equals(input, "6")) {
+    } else if (input.equals("6")) {
       System.out.println("Não implementado");
 
     }
@@ -78,15 +90,15 @@ public class MainMenuService {
       InputUtil.pause();
       initialize();
       return;
-    } else if (AppConfig.isEmailAlreadyInUse(email)) {
+    } else if (AppContext.isEmailAlreadyInUse(email)) {
       System.out.println("E-mail inválido: este e-mail já está sendo usado.");
       InputUtil.pause();
       initialize();
       return;
     }
     String password = InputUtil.waitForAnyInput("Digite sua senha: ");
-    User createdUser = AppConfig.addUser(firstName, lastName, email, password);
-    if (AppConfig.getLoggedUser() != null) {
+    User createdUser = AppContext.addUser(firstName, lastName, email, password);
+    if (AppContext.hasLoggedUser()) {
       requestLogout();
     }
     login(createdUser);
@@ -100,14 +112,14 @@ public class MainMenuService {
     ConsoleUtil.printHeader();
     System.out.printf("%s - Sair\n", Consts.APP_NAME);
     ConsoleUtil.printDivider();
-    System.out.printf("Até a próxima %s.\n", AppConfig.getLoggedUser().getFirstName());
+    System.out.printf("Até a próxima %s.\n", AppContext.getLoggedUser().getFirstName());
     logout();
     InputUtil.pause();
     initialize();
   }
 
   private void logout() {
-    AppConfig.setLoggedUser(null);
+    AppContext.setLoggedUser(null);
   }
 
   private void requestLogin() {
@@ -117,7 +129,7 @@ public class MainMenuService {
     ConsoleUtil.printDivider();
     String email = InputUtil.waitForAnyInput("Digite o seu email: ");
     String password = InputUtil.waitForAnyInput("Digite a sua senha: ");
-    User user = AppConfig.findFirstByEmailAndPassword(email, password);
+    User user = AppContext.findFirstUserByEmailAndPassword(email, password);
     if (user == null) {
       System.out.println("Usuário e/ou senha inválido.");
       InputUtil.pause();
@@ -133,7 +145,96 @@ public class MainMenuService {
   }
 
   private void login(User user) {
-    AppConfig.setLoggedUser(user);
+    AppContext.setLoggedUser(user);
   }
 
-}
+  private void productCatalog() {
+    ConsoleUtil.clean();
+    ConsoleUtil.printHeader();
+    System.out.printf("%s - Catálogo de produtos\n", Consts.APP_NAME);
+    ConsoleUtil.printDivider();
+    List<String> allProducts = AppContext.getProductList().stream().map(Product::toStringFormatted).collect(Collectors.toList());
+    System.out.println(String.join("\n", allProducts));
+
+    List<String> allowedCommands = new ArrayList<>();
+    allowedCommands.add(Command.MAIN_MENU.getName());
+    allowedCommands.add(Command.CHECKOUT.getName());
+
+    List<String> allowedOptions = new ArrayList<>();
+    allowedOptions.addAll(AppContext.getProductList().stream().map(it -> String.valueOf(it.getId())).collect(Collectors.toList()));
+    allowedOptions.addAll(allowedCommands);
+
+    ConsoleUtil.printAllowedCommands(allowedCommands);
+    String input = InputUtil.waitForAllowedOption(
+      "Digite o código do produto ou uma opção válida: ",
+      "Por favor, digite o código do produto para adicioná-lo ao carrinho.\n" +
+        "Ou digite \"" +Command.CHECKOUT.getName()+ "\" se você quiser prosseguir com a finalização da compra.\n" +
+        "Ou digite \"" +Command.MAIN_MENU.getName()+ "\" se você quiser navegar de volta para o menu principal.",
+      allowedOptions);
+    if (input.equals(Command.MAIN_MENU.getName())) {
+      initialize();
+      return;
+    }
+    if (input.equals(Command.CHECKOUT.getName())) {
+      if (!AppContext.hasLoggedUser()) {
+        System.out.println("Você não entrou. Por favor entre ou crie uma nova conta.");
+        InputUtil.pause();
+        initialize();
+        return;
+      }
+      else if (AppContext.getLoggedUser().getCart().isCartEmpty()) {
+        System.out.println("Seu carrinho está vazio. Por favor, adicione produtos ao seu carrinho antes de tentar finalizar a compra.");
+        InputUtil.pause();
+        productCatalog();
+        return;
+      }
+
+      boolean isCreditCardNumberValid = false;
+      String creditCardNumber;
+      int maxTries = 3;
+      int currentTry = 1;
+
+      do {
+        System.out.printf("Por razões de segurança, o número máximo de tentativas é %d. Você está na tentativa %d.\n", maxTries, currentTry);
+        creditCardNumber = InputUtil.waitForAnyInput("Digite o número do seu cartão de crédito sem espaços e pressione \"Enter\" para confirmar a compra.\n");
+        if (creditCardNumber.length() == 16) {
+          isCreditCardNumberValid = true;
+        }
+        currentTry++;
+      } while (!isCreditCardNumberValid && currentTry <= maxTries);
+
+      if (!isCreditCardNumberValid) {
+        System.out.println("Você esgotou o máximo de tentativas para digitar o cartão de crédito.");
+        InputUtil.pause();
+        productCatalog();
+        return;
+      }
+
+      System.out.println("Muito obrigado pela sua compra. Detalhes sobre a entrega do pedido foram enviados para o seu e-mail.");
+      AppContext.getLoggedUser().getCart().empty();
+      InputUtil.pause();
+      initialize();
+      return;
+    }
+
+    if (AppContext.hasLoggedUser()) {
+      Product chosenProduct = AppContext.findProductById(Integer.parseInt(input));
+      if (chosenProduct != null) {
+        AppContext.getLoggedUser().getCart().addProduct(chosenProduct);
+        System.out.printf("\nO produto %s foi adicionado ao seu carrinho.\n\n", chosenProduct.getProductName());
+        InputUtil.pause();
+        productCatalog();
+      } else {
+        System.out.println("Produto inválido.");
+        initialize();
+      }
+
+    } else {
+      System.out.println("Você ainda não entrou, por favor entre ou crie uma conta nova.");
+      InputUtil.pause();
+      initialize();
+      return;
+    }
+
+  }
+  }

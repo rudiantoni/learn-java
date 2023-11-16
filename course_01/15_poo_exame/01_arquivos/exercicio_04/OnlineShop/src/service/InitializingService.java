@@ -1,6 +1,6 @@
 package service;
 
-import config.AppConfig;
+import config.AppContext;
 import util.ConsoleUtil;
 
 import java.util.Objects;
@@ -20,19 +20,19 @@ public class InitializingService {
     } else {
       System.out.println("WARNING: Detected your current terminal session doesn't support clear. No text will be removed from screen.");
     }
-    AppConfig.setCleanable(this.canClear);
+    AppContext.setCleanable(this.canClear);
     ConsoleUtil.printDivider();
   }
 
   private void startScanner() {
-    AppConfig.setSc(new Scanner(System.in));
+    AppContext.setSc(new Scanner(System.in));
   }
   private void defineOS() {
     String os = System.getProperty("os.name");
     if (os.contains("Windows")) {
-      AppConfig.setOsName("windows");
+      AppContext.setOsName("windows");
     } else if (os.contains("Linux")) {
-      AppConfig.setOsName("linux");
+      AppContext.setOsName("linux");
     }
   }
 

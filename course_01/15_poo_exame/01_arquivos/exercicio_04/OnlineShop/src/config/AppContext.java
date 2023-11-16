@@ -1,12 +1,13 @@
 package config;
 
+import pojo.Product;
 import pojo.User;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class AppConfig {
-  private AppConfig() {
+public class AppContext {
+  private AppContext() {
   }
 
   private static boolean cleanable = false;
@@ -14,19 +15,20 @@ public class AppConfig {
   private static Scanner sc = null;
   private static User loggedUser = null;
   private static ArrayList<User> userList = new ArrayList<>();
+  private static ArrayList<Product> productList = new ArrayList<>();
 
   public static boolean isCleanable() {
     return cleanable;
   }
   public static void setCleanable(boolean cleanable) {
-    AppConfig.cleanable = cleanable;
+    AppContext.cleanable = cleanable;
   }
 
   public static String getOsName() {
     return osName;
   }
   public static void setOsName(String osName) {
-    AppConfig.osName = osName;
+    AppContext.osName = osName;
   }
   public static boolean isWindows() {
     return osName.equals("windows");
@@ -36,13 +38,17 @@ public class AppConfig {
   }
 
   public static Scanner getSc() {return sc;}
-  public static void setSc(Scanner sc) {AppConfig.sc = sc;}
+  public static void setSc(Scanner sc) {
+    AppContext.sc = sc;}
 
   public static User getLoggedUser() {
     return loggedUser;
   }
+  public static boolean hasLoggedUser() {
+    return loggedUser != null;
+  }
   public static void setLoggedUser(User loggedUser) {
-    AppConfig.loggedUser = loggedUser;
+    AppContext.loggedUser = loggedUser;
   }
 
   public static boolean isEmailAlreadyInUse(String email) {
@@ -53,20 +59,33 @@ public class AppConfig {
     return new ArrayList<>(userList);
   }
 
-  public static void setUserList(ArrayList<User> userList) {
-    AppConfig.userList = userList;
-  }
-
   public static User addUser(String firstName, String lastName, String email, String password) {
     User user = new User(firstName, lastName, email, password);
-    AppConfig.userList.add(user);
+    AppContext.userList.add(user);
     return user;
   }
 
-  public static User findFirstByEmailAndPassword(String email, String password) {
-    User user = AppConfig.userList.stream().filter(it ->
+  public static User findFirstUserByEmailAndPassword(String email, String password) {
+    User user = AppContext.userList.stream().filter(it ->
       it.getEmail().equalsIgnoreCase(email) && it.getPassword().equals(password))
       .findAny().orElse(null);
     return user;
   }
+
+  public static ArrayList<Product> getProductList() {
+    return new ArrayList<>(productList);
+  }
+
+  public static Product addProduct(int id, String productName, String categoryName, double price) {
+    Product product = new Product(id, productName, categoryName, price);
+    AppContext.productList.add(product);
+    return product;
+  }
+
+  public static Product findProductById(int id) {
+    Product product = AppContext.productList.stream().filter(it -> it.getId() == id)
+      .findFirst().orElse(null);
+    return product;
+  }
+
 }

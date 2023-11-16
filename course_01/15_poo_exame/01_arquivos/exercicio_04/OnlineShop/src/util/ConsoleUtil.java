@@ -1,6 +1,6 @@
 package util;
 
-import config.AppConfig;
+import config.AppContext;
 import enums.Command;
 
 import java.io.IOException;
@@ -8,7 +8,7 @@ import java.util.List;
 
 public class ConsoleUtil {
   private static void cleanLinux(boolean force) {
-    if (force || AppConfig.isCleanable()) {
+    if (force || AppContext.isCleanable()) {
       try {
         new ProcessBuilder("clear").inheritIO().start().waitFor();
       } catch (InterruptedException | IOException e) {
@@ -18,7 +18,7 @@ public class ConsoleUtil {
   }
 
   private static void cleanWindows(boolean force) {
-    if (force || AppConfig.isCleanable()) {
+    if (force || AppContext.isCleanable()) {
       try {
         new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
       } catch (InterruptedException | IOException e) {
@@ -28,9 +28,9 @@ public class ConsoleUtil {
   }
 
   public static void clean(boolean force) {
-    if (AppConfig.isLinux()) {
+    if (AppContext.isLinux()) {
       cleanLinux(force);
-    } else if (AppConfig.isWindows()) {
+    } else if (AppContext.isWindows()) {
       cleanWindows(force);
     }
   }
@@ -49,14 +49,14 @@ public class ConsoleUtil {
 
   public static void printMainMenu() {
     printHeader();
-    if (AppConfig.getLoggedUser() == null) {
+    if (!AppContext.hasLoggedUser()) {
       System.out.printf("Bem-vindo a %s!\n", Consts.APP_NAME);
     } else {
-      System.out.printf("%s! %s %s, seja bem-vindo(a).\n", DateUtil.greeting(), AppConfig.getLoggedUser().getFirstName(), AppConfig.getLoggedUser().getLastName());
+      System.out.printf("%s! %s %s, seja bem-vindo(a).\n", DateUtil.greeting(), AppContext.getLoggedUser().getFirstName(), AppContext.getLoggedUser().getLastName());
     }
     printDivider();
     System.out.println("1 - Registrar");
-    if (AppConfig.getLoggedUser() == null) {
+    if (!AppContext.hasLoggedUser()) {
       System.out.println("2 - Entrar");
     } else {
       System.out.println("2 - Sair");
