@@ -20,6 +20,10 @@ public class Cart {
     productList.clear();
   }
 
+  public List<Product> getProductList() {
+    return new ArrayList<>(productList);
+  }
+
   @Override
   public String toString() {
     return "Cart{" +

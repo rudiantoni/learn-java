@@ -2,6 +2,7 @@ package service;
 
 import config.AppContext;
 import enums.Command;
+import pojo.Order;
 import pojo.Product;
 import pojo.User;
 import util.ConsoleUtil;
@@ -64,7 +65,21 @@ public class MainMenuService {
       productCatalog();
 
     } else if (input.equals("4")) {
-      System.out.println("Não implementado");
+      if (AppContext.hasLoggedUser()) {
+
+        if (AppContext.getLoggedUser().isOrderListEmpty()) {
+          System.out.println("Você ainda não realizou nenhum pedido, adicione produtos no carrinho e/ou finalize sua compra.");
+          InputUtil.pause();
+          initialize();
+        } else {
+          myOrders();
+        }
+
+      } else {
+        System.out.println("Você ainda não entrou, entre ou crie uma conta nova.");
+        InputUtil.pause();
+        initialize();
+      }
 
     } else if (input.equals("5")) {
       System.out.println("Não implementado");
@@ -209,7 +224,8 @@ public class MainMenuService {
         productCatalog();
         return;
       }
-
+      Order generatedOrder = AppContext.getLoggedUser().addOrder(AppContext.getLoggedUser().getCart().getProductList());
+      System.out.printf("Foi gerado o pedido %d.\n", generatedOrder.getId());
       System.out.println("Muito obrigado pela sua compra. Detalhes sobre a entrega do pedido foram enviados para o seu e-mail.");
       AppContext.getLoggedUser().getCart().empty();
       InputUtil.pause();
@@ -237,4 +253,16 @@ public class MainMenuService {
     }
 
   }
+
+  private void myOrders() {
+    ConsoleUtil.clean();
+    ConsoleUtil.printHeader();
+    System.out.printf("%s - Meus pedidos\n", Consts.APP_NAME);
+    ConsoleUtil.printDivider();
+    List<String> allOrders = AppContext.getLoggedUser().getOrderList().stream().map(Order::toStringFormatted).collect(Collectors.toList());
+    System.out.println(String.join("\n", allOrders));
+    InputUtil.pause();
+    initialize();
   }
+
+}

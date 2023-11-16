@@ -1,5 +1,9 @@
 package pojo;
 
+import config.AppContext;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class User {
@@ -13,6 +17,7 @@ public class User {
   private String email;
   private String password;
   private Cart cart;
+  private List<Order> orderList = new ArrayList<>();
 
   public User(String firstName, String lastName, String email, String password) {
     this.firstName = firstName;
@@ -57,6 +62,14 @@ public class User {
   public Cart getCart() { return cart; }
   public void setCart(Cart cart) { this.cart = cart; }
 
+  public List<Order> getOrderList() { return new ArrayList<>(orderList); }
+  public boolean isOrderListEmpty() { return orderList.isEmpty(); }
+  public Order addOrder(List<Product> productList) {
+    Order order = new Order(productList);
+    orderList.add(order);
+    return order;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
@@ -67,12 +80,13 @@ public class User {
       Objects.equals(lastName, user.lastName) &&
       Objects.equals(email, user.email) &&
       Objects.equals(password, user.password) &&
-      Objects.equals(cart, user.cart);
+      Objects.equals(cart, user.cart) &&
+      Objects.equals(orderList, user.orderList);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, firstName, lastName, email, password, cart);
+    return Objects.hash(id, firstName, lastName, email, password, cart, orderList);
   }
 
   @Override
@@ -84,6 +98,7 @@ public class User {
       ", email='" + email + '\'' +
       ", password='" + password + '\'' +
       ", cart=" + cart +
+      ", orderList=" + orderList +
       '}';
   }
 }
