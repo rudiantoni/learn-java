@@ -9,17 +9,17 @@
   - [Classes](#classes)
   - [Herança e Polimorfismo](#herança-e-polimorfismo)
   - [Classes internas e aninhadas](#classes-internas-e-aninhadas)
-  - ...
+  - [EXAME: Loja Online](#exame-loja-online)
 - Exercícios
   - [Exercício 1](./01_arquivos/exercicio_01/) ([enunciado](#classes))
   - [Exercício 2](./01_arquivos/exercicio_02/) ([enunciado](#herança-e-polimorfismo))
   - [Exercício 3](./01_arquivos/exercicio_03//) ([enunciado](#classes-internas-e-aninhadas))
-  - ...
+  - [Exercício 4](./01_arquivos/exercicio_04/) ([enunciado](#exame-loja-online))
 - Conteúdo
   - [Classes](#classes)
   - [Herança e Polimorfismo](#herança-e-polimorfismo)
   - [Classes internas e aninhadas](#classes-internas-e-aninhadas)
-  - ...
+  - [EXAME: Loja Online](#exame-loja-online)
 
 ### Classes
 [[Topo]](#)<br />
@@ -444,7 +444,7 @@ Este código será usado na educação continuada e nos próximos tópicos e aca
 - ENTÃO: Vejo mensagem: "Por favor, entre ou crie uma nova conta para ver a listagem de seus pedidos."
 - E: Sou redirecionado para o menu principal.
 
-##### Cenário: listar meus pedidios - manipulação de erro - usuário não entrou
+##### Cenário: listar meus pedidios - manipulação de erro - pedido vazio
 - DADO: Sou um usuário do app
 - E: Entrei
 - E: Não tenho nenhuma compra registrada ainda
@@ -641,3 +641,4 @@ javacore/oop/exam/templates/onlineshop
 A solução para essa tarefa do exame está aqui: https://github.com/AndriiPiatakha/learnit_java_core/tree/master/src/com/itbulls/learnit/javacor
 e/oop/exam/onlineshop
 
+> Exercício 4 (EXAME: Loja Online): [01_arquivos/exercicio_04](./01_arquivos/exercicio_04/)
