@@ -97,15 +97,18 @@ Aplicações utilizadas:
 
 
 14. Programação Orientada a Objetos - Preparação para a entrevista
-  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35007510#overview)\] [14.1. Como se preparar](xxx.md)
-  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35007540#overview)\] [14.2. POO parte 1: Perguntas e respostas](xxx.md)
-  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35007690#overview)\] [14.3. POO parte 2: Perguntas e respostas](xxx.md)
-  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35327884#overview)\] [14.4. POO e Design Patterns: Perguntas e respostas](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35007510)\] [14.1. Como se preparar](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35007540)\] [14.2. POO parte 1: Perguntas e respostas](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35007690)\] [14.3. POO parte 2: Perguntas e respostas](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35327884)\] [14.4. POO e Design Patterns: Perguntas e respostas](xxx.md)
 
 15. Exames de Programação Orientada a Objetos - Aplicações de console comerciais
   - 
-  \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794752#overview)\] [15.1. Exame e homework para o tópico POO](xxx.md)
+  \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794752)\] [15.1. Exame e homework para o tópico POO](xxx.md)
 
+16. Exceptions
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794848)\] [16.1. Manipulação de exceptions](xxx.md)
+  
 
 x. xxx
   - \[[Ref](xxx)\] [x.x. xxx](xxx.md)
