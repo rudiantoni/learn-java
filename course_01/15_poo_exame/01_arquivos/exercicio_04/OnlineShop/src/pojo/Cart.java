@@ -1,7 +1,5 @@
 package pojo;
 
-import config.AppContext;
-
 import java.util.ArrayList;
 import java.util.List;
 

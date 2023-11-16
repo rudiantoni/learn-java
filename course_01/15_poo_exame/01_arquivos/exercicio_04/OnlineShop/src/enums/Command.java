@@ -1,7 +1,5 @@
 package enums;
 
-import java.util.Arrays;
-
 public enum Command {
   UNKNOWN("desconhecido", "Erro: comando desconhecido"),
   EXIT("exit", "Fecha a aplicação"),
@@ -15,14 +13,20 @@ public enum Command {
     this.name = name;
     this.description = description;
   }
+
   private final String name;
   private final String description;
 
-  public String getName() { return name; }
-  public String getDescription() { return description; }
+  public String getName() {
+    return name;
+  }
+
+  public String getDescription() {
+    return description;
+  }
 
   public static Command getCommandByName(String name) {
-    for (Command command: Command.values()) {
+    for (Command command : Command.values()) {
       if (command.getName().equalsIgnoreCase(name)) {
         return command;
       }

@@ -45,7 +45,7 @@ public class MainMenuService {
       InputUtil.pause();
       initialize();
 
-    }  else if (input.equals(Command.GET_PRODUCTS.getName())) {
+    } else if (input.equals(Command.GET_PRODUCTS.getName())) {
       System.out.println(AppContext.getProductList());
       InputUtil.pause();
       initialize();
@@ -91,7 +91,7 @@ public class MainMenuService {
       }
 
     } else if (input.equals("6")) {
-      System.out.println("Não implementado");
+      customerList();
 
     }
 
@@ -189,8 +189,8 @@ public class MainMenuService {
     String input = InputUtil.waitForAllowedOption(
       "Digite o código do produto ou uma opção válida: ",
       "Por favor, digite o código do produto para adicioná-lo ao carrinho.\n" +
-        "Ou digite \"" +Command.CHECKOUT.getName()+ "\" se você quiser prosseguir com a finalização da compra.\n" +
-        "Ou digite \"" +Command.MAIN_MENU.getName()+ "\" se você quiser navegar de volta para o menu principal.",
+        "Ou digite \"" + Command.CHECKOUT.getName() + "\" se você quiser prosseguir com a finalização da compra.\n" +
+        "Ou digite \"" + Command.MAIN_MENU.getName() + "\" se você quiser navegar de volta para o menu principal.",
       allowedOptions);
     if (input.equals(Command.MAIN_MENU.getName())) {
       initialize();
@@ -202,8 +202,7 @@ public class MainMenuService {
         InputUtil.pause();
         initialize();
         return;
-      }
-      else if (AppContext.getLoggedUser().getCart().isCartEmpty()) {
+      } else if (AppContext.getLoggedUser().getCart().isCartEmpty()) {
         System.out.println("Seu carrinho está vazio. Por favor, adicione produtos ao seu carrinho antes de tentar finalizar a compra.");
         InputUtil.pause();
         productCatalog();
@@ -315,4 +314,14 @@ public class MainMenuService {
     }
   }
 
+  private void customerList() {
+    ConsoleUtil.clean();
+    ConsoleUtil.printHeader();
+    System.out.printf("%s - Lista de clientes\n", Consts.APP_NAME);
+    ConsoleUtil.printDivider();
+    List<String> allCustomers = AppContext.getUserList().stream().map(User::toStringFormatted).collect(Collectors.toList());
+    System.out.println(String.join("\n", allCustomers));
+    InputUtil.pause();
+    initialize();
+  }
 }

@@ -1,7 +1,5 @@
 package pojo;
 
-import config.AppContext;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -9,8 +7,14 @@ import java.util.Objects;
 public class User {
   private static int nextId;
   private int id;
-  static { nextId = 1; }
-  { id = nextId++; }
+
+  static {
+    nextId = 1;
+  }
+
+  {
+    id = nextId++;
+  }
 
   private String firstName;
   private String lastName;
@@ -34,6 +38,7 @@ public class User {
   public String getFirstName() {
     return firstName;
   }
+
   public void setFirstName(String firstName) {
     this.firstName = firstName;
   }
@@ -41,6 +46,7 @@ public class User {
   public String getLastName() {
     return lastName;
   }
+
   public void setLastName(String lastName) {
     this.lastName = lastName;
   }
@@ -48,6 +54,7 @@ public class User {
   public String getEmail() {
     return email;
   }
+
   public void setEmail(String email) {
     this.email = email;
   }
@@ -55,15 +62,27 @@ public class User {
   public String getPassword() {
     return password;
   }
+
   public void setPassword(String password) {
     this.password = password;
   }
 
-  public Cart getCart() { return cart; }
-  public void setCart(Cart cart) { this.cart = cart; }
+  public Cart getCart() {
+    return cart;
+  }
 
-  public List<Order> getOrderList() { return new ArrayList<>(orderList); }
-  public boolean isOrderListEmpty() { return orderList.isEmpty(); }
+  public void setCart(Cart cart) {
+    this.cart = cart;
+  }
+
+  public List<Order> getOrderList() {
+    return new ArrayList<>(orderList);
+  }
+
+  public boolean isOrderListEmpty() {
+    return orderList.isEmpty();
+  }
+
   public Order addOrder(List<Product> productList) {
     Order order = new Order(productList);
     orderList.add(order);
@@ -100,5 +119,9 @@ public class User {
       ", cart=" + cart +
       ", orderList=" + orderList +
       '}';
+  }
+
+  public String toStringFormatted() {
+    return String.format("Id: %d. Primeiro nome: %s. Último nome: %s. E-mail: %s.", id, firstName, lastName, email);
   }
 }

@@ -20,6 +20,7 @@ public class AppContext {
   public static boolean isCleanable() {
     return cleanable;
   }
+
   public static void setCleanable(boolean cleanable) {
     AppContext.cleanable = cleanable;
   }
@@ -27,26 +28,35 @@ public class AppContext {
   public static String getOsName() {
     return osName;
   }
+
   public static void setOsName(String osName) {
     AppContext.osName = osName;
   }
+
   public static boolean isWindows() {
     return osName.equals("windows");
   }
+
   public static boolean isLinux() {
     return osName.equals("linux");
   }
 
-  public static Scanner getSc() {return sc;}
+  public static Scanner getSc() {
+    return sc;
+  }
+
   public static void setSc(Scanner sc) {
-    AppContext.sc = sc;}
+    AppContext.sc = sc;
+  }
 
   public static User getLoggedUser() {
     return loggedUser;
   }
+
   public static boolean hasLoggedUser() {
     return loggedUser != null;
   }
+
   public static void setLoggedUser(User loggedUser) {
     AppContext.loggedUser = loggedUser;
   }
@@ -67,7 +77,7 @@ public class AppContext {
 
   public static User findFirstUserByEmailAndPassword(String email, String password) {
     User user = AppContext.userList.stream().filter(it ->
-      it.getEmail().equalsIgnoreCase(email) && it.getPassword().equals(password))
+        it.getEmail().equalsIgnoreCase(email) && it.getPassword().equals(password))
       .findAny().orElse(null);
     return user;
   }

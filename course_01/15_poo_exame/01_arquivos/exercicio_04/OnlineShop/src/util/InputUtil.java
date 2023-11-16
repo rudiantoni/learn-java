@@ -45,8 +45,10 @@ public class InputUtil {
     System.out.print("Pressione enter para continuar...");
     try {
       AppContext.getSc().nextLine();
-    } catch (Exception e) {}
+    } catch (Exception e) {
+    }
   }
+
   private static boolean isAllowedOption(String option, String[] allowedOptions) {
     for (String allowedOption : allowedOptions) {
       if (option.equalsIgnoreCase(allowedOption)) {

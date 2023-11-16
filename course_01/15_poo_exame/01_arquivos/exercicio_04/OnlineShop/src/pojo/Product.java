@@ -15,19 +15,37 @@ public class Product {
     this.price = price;
   }
 
-  public int getId() { return id; }
-  public void setId(int id) { this.id = id; }
+  public int getId() {
+    return id;
+  }
 
-  public String getProductName() { return productName;}
-  public void setProductName(String productName) { this.productName = productName; }
+  public void setId(int id) {
+    this.id = id;
+  }
 
-  public String getCategoryName() { return categoryName; }
+  public String getProductName() {
+    return productName;
+  }
 
-  public void setCategoryName(String categoryName) { this.categoryName = categoryName; }
+  public void setProductName(String productName) {
+    this.productName = productName;
+  }
 
-  public double getPrice() { return price; }
+  public String getCategoryName() {
+    return categoryName;
+  }
 
-  public void setPrice(double price) { this.price = price; }
+  public void setCategoryName(String categoryName) {
+    this.categoryName = categoryName;
+  }
+
+  public double getPrice() {
+    return price;
+  }
+
+  public void setPrice(double price) {
+    this.price = price;
+  }
 
   @Override
   public boolean equals(Object o) {

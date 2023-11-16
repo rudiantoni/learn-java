@@ -27,6 +27,7 @@ public class InitializingService {
   private void startScanner() {
     AppContext.setSc(new Scanner(System.in));
   }
+
   private void defineOS() {
     String os = System.getProperty("os.name");
     if (os.contains("Windows")) {
