@@ -32,21 +32,21 @@ Ao comparar Arrays e Collections no Java, estamos lidando com duas formas fundam
 
 **Arrays**
 
-- Tamanho Fixo: Uma vez criado, o tamanho de um array não pode ser alterado.
-- Tipo Homogêneo: Arrays armazenam elementos de um único tipo de dado. O tipo é definido na criação do array.
-- Eficiência: Arrays têm uma performance muito eficiente em termos de armazenamento e acesso, pois são uma estrutura de dados simples.
-- Sintaxe Direta: Em Java, a sintaxe para criar e manipular arrays é integrada na linguagem.
-- Manipulação Básica: Arrays fornecem funcionalidades básicas. Operações complexas, como inserção, remoção ou busca avançada, requerem algoritmos adicionais implementados pelo programador.
-- Indexação: Arrays são acessados por índices numéricos, o que facilita o acesso direto a qualquer elemento.
+- **Tamanho Fixo**: Uma vez criado, o tamanho de um array não pode ser alterado.
+- **Tipo Homogêneo**: Arrays armazenam elementos de um único tipo de dado. O tipo é definido na criação do array.
+- **Eficiência**: Arrays têm uma performance muito eficiente em termos de armazenamento e acesso, pois são uma estrutura de dados simples.
+- **Sintaxe Direta**: Em Java, a sintaxe para criar e manipular arrays é integrada na linguagem.
+- **Manipulação Básica**: Arrays fornecem funcionalidades básicas. Operações complexas, como inserção, remoção ou busca avançada, requerem algoritmos adicionais implementados pelo programador.
+- **Indexação**: Arrays são acessados por índices numéricos, o que facilita o acesso direto a qualquer elemento.
 
 **Collections**
 
-- Tamanho Dinâmico: As coleções podem crescer ou diminuir de tamanho dinamicamente, adaptando-se às necessidades em tempo de execução.
-- Diversidade de Tipos: O framework de coleções oferece muitos tipos diferentes, como listas, conjuntos e mapas, cada um com características e usos específicos.
-- Funcionalidades Avançadas: Incluem operações como inserção, remoção, iteração, ordenação e busca de maneira muito mais fácil e direta.
-- Uso de Generics: As coleções em Java suportam generics, permitindo que sejam mais seguras em termos de tipo e reduzindo a necessidade de casting explícito.
-- Iteradores: Oferecem uma maneira padronizada de percorrer elementos, independentemente do tipo específico de coleção.
-- Suporte a Concorrência: Algumas implementações de coleções são projetadas para serem seguras em ambientes multi-thread.
+- **Tamanho Dinâmico**: As coleções podem crescer ou diminuir de tamanho dinamicamente, adaptando-se às necessidades em tempo de execução.
+- **Diversidade de Tipos**: O framework de coleções oferece muitos tipos diferentes, como listas, conjuntos e mapas, cada um com características e usos específicos.
+- **Funcionalidades Avançadas**: Incluem operações como inserção, remoção, iteração, ordenação e busca de maneira muito mais fácil e direta.
+- **Uso de Generics**: As coleções em Java suportam generics, permitindo que sejam mais seguras em termos de tipo e reduzindo a necessidade de casting explícito.
+- **Iteradores**: Oferecem uma maneira padronizada de percorrer elementos, independentemente do tipo específico de coleção.
+- **Suporte a Concorrência**: Algumas implementações de coleções são projetadas para serem seguras em ambientes multi-thread.
 
 **Escolha entre Arrays e Collections**
 
@@ -59,16 +59,16 @@ Ao comparar Arrays e Collections no Java, estamos lidando com duas formas fundam
 
 As coleções, parte do Java Collection Framework, oferecem várias vantagens sobre os arrays, especialmente quando se trata de flexibilidade, funcionalidade e facilidade de uso. Aqui estão algumas das principais vantagens das coleções sobre arrays:
 
-- Tamanho Dinâmico: Ao contrário dos arrays, que têm um tamanho fixo, as coleções podem ajustar seu tamanho automaticamente para acomodar mais elementos. Isso elimina a necessidade de determinar o tamanho da coleção com antecedência.
-- Uso de Generics: As coleções suportam generics, o que permite criar coleções que são type-safe, reduzindo a necessidade de casting e minimizando a probabilidade de erros em tempo de execução relacionados a tipos incompatíveis.
-- Operações Avançadas: As coleções fornecem uma ampla gama de operações para manipulação de dados, como adição, remoção, iteração, ordenação e busca, de maneira muito mais simples e direta do que com arrays.
-- Diversidade de Estruturas: O framework de coleções oferece uma variedade de estruturas de dados, como List, Set, Queue e Map, cada uma com suas próprias características e usos específicos, proporcionando uma grande flexibilidade.
-- Facilidade de Iteração: As coleções oferecem iteradores e outras formas de iteração (como loops for-each) que simplificam a navegação pelos elementos da coleção.
-- Integração com APIs e Frameworks: Muitas APIs e frameworks Java são projetados para trabalhar com o Collection Framework, tornando mais fácil integrar coleções em diversas aplicações e bibliotecas.
-- Concorrência: Algumas implementações de coleção são projetadas para uso seguro em ambientes multithread, como as encontradas em java.util.concurrent.
-- Algoritmos Prontos para Uso: O framework de coleções inclui algoritmos comuns, como ordenação e embaralhamento, que podem ser aplicados diretamente às coleções.
-- Redução de Overhead em Autoboxing/Unboxing: Quando se trabalha com tipos de dados primitivos, as coleções (como ArrayList<Integer>) gerenciam automaticamente a conversão entre tipos primitivos e seus equivalentes de objeto, enquanto os arrays de tipos primitivos não oferecem essa funcionalidade.
-- Facilidade de Transformação e Processamento: Com a introdução de Streams no Java 8, tornou-se muito mais fácil transformar e processar coleções de maneira funcional e eficiente.
+- **Tamanho Dinâmico**: Ao contrário dos arrays, que têm um tamanho fixo, as coleções podem ajustar seu tamanho automaticamente para acomodar mais elementos. Isso elimina a necessidade de determinar o tamanho da coleção com antecedência.
+- **Uso de Generics**: As coleções suportam generics, o que permite criar coleções que são type-safe, reduzindo a necessidade de casting e minimizando a probabilidade de erros em tempo de execução relacionados a tipos incompatíveis.
+- **Operações Avançadas**: As coleções fornecem uma ampla gama de operações para manipulação de dados, como adição, remoção, iteração, ordenação e busca, de maneira muito mais simples e direta do que com arrays.
+- **Diversidade de Estruturas**: O framework de coleções oferece uma variedade de estruturas de dados, como List, Set, Queue e Map, cada uma com suas próprias características e usos específicos, proporcionando uma grande flexibilidade.
+- **Facilidade de Iteração**: As coleções oferecem iteradores e outras formas de iteração (como loops for-each) que simplificam a navegação pelos elementos da coleção.
+- **Integração com APIs e Frameworks**: Muitas APIs e frameworks Java são projetados para trabalhar com o Collection Framework, tornando mais fácil integrar coleções em diversas aplicações e bibliotecas.
+- **Concorrência**: Algumas implementações de coleção são projetadas para uso seguro em ambientes multithread, como as encontradas em java.util.concurrent.
+- **Algoritmos Prontos para Uso**: O framework de coleções inclui algoritmos comuns, como ordenação e embaralhamento, que podem ser aplicados diretamente às coleções.
+- **Redução de Overhead em Autoboxing/Unboxing**: Quando se trabalha com tipos de dados primitivos, as coleções (como ArrayList<Integer>) gerenciam automaticamente a conversão entre tipos primitivos e seus equivalentes de objeto, enquanto os arrays de tipos primitivos não oferecem essa funcionalidade.
+- **Facilidade de Transformação e Processamento**: Com a introdução de Streams no Java 8, tornou-se muito mais fácil transformar e processar coleções de maneira funcional e eficiente.
 
 Em resumo, as coleções são mais versáteis, flexíveis e poderosas que os arrays, especialmente quando se trata de manipulação de conjuntos de dados complexos e variáveis, e são uma escolha comum para muitas situações de programação em Java.
 
@@ -79,19 +79,19 @@ No Java Collection Framework, tanto Collection quanto Map são interfaces fundam
 
 **Collection**
 
-- Natureza: A interface Collection representa um grupo de objetos, conhecidos como seus elementos. É a raiz da hierarquia de coleção no Java (excluindo mapas).
-- Estruturas de Dados: Inclui várias estruturas de dados como List, Set e Queue, cada uma com suas próprias características. Por exemplo, List mantém a ordem de inserção, enquanto Set não permite elementos duplicados.
-- Elemento Único: Cada item na Collection é considerado um elemento único. Mesmo que possam existir valores duplicados (como em uma List), cada ocorrência é tratada como um elemento individual.
-- Operações Básicas: Inclui operações como adição, remoção, iteração e verificação de tamanho.
-- Uso: Mais adequado para quando você precisa de um grupo simples de elementos, e a organização ou relações únicas entre esses elementos não são uma preocupação primária.
+- **Natureza:** A interface Collection representa um grupo de objetos, conhecidos como seus elementos. É a raiz da hierarquia de coleção no Java (excluindo mapas).
+- **Estruturas de Dados**: Inclui várias estruturas de dados como List, Set e Queue, cada uma com suas próprias características. Por exemplo, List mantém a ordem de inserção, enquanto Set não permite elementos duplicados.
+- **Elemento Único**: Cada item na Collection é considerado um elemento único. Mesmo que possam existir valores duplicados (como em uma List), cada ocorrência é tratada como um elemento individual.
+- **Operações Básicas**: Inclui operações como adição, remoção, iteração e verificação de tamanho.
+- **Uso**: Mais adequado para quando você precisa de um grupo simples de elementos, e a organização ou relações únicas entre esses elementos não são uma preocupação primária.
 
 **Map**
 
-- Natureza: A interface Map não é uma verdadeira coleção, mas faz parte do Collection Framework. Ela representa um mapeamento de chaves únicas para valores.
-- Pares Chave-Valor: Em um Map, cada valor é associado a uma chave única. A chave é usada para acessar ou modificar seu valor correspondente.
-- Sem Duplicatas de Chaves: Enquanto os valores podem ser duplicados, as chaves em um Map são únicas. Tentar inserir uma chave duplicada resultará na substituição do valor anterior associado àquela chave.
-- Operações Específicas: Inclui operações específicas como colocar, obter por chave, remover por chave, e verificar se uma chave ou valor está presente.
-- Uso: Mais adequado quando há uma relação natural chave-valor entre os elementos, como um dicionário, onde cada palavra (chave) mapeia para sua definição (valor).
+- **Natureza:** A interface Map não é uma verdadeira coleção, mas faz parte do Collection Framework. Ela representa um mapeamento de chaves únicas para valores.
+- **Pares Chave-Valor**: Em um Map, cada valor é associado a uma chave única. A chave é usada para acessar ou modificar seu valor correspondente.
+- **Sem Duplicatas de Chaves**: Enquanto os valores podem ser duplicados, as chaves em um Map são únicas. Tentar inserir uma chave duplicada resultará na substituição do valor anterior associado àquela chave.
+- **Operações Específicas**: Inclui operações específicas como colocar, obter por chave, remover por chave, e verificar se uma chave ou valor está presente.
+- **Uso**: Mais adequado quando há uma relação natural chave-valor entre os elementos, como um dicionário, onde cada palavra (chave) mapeia para sua definição (valor).
 
 **Escolha entre Collection e Map**
 
