@@ -109,6 +109,20 @@ Aplicações utilizadas:
 16. Exceptions
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794848)\] [16.1. Manipulação de exceptions](xxx.md)
   
+17. Java Collections
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794858)\] [17.1. Visão geral](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794864)\] [17.2. Interface Collection](xxx.md)
+  - \[[Ref](https://udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794876)\] [17.3. Visão geral: Interface List, Set e Queue](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794890)\] [17.4. Implementações de List: ArrayList, Vector, CopyOnWriteArrayList e Stack](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794892)\] [17.5. LinkedList vs ArrayList, Big O Notation e Homework](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27797060)\] [17.6. Comparator e Comparable](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27797076)\] [17.7. Iterable, Iterator e ListIterator](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27797108)\] [17.8. Queue e Deque](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27797162)\] [17.9. Map hierarchy](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27797176)\] [17.10. Hash tables e HashMap](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27797182)\] [17.11. LinkedHashMap](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27797192)\] [17.12. SortedMap, NavigableMap e TreeMap](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27797194)\] [17.13. Implementações de Set (prática de HashSet) e classe java.util.Collections](xxx.md)
 
 x. xxx
   - \[[Ref](xxx)\] [x.x. xxx](xxx.md)
