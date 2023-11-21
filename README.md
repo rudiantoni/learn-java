@@ -114,7 +114,7 @@ Aplicações utilizadas:
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794864)\] [17.2. Interface Collection](xxx.md)
   - \[[Ref](https://udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794876)\] [17.3. Visão geral: Interface List, Set e Queue](xxx.md)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794890)\] [17.4. Implementações de List: ArrayList, Vector, CopyOnWriteArrayList e Stack](xxx.md)
-  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794892)\] [17.5. LinkedList vs ArrayList, Big O Notation e Homework](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794892)\] [17.5. LinkedList vs ArrayList, e notação Big O](xxx.md)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27797060)\] [17.6. Comparator e Comparable](xxx.md)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27797076)\] [17.7. Iterable, Iterator e ListIterator](xxx.md)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27797108)\] [17.8. Queue e Deque](xxx.md)
