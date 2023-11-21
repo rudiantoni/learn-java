@@ -6,12 +6,14 @@
 - Diretório de arquivos: [05_arquivos](./05_arquivos/)
 - Homework
   - [HW - List](./05_arquivos/homework/HW%20-%20List.pdf)
-  - [content_title](content_link)
-  - ...
+  - [Comparação de desempenho](#comparação-de-desempenho)
+  - [Refatorar array para Collection](#refatorar-array-para-collection)
+  - [My list implementation](#my-list-implementation)
 - Projetos
   - [Projeto 1](./05_arquivos/proj_01/) [(iniciado em)](#linkedlist)
-- (se existir exercícios) Exercícios
-  - [Exercício N](folder_link-exercicio_nn) ([enunciado](#statement_content_link))
+- Exercícios
+  - [Exercício 1](./05_arquivos/exercicio_01/) ([enunciado](#comparação-de-desempenho))
+  - [Exercício 2](./05_arquivos/exercicio_02/) ([enunciado](#refatorar-array-para-collection))
   - ...
 - Conteúdo
   - [LinkedList](#linkedlist)
@@ -230,8 +232,6 @@ long delta = (System.nanoTime() - mill) / 10000;
     - 10000 -> ArrayList: 50 - LinkedList: 37
     - 100000 -> ArrayList: 318 - LinkedList: 65
 
-
-
 - Após ter completado todos os passos você pode comparar seus resultados com o do seu tutor. Preste atenção aos resultados e os números serão diferentes. Mas o padrão será o mesmo.
 
 Dados do tutor:
@@ -265,15 +265,68 @@ Dados do tutor:
 
 > Exercício 1 (LinkedList vs ArrayList, e notação Big O): [05_arquivos/exercicio_01](./05_arquivos/exercicio_01/)
 
-### Refatorar array para List
+### Refatorar array para Collection
 
 - Ver homework: [HW - List](./05_arquivos/homework/HW%20-%20List.pdf)
 
+- Clone o projeto demo: https://github.com/AndriiPiatakha/learnit_java_core
+- Investigue o código fonte de com.itbulls.learnit.javacore.jcf.hw.onlinestore.withoutlist
+- Substitua os arrays com a implementação da interface Collections (qualquer implementação que você achar que é a mais apropriada) e coloque a solução no seguinte pacote: com.itbulls.learnit.javacore.jcf.hw.onlinestore.withlist
+- Dica: faça alterações nos seguintes arquivos:
+  - Cart
+  - Default Cart
+  - Order
+  - Default Order
+  - CustomerListMenu
+  - MyOrdersMenu
+  - ProductCatalogMenu
+  - OrderManagementService
+  - DefaultOrderManagementService
+  - ProductManagementService
+  - DefaultProductManagementService
+  - UserManagementService
+  - DefaultUserManagementService
+- As funcionalidades existentes não devem ser alteradas
+- Os cenários para testes estão localizados aqui: https://docs.google.com/document/d/1_j1MAEahsHMk7MpnGXGZLNyW6UPiVKfDhWLaHl47eg8/edit?usp=sharing (Tarefa 4 do exame)
+
+> Exercício 2 (LinkedList vs ArrayList, e notação Big O): [/05_arquivos/exercicio_02](./05_arquivos/exercicio_02/)
+
+### My list implementation
+
+- Ver homework: [HW - List](./05_arquivos/homework/HW%20-%20List.pdf)
+
+Implemente sua própria implementação de cuma interface de lista personalizada. É proibido usar qualquer implementação existente do pacote java.util. Para o escopo desta tarefa os estudantes devem poder criar suas próprias implementações da interface MyList.
+
+Para prosseguir com a tarefa, siga os próximos passos:
+
+- Crie uma interface com o nome MyList com o conteúdo:
+
+```java
+public interface MyList {
+  void add(Object e); // appends the specified element to the end of this list
+  void clear(); // removes all of the elements from this list
+  boolean remove(Object o); // removes the first occurrence of the specified element from this list
+  Object[] toArray(); // returns an array containing all of the elements in this list in proper sequence
+  int size(); // returns the number of elements in this list
+  boolean contains(Object o); // returns true if this list contains the specified element.
+  boolean containsAll(MyList c); // returns true if this list contains all of the elements of the specified list
+}
+```
+
+- Crie a classe DefaultMyList que implementa a interface MyList.
+- Sobrescreva o método toString() para que seja possível imprimir de acordo com o formato a seguir:
+
+```text
+{[result of the toString method for element #1], [result of the toString method for element #2], ... }
+```
+
+- É proibido usar qualquer implementação da interface List e delegar chamadas para essa implementação a partir da classe DefaultMuList.
+- Você pode usar a implementação de ArrayList ou LinkedList como referência durante a implementação desta tarefa. A recomendação é realizar uma implementação de lista de double-link.
+- Veja minha solução aqui se você quiser: https://github.com/AndriiPiatakha/learnit_java_core/tree/master/src/com/itbulls
+/learnit/javacore/jcf/collections/list/hw
+- Commit para verificar mudanças apenas nos arquivos afetados: https://github.com/AndriiPiatakha/learnit_java_core/commit/053bada1bb72a5
+8f2f21d6b3023d4776522c3ffc
 
 
 
-Se homework:
-- Ver homework: [file_name_no_extension](file_link)
-
-Se exercício:
 > Exercício N ((nome do vídeo, aula, etc)): [caminho](pasta_exercicio-exercicio_nn)
