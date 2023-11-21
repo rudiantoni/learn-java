@@ -8,13 +8,13 @@
   - [HW - List](./05_arquivos/homework/HW%20-%20List.pdf)
   - [Comparação de desempenho](#comparação-de-desempenho)
   - [Refatorar array para Collection](#refatorar-array-para-collection)
-  - [My list implementation](#my-list-implementation)
+  - [Minha implementação personalizada de lista](#minha-implementação-personalizada-de-lista)
 - Projetos
   - [Projeto 1](./05_arquivos/proj_01/) [(iniciado em)](#linkedlist)
 - Exercícios
   - [Exercício 1](./05_arquivos/exercicio_01/) ([enunciado](#comparação-de-desempenho))
   - [Exercício 2](./05_arquivos/exercicio_02/) ([enunciado](#refatorar-array-para-collection))
-  - ...
+  - [Exercício 3](./05_arquivos/exercicio_03/) ([enunciado](#minha-implementação-personalizada-de-lista))
 - Conteúdo
   - [LinkedList](#linkedlist)
   - [Notação Big O](#notação-big-o)
@@ -291,7 +291,7 @@ Dados do tutor:
 
 > Exercício 2 (LinkedList vs ArrayList, e notação Big O): [/05_arquivos/exercicio_02](./05_arquivos/exercicio_02/)
 
-### My list implementation
+### Minha implementação personalizada de lista
 
 - Ver homework: [HW - List](./05_arquivos/homework/HW%20-%20List.pdf)
 
@@ -327,6 +327,4 @@ public interface MyList {
 - Commit para verificar mudanças apenas nos arquivos afetados: https://github.com/AndriiPiatakha/learnit_java_core/commit/053bada1bb72a5
 8f2f21d6b3023d4776522c3ffc
 
-
-
-> Exercício N ((nome do vídeo, aula, etc)): [caminho](pasta_exercicio-exercicio_nn)
+> Exercício 3 (LinkedList vs ArrayList, e notação Big O): [05_arquivos/exercicio_03](./05_arquivos/exercicio_03/)
