@@ -24,6 +24,8 @@
 ### Classes
 [[Topo]](#)<br />
 
+- Ver homework: [HW - OOP](./01_arquivos/homework/HW%20-%20OOP.pdf)
+
 Implemente um programa de console que atenda aos seguintes requisitos:
 
 Implemente a classe Book (Livro) que possui as seguintes propriedades:
@@ -91,6 +93,8 @@ Crie uma instância do tipo BookService e demonstre o funcionamento dos métodos
 ### Herança e Polimorfismo
 [[Topo]](#)<br />
 
+- Ver homework: [HW - OOP](./01_arquivos/homework/HW%20-%20OOP.pdf)
+
 Implemente um programa de console com os seguntes requisitos:
 
 - Implemente uma hierarquia de Sweets (doces). Todos os doces devem possuir as seguintes propriedades: name, weight e sugarWeight. Weight é o peso´de um doce em kilogramas, sugarWeight é o peso do açúcar neste doce em kilogramas.
@@ -129,6 +133,8 @@ public Sweet[] getSweets() {
 
 ### Classes internas e aninhadas
 [[Topo]](#)<br />
+
+- Ver homework: [HW - OOP](./01_arquivos/homework/HW%20-%20OOP.pdf)
 
 Implemente um programa de console que atenda aos seguintes requisitos:
 Implemente a classe Account (Conta). A classe Account possui os seguintes campos:
@@ -171,6 +177,8 @@ Preste atenção que quando dinheiro é enviado de uma conta para outra, uma tra
 
 ### EXAME: Loja Online
 [[Topo]](#)<br />
+
+- Ver homework: [HW - OOP](./01_arquivos/homework/HW%20-%20OOP.pdf)
 
 Você tem que implementar um backend para uma loja online. O sistema deve suportar operações básicas, tais como:
 
