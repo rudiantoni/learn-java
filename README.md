@@ -116,7 +116,7 @@ Aplicações utilizadas:
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794890)\] [17.4. Implementações de List: ArrayList, Vector, CopyOnWriteArrayList e Stack](xxx.md)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27794892)\] [17.5. LinkedList vs ArrayList, e notação Big O](xxx.md)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27797060)\] [17.6. Comparator e Comparable](xxx.md)
-  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27797076)\] [17.7. Iterable, Iterator e ListIterator](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27797076)\] [17.7. Iterator, Iterable e ListIterator](xxx.md)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27797108)\] [17.8. Queue e Deque](xxx.md)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27797162)\] [17.9. Map hierarchy](xxx.md)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27797176)\] [17.10. Hash tables e HashMap](xxx.md)
