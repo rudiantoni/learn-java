@@ -124,6 +124,9 @@ Aplicações utilizadas:
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27797192)\] [17.12. SortedMap, NavigableMap e TreeMap](xxx.md)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27797194)\] [17.13. Implementações de Set e a classe Collections](xxx.md)
 
+18. Genéricos
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27797212)\] [18.1. Manipulação de genéricos](xxx.md)
+
 x. xxx
   - \[[Ref](xxx)\] [x.x. xxx](xxx.md)
 
