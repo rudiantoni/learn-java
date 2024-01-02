@@ -127,6 +127,16 @@ Aplicações utilizadas:
 18. Genéricos
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27797212)\] [18.1. Manipulação de genéricos](xxx.md)
 
+19. Java Collections Framework - Preparação para a entrevista
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35025092)\] [19.1. Como se preparar](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35025118)\] [19.2. JCF parte 1: Perguntas e respostas](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35025144)\] [19.3. JCF parte 2: Perguntas e respostas](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35025910)\] [19.4. JCF parte 3: Perguntas e respostas](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35025934)\] [19.5. JCF parte 4: Perguntas e respostas](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35025962)\] [19.6. JCF parte 5: Perguntas e respostas](xxx.md)
+
+
+
 x. xxx
   - \[[Ref](xxx)\] [x.x. xxx](xxx.md)
 
