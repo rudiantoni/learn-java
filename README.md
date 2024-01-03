@@ -135,7 +135,11 @@ Aplicações utilizadas:
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35025934)\] [19.5. JCF parte 4: Perguntas e respostas](xxx.md)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35025962)\] [19.6. JCF parte 5: Perguntas e respostas](xxx.md)
 
-
+20. Programação Funcional
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/30340806)\] [20.1. Visão geral: programação funcional](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/30340828)\] [20.2. Interface Functional, funções lambda e referencia de métodos](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/30340854)\] [20.3. Function e BiFunction: teoria e prática](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/30340880)\] [20.4. Consumer e BiConsumer: teoria e prática](xxx.md)
 
 x. xxx
   - \[[Ref](xxx)\] [x.x. xxx](xxx.md)
