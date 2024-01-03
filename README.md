@@ -137,7 +137,7 @@ Aplicações utilizadas:
 
 20. Programação Funcional
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/30340806)\] [20.1. Visão geral: programação funcional](xxx.md)
-  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/30340828)\] [20.2. Interface Functional, funções lambda e referencia de métodos](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/30340828)\] [20.2. Interface funcional, funções lambda e referência de métodos](xxx.md)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/30340854)\] [20.3. Function e BiFunction: teoria e prática](xxx.md)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/30340880)\] [20.4. Consumer e BiConsumer: teoria e prática](xxx.md)
 
