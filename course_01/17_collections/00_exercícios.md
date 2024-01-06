@@ -12,6 +12,8 @@
     - [Arquivo: HW - Iterator and ListIterator](./07_arquivos/homework/HW%20-%20Iterator%20and%20ListIterator.pdf)
   - [17.8. Queue e Deque](#178-queue-e-deque)
     - [Arquivo: HW - Queue](./08_arquivos/homework/HW%20-%20Queue.pdf)
+  - [17.11. LinkedHashMap](#1711-linkedhashmap)
+    - [Arquivo: HW - LinkedHashMap - LRU Cache](./11_arquivos/homework/HW%20-%20LinkedHashMap%20-%20LRU%20Cache.pdf)
 - Exercícios
   - [17.5. LinkedList vs ArrayList, e notação Big O](#175-linkedlist-vs-arraylist-e-notação-big-o)
     - [Exercício 1](./exercicio_01/) ([enunciado](#comparação-de-desempenho))
@@ -24,6 +26,8 @@
     - [Exercício 6](./exercicio_06/) ([enunciado](#listiterator-personalizado))
   - [17.8. Queue e Deque](#178-queue-e-deque)
     - [Exercício 7](./exercicio_07/) ([enunciado](#backend-para-um-help-desk))
+  - [17.11. LinkedHashMap](#1711-linkedhashmap)
+    - [Exercício 8](./exercicio_08/) ([enunciado](#cache-lru))
 
 ### 17.5. LinkedList vs ArrayList, e notação Big O
 [[Topo]](#)<br />
@@ -370,7 +374,7 @@ private class ListIteratorImpl extends IteratorImpl implements ListIterator {
 ### 17.8. Queue e Deque
 [[Topo]](#)<br />
 
-### Backend para um help-desk
+#### Backend para um help-desk
 [[Topo]](#)<br />
 
 - Ver homework: [HW - Queue](./08_arquivos/homework/HW%20-%20Queue.pdf)
@@ -426,8 +430,43 @@ public interface SupportTicket {
 
 > Exercício 7 (Queue e Deque): [exercicio_07](./exercicio_07/)
 
-
-#TODO: continuar a partir daqui
-
-### 17.11. Hash tables e HashMap
+### 17.11. LinkedHashMap
 [[Topo]](#)<br />
+
+#### Cache LRU
+[[Topo]](#)<br />
+
+- Ver homework: [HW - LinkedHashMap - LRU Cache](./11_arquivos/homework/HW%20-%20LinkedHashMap%20-%20LRU%20Cache.pdf)
+
+Implemente o cache LRU baseando-se no LinkedHashMap
+
+- Crie a interface:
+```java
+public interface LruCache {
+  /**
+   * @return o valor da chave se a chave existir
+   * caso contrário retorna -1
+   */
+  int get(int key);
+
+  /**
+   * Atualize o valor da cheve se a chave existir,
+   * Caso contrário, adicionar o par chave-valor no cache.
+   * Se o número de chaves exceder a capacidade nesta operação,
+   * remova a chave menos usada recentemente.
+   */
+  void put(int key, int value);
+
+
+  /**
+   * Define a capacidade máxima do cache
+   */
+  void setCapacity(int capacity);
+
+}
+```
+
+- Implemente a interface LruCache com a classe DefaultLruCache
+- Commit para verificar apenas as alterações realizadas: https://github.com/AndriiPiatakha/learnit_java_core/commit/826cf08b3a121763b363b2777a0e32ca16d43e54 
+
+> Exercício 8 (LinkedHashMap): [exercicio_08](./exercicio_08/)

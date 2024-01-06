@@ -4,13 +4,8 @@
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Diretório de arquivos: [08_arquivos](./08_arquivos/)
-- Homework
-  - [Arquivo: HW - Queue](./08_arquivos/homework/HW%20-%20Queue.pdf)
-  - [Backend para um help-desk](#backend-para-um-help-desk)
 - Projetos
   - [Projeto 1](./08_arquivos/proj_01/) [(iniciado em)](#interface-queue)
-- Exercícios
-  - [Exercício 1](./08_arquivos/exercicio_01/) ([enunciado](#backend-para-um-help-desk))
 - Conteúdo
   - [Interface Queue](#interface-queue)
   - [Interface Deque](#interface-deque)
@@ -18,7 +13,6 @@
   - [LIFO - Pilhas](#lifo---pilhas)
   - [Implementações populares de Queue e Deque](#implementações-populares-de-queue-e-deque)
   - [PriorityQueue](#priorityqueue)
-  - [Backend para um help-desk](#backend-para-um-help-desk)
 
 ### Interface Queue
 [[Topo]](#)<br />
@@ -70,14 +64,6 @@ Filas bloqueantes, como ArrayBlockingQueue e LinkedBlockingQueue, são particula
 **Aplicações**
 
 Filas são frequentemente usadas em situações que envolvem um serviço de "primeiro a chegar, primeiro a ser servido", como gerenciamento de tarefas, operações de buffer e processamento de dados em fluxo (stream).
-
-  - [Interface Queue](#interface-queue)
-  - [Interface Deque](#interface-deque)
-  - [FIFO - Filas](#fifo---filas)
-  - [LIFO - Pilhas](#lifo---pilhas)
-  - [Implementações populares de Queue e Deque](#implementações-populares-de-queue-e-deque)
-  - [PriorityQueue](#priorityqueue)
-  - [Backend para um help-desk](#backend-para-um-help-desk)
 
 ### Interface Deque
 [[Topo]](#)<br />
@@ -152,14 +138,6 @@ Assim como as filas, existem versões de Deque projetadas para uso em ambientes 
 
 **Aplicações**: Deque é útil em situações que exigem flexibilidade na manipulação de dados, como em algoritmos que necessitam tanto de operações de pilha quanto de fila, ou em casos onde é vantajoso poder adicionar ou remover elementos de ambas as extremidades da coleção.
 
-  - [Interface Queue](#interface-queue)
-  - [Interface Deque](#interface-deque)
-  - [FIFO - Filas](#fifo---filas)
-  - [LIFO - Pilhas](#lifo---pilhas)
-  - [Implementações populares de Queue e Deque](#implementações-populares-de-queue-e-deque)
-  - [PriorityQueue](#priorityqueue)
-  - [Backend para um help-desk](#backend-para-um-help-desk)
-
 ### FIFO - Filas
 [[Topo]](#)<br />
 
@@ -188,14 +166,6 @@ Em um sistema de atendimento ao cliente, por exemplo, as solicitações podem se
 **Diferença em relação a outros princípios**:
 - **FIFO vs. LIFO**: Em contraste com FIFO, o princípio LIFO (Last In, First Out) é utilizado em pilhas (stacks), onde o último elemento adicionado é o primeiro a ser removido.
 - **FIFO vs. Prioridade**: Em algumas estruturas de dados, como filas de prioridade, os elementos são processados com base em uma prioridade designada, que pode não seguir a ordem FIFO.
-
-  - [Interface Queue](#interface-queue)
-  - [Interface Deque](#interface-deque)
-  - [FIFO - Filas](#fifo---filas)
-  - [LIFO - Pilhas](#lifo---pilhas)
-  - [Implementações populares de Queue e Deque](#implementações-populares-de-queue-e-deque)
-  - [PriorityQueue](#priorityqueue)
-  - [Backend para um help-desk](#backend-para-um-help-desk)
 
 ### LIFO - Pilhas
 [[Topo]](#)<br />
@@ -226,14 +196,6 @@ Na implementação de um recurso de desfazer (undo) em um editor de texto, onde 
 **Diferença em relação a outros princípios**:
 - **LIFO vs. FIFO**: Em contraste com LIFO, o princípio FIFO (First In, First Out) é utilizado em filas (queues), onde o primeiro elemento adicionado é o primeiro a ser removido.
 - **LIFO vs. Prioridade**: Diferentemente das filas de prioridade, onde os elementos são processados com base em uma prioridade designada, as pilhas LIFO processam os elementos na ordem exata de sua chegada.
-
-  - [Interface Queue](#interface-queue)
-  - [Interface Deque](#interface-deque)
-  - [FIFO - Filas](#fifo---filas)
-  - [LIFO - Pilhas](#lifo---pilhas)
-  - [Implementações populares de Queue e Deque](#implementações-populares-de-queue-e-deque)
-  - [PriorityQueue](#priorityqueue)
-  - [Backend para um help-desk](#backend-para-um-help-desk)
 
 ### Implementações populares de Queue e Deque
 [[Topo]](#)<br />
@@ -297,12 +259,3 @@ public class PriorityQueueExample {
 - **Iteração**: A iteração sobre uma PriorityQueue não garante que os elementos serão processados em ordem de prioridade. Para processar os elementos na ordem correta, eles devem ser removidos usando poll().
 - **Uso**: PriorityQueue é frequentemente usada em algoritmos que processam tarefas com base em prioridades, como algoritmos de caminho mais curto em grafos (por exemplo, o algoritmo de Dijkstra), ou em sistemas de gerenciamento de tarefas onde algumas tarefas têm prioridade sobre outras.
 **Implementação**: Internamente, a PriorityQueue é geralmente implementada como uma heap (estrutura de árvore binária), o que permite que as operações de inserção e remoção sejam realizadas de forma eficiente.
-
-  - [Interface Queue](#interface-queue)
-  - [Interface Deque](#interface-deque)
-  - [FIFO - Filas](#fifo---filas)
-  - [LIFO - Pilhas](#lifo---pilhas)
-  - [Implementações populares de Queue e Deque](#implementações-populares-de-queue-e-deque)
-  - [PriorityQueue](#priorityqueue)
-  - [Backend para um help-desk](#backend-para-um-help-desk)
-

@@ -4,15 +4,8 @@
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - (se existir diretório de arquivos com documentos, etc) Diretório de arquivos: [folder_name-nn_arquivos](folder_link)
-- (se existir homework) Homework
-  - [Arquivo: file_name_no_extension](file_link)
-  - [content_title](content_link)
-  - ...
 - (se existir projeto) Projetos
   - [Projeto N](folder_link-proj_nn) [(iniciado em)](#started_in_content_link)
-  - ...
-- (se existir exercícios) Exercícios
-  - [Exercício N](folder_link-exercicio_nn) ([enunciado](#statement_content_link))
   - ...
 - Conteúdo
   - []()

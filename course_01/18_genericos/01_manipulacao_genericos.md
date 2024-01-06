@@ -4,17 +4,12 @@
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Diretório de arquivos: [01_arquivos](./01_arquivos/)
-- Homework
-  - [Arquivo: HW - Generics](./01_arquivos/homework/HW%20-%20Generics.pdf)
-  - [Lista personalizada parametrizada](#lista-personalizada-parametrizada)
 - Projetos
   - [Projeto 1](./01_arquivos/proj_01/GenericsDemo/) [(iniciado em)](#para-que-precisamos-de-generics)
   - [Projeto 2](./01_arquivos/proj_02/GenericsDemo02/) [(iniciado em)](#o-operador-diamond)
   - [Projeto 3](./01_arquivos/proj_03/GenericsDemo03/) [(iniciado em)](#classe-genérica)
   - [Projeto 4](./01_arquivos/proj_04/GenericsDemo04/) [(iniciado em)](#curingas-wildcards)
   - [Projeto 5](./01_arquivos/proj_05/GenericsDemo05/) [(iniciado em)](#apagamento-de-tipo-type-erasure)
-- Exercícios
-  - [Exercício 1](./01_arquivos/exercicio_01/) ([enunciado](#lista-personalizada-parametrizada))
 - Conteúdo
   - [Para que precisamos de generics](#para-que-precisamos-de-generics)
   - [O que são generics](#o-que-são-generics)
@@ -24,7 +19,6 @@
   - [Classe genérica](#classe-genérica)
   - [Curingas (wildcards)](#curingas-wildcards)
   - [Apagamento de tipo (type erasure)](#apagamento-de-tipo-type-erasure)
-  - [Lista personalizada parametrizada](#lista-personalizada-parametrizada)
 
 ### Para que precisamos de generics
 [[Topo]](#)<br />
@@ -358,20 +352,3 @@ Aqui, `List<Integer>` é transformado em um simples List sem informação de tip
 - **Reflexão**: A informação de tipo apagada pode tornar certas operações de reflexão mais complexas ou impossíveis.
 
 O apagamento de tipo é um mecanismo fundamental para entender como os genéricos funcionam em Java e como eles são implementados no nível do compilador e do runtime.
-
-### Lista personalizada parametrizada
-[[Topo]](#)<br />
-
-- Ver homework: [HW - Generics](./01_arquivos/homework/HW%20-%20Generics.pdf)
-
-Implementar generics na interface MyList e nas implementações desta interface.
-- **a**. Certifique-se de que você completou o homework do tópico de Lists (tarefa 3), neste link: https://docs.google.com/document/d/1g5GRLOU4XRDCIp50n_-Dmnok-2EdoDTlAQdVm6XyBLo/edit?usp=sharing
-- **b**. Parametrizar iteradores (ambos, Iterator e ListIterator) e também parametrizar as implementações destes iteradores que você criou no escopo desta tarefa: https://docs.google.com/document/d/1EAQRwHR1HbWt95T3FtS9EOdQsIc_3nZFYUvc6Qv4frQ/edit?usp=sharing
-- **c**. Sua interface parametrizada deve se parecer com isso:
-  - `public interface MyListParameterized<T> extends Iterable<T> { ... }`
-- **d**. As implementações dessa interface deve se parecer com isso:
-  - `public class DefaultMyListParameterized<T> implements MyListParameterized<T>, ListIterableParameterized<T>`
-- **e**: O Iterator e ListIterator que você implementou no escopo de outro homework compartilhado acima, esta classe também deve ser parametrizada.
-- Commit para verificar apenas as alterações realizadas: https://github.com/AndriiPiatakha/learnit_java_core/commit/964112dd84f03adbabb16348bcca77555d4d1294
-
-> Exercício 1 (Lista personalizada parametrizada): [01_arquivos/exercicio_01](./01_arquivos/exercicio_01/CustomListParameterized/)

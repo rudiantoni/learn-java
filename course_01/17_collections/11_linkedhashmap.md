@@ -4,19 +4,13 @@
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Diretório de arquivos: [11_arquivos](./11_arquivos/)
-- Homework
-  - [Arquivo: HW - LinkedHashMap - LRU Cache](./11_arquivos/homework/HW%20-%20LinkedHashMap%20-%20LRU%20Cache.pdf)
-  - [Cache LRU](#cache-lru)
 - Projetos
   - [Projeto 1](./11_arquivos/proj_01/) [(iniciado em)](#o-que-é-linkedhashmap)
-- Exercícios
-  - [Exercício 1](./11_arquivos/exercicio_01/) ([enunciado](#cache-lru))
 - Conteúdo
   - [O que é LinkedHashMap](#o-que-é-linkedhashmap)
   - [Ordem de acesso VS ordem de inserção](#ordem-de-acesso-vs-ordem-de-inserção)
   - [Cache](#cache)
   - [Limitar elementos no LinkedHashMap](#limitar-elementos-no-linkedhashmap)
-  - [Cache LRU](#cache-lru)
 
 ### O que é LinkedHashMap
 [[Topo]](#)<br />
@@ -129,41 +123,3 @@ Neste exemplo:
 - O construtor da classe LimitedLinkedHashMap pode receber a capacidade desejada, e você pode ajustá-la de acordo com suas necessidades.
 - O parâmetro true no superconstrutor configura o LinkedHashMap para usar a ordem de acesso, o que significa que cada vez que um item é acessado, ele é movido para o final da lista. Se você quiser manter a ordem de inserção, altere esse valor para false.
 - Essa abordagem é especialmente útil para implementações de cache, onde você quer restringir o número de entradas armazenadas para evitar o uso excessivo de memória.
-
-### Cache LRU
-[[Topo]](#)<br />
-
-- Ver homework: [HW - LinkedHashMap - LRU Cache](./11_arquivos/homework/HW%20-%20LinkedHashMap%20-%20LRU%20Cache.pdf)
-
-Implemente o cache LRU baseando-se no LinkedHashMap
-
-- Crie a interface:
-```java
-public interface LruCache {
-  /**
-   * @return o valor da chave se a chave existir
-   * caso contrário retorna -1
-   */
-  int get(int key);
-
-  /**
-   * Atualize o valor da cheve se a chave existir,
-   * Caso contrário, adicionar o par chave-valor no cache.
-   * Se o número de chaves exceder a capacidade nesta operação,
-   * remova a chave menos usada recentemente.
-   */
-  void put(int key, int value);
-
-
-  /**
-   * Define a capacidade máxima do cache
-   */
-  void setCapacity(int capacity);
-
-}
-```
-
-- Implemente a interface LruCache com a classe DefaultLruCache
-- Commit para verificar apenas as alterações realizadas: https://github.com/AndriiPiatakha/learnit_java_core/commit/826cf08b3a121763b363b2777a0e32ca16d43e54 
-
-> Exercício 1 (LinkedHashMap): [11_arquivos/exercicio_01](./11_arquivos/exercicio_01/)
