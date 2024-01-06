@@ -4,16 +4,9 @@
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Diretório de arquivos: [07_arquivos](./07_arquivos/)
-- Homework
-  - [Arquivo: HW - Iterator and ListIterator](./07_arquivos/homework/HW%20-%20Iterator%20and%20ListIterator.pdf)
-  - [Iterator personalizado](#iterator-personalizado)
-  - [ListIterator personalizado](#listiterator-personalizado)
 - Projetos
   - [Projeto 1](./07_arquivos/proj_01/) [(iniciado em)](#iterable)
   - [Projeto 2](./07_arquivos/proj_02/) [(iniciado em)](#listiterator)
-- Exercícios
-  - [Exercício 1](./07_arquivos/exercicio_01/) ([enunciado](#iterator-personalizado))
-  - [Exercício 2](./07_arquivos/exercicio_02/) ([enunciado](#listiterator-personalizado))
 - Conteúdo
   - [Iterable](#iterable)
   - [Iterator](#iterator)
@@ -23,8 +16,6 @@
   - [Iterator fail-safe](#iterator-fail-safe)
   - [Iterator weakly consistent](#iterator-weakly-consistent)
   - [ListIterator](#listiterator)
-  - [Iterator personalizado](#iterator-personalizado)
-  - [ListIterator personalizado](#listiterator-personalizado)
 
 ### Iterable
 [[Topo]](#)<br />
@@ -57,17 +48,6 @@ A interface Iterable padroniza a forma como os objetos podem ser percorridos, to
 **Uso com Lambda e Streams**
 
 Com a introdução de lambdas e streams no Java 8, a iteração sobre coleções que implementam Iterable tornou-se ainda mais flexível e poderosa, permitindo operações mais complexas e concisas.
-
-  - [Iterable](#iterable)
-  - [Iterator](#iterator)
-  - [Exceções](#exceções)
-  - [Categorias de iteradores pela resposta as modificações](#categorias-de-iteradores-pela-resposta-as-modificações)
-  - [Iterator fail-fast](#iterator-fail-fast)
-  - [Iterator fail-safe](#iterator-fail-safe)
-  - [Iterator weakly consistent](#iterator-weakly-consistent)
-  - [ListIterator](#listiterator)
-  - [Iterator personalizado](#iterator-personalizado)
-  - [ListIterator personalizado](#listiterator-personalizado)
 
 ### Iterator
 [[Topo]](#)<br />
@@ -103,17 +83,6 @@ Enquanto um Iterator fornece uma maneira de iterar sobre elementos, ele não gar
 
 Além do Iterator básico, existem variações como ListIterator (que permite iteração bidirecional em listas e modificação de elementos) e iteradores em bibliotecas de fluxo de dados, como Stream.iterator() no Java 8.
 
-  - [Iterable](#iterable)
-  - [Iterator](#iterator)
-  - [Exceções](#exceções)
-  - [Categorias de iteradores pela resposta as modificações](#categorias-de-iteradores-pela-resposta-as-modificações)
-  - [Iterator fail-fast](#iterator-fail-fast)
-  - [Iterator fail-safe](#iterator-fail-safe)
-  - [Iterator weakly consistent](#iterator-weakly-consistent)
-  - [ListIterator](#listiterator)
-  - [Iterator personalizado](#iterator-personalizado)
-  - [ListIterator personalizado](#listiterator-personalizado)
-
 ### Exceções
 [[Topo]](#)<br />
 
@@ -124,17 +93,6 @@ Em Java, a interface Iterator pode lançar principalmente as seguintes exceçõe
 - **NoSuchElementException**: Esta exceção é lançada pelo método next() quando não há mais elementos para iterar. Isso geralmente ocorre se next() é chamado sem verificar primeiro se há um próximo elemento disponível usando hasNext().
 - **ConcurrentModificationException**: Embora não seja uma parte obrigatória da especificação do Iterator, esta exceção é comumente lançada se a coleção subjacente for modificada enquanto um iterador estiver em uso, de uma maneira que não seja permitida. Por exemplo, se você estiver usando um iterador em uma lista e, ao mesmo tempo, modificar essa lista diretamente (não através do próprio iterador), isso pode resultar em ConcurrentModificationException.
 - **UnsupportedOperationException**: Esta exceção é lançada pelo método remove() se a operação de remoção não for suportada pela implementação do iterador. Nem todos os iteradores suportam a remoção de elementos.
-  - [Iterable](#iterable)
-  - [Iterator](#iterator)
-  - [Exceções](#exceções)
-  - [Categorias de iteradores pela resposta as modificações](#categorias-de-iteradores-pela-resposta-as-modificações)
-  - [Iterator fail-fast](#iterator-fail-fast)
-  - [Iterator fail-safe](#iterator-fail-safe)
-  - [Iterator weakly consistent](#iterator-weakly-consistent)
-  - [ListIterator](#listiterator)
-  - [Iterator personalizado](#iterator-personalizado)
-  - [ListIterator personalizado](#listiterator-personalizado)
-
 
 ### Categorias de iteradores pela resposta as modificações
 [[Topo]](#)<br />
@@ -161,18 +119,6 @@ Os iteradores em Java podem ser categorizados com base em como eles respondem à
 - **Implementações Comuns**: Também presentes em estruturas de dados do java.util.concurrent, como ConcurrentHashMap.newKeySet().iterator().
 - **Uso**: Adequados para coleções que são frequentemente acessadas por múltiplos threads e onde a consistência total durante a iteração não é uma exigência crítica.
 
-  - [Iterable](#iterable)
-  - [Iterator](#iterator)
-  - [Exceções](#exceções)
-  - [Categorias de iteradores pela resposta as modificações](#categorias-de-iteradores-pela-resposta-as-modificações)
-  - [Iterator fail-fast](#iterator-fail-fast)
-  - [Iterator fail-safe](#iterator-fail-safe)
-  - [Iterator weakly consistent](#iterator-weakly-consistent)
-  - [ListIterator](#listiterator)
-  - [Iterator personalizado](#iterator-personalizado)
-  - [ListIterator personalizado](#listiterator-personalizado)
-
-
 ### Iterator fail-fast
 [[Topo]](#)<br />
 
@@ -198,17 +144,6 @@ while(iterator.hasNext()) {
 - **Objetivo**: O principal objetivo desses iteradores é evitar comportamentos indefinidos e erros sutis que podem ocorrer devido a modificações concorrentes em uma coleção durante a iteração.
 - **Limitações**: Enquanto os iteradores fail-fast ajudam a identificar erros, eles não são apropriados para uso em ambientes multithread onde as coleções são esperadas para serem modificadas concorrentemente, pois a exceção ConcurrentModificationException será frequentemente lançada nesses cenários.
 - **Não são uma Garantia**: A falha rápida não é garantida. O Java não fornece qualquer garantia forte de que um iterador fail-fast sempre lançará essa exceção em face de modificações concorrentes. É uma tentativa de melhor esforço.
-  - [Iterable](#iterable)
-  - [Iterator](#iterator)
-  - [Exceções](#exceções)
-  - [Categorias de iteradores pela resposta as modificações](#categorias-de-iteradores-pela-resposta-as-modificações)
-  - [Iterator fail-fast](#iterator-fail-fast)
-  - [Iterator fail-safe](#iterator-fail-safe)
-  - [Iterator weakly consistent](#iterator-weakly-consistent)
-  - [ListIterator](#listiterator)
-  - [Iterator personalizado](#iterator-personalizado)
-  - [ListIterator personalizado](#listiterator-personalizado)
-
 
 ### Iterator fail-safe
 [[Topo]](#)<br />
@@ -237,17 +172,6 @@ while (iterator.hasNext()) {
 - **Desvantagens**: Embora os iteradores fail-safe evitem ConcurrentModificationException e sejam mais seguros em ambientes concorrentes, eles têm a desvantagem de usar mais memória, já que mantêm uma cópia da coleção. Além disso, eles não refletem as alterações feitas na coleção após a criação do iterador, o que pode ser um problema, dependendo do caso de uso específico.
 - **Performance**: Em termos de performance, os iteradores fail-safe podem ser mais lentos em coleções grandes devido ao custo de manter uma cópia separada da coleção.
 - **Não Refletem Mudanças**: É importante notar que, uma vez que os iteradores fail-safe podem operar em uma cópia da coleção, as mudanças feitas na coleção original durante a iteração não serão visíveis para o iterador.
-  - [Iterable](#iterable)
-  - [Iterator](#iterator)
-  - [Exceções](#exceções)
-  - [Categorias de iteradores pela resposta as modificações](#categorias-de-iteradores-pela-resposta-as-modificações)
-  - [Iterator fail-fast](#iterator-fail-fast)
-  - [Iterator fail-safe](#iterator-fail-safe)
-  - [Iterator weakly consistent](#iterator-weakly-consistent)
-  - [ListIterator](#listiterator)
-  - [Iterator personalizado](#iterator-personalizado)
-  - [ListIterator personalizado](#listiterator-personalizado)
-
 
 ### Iterator weakly consistent
 [[Topo]](#)<br />
@@ -276,17 +200,6 @@ System.out.println(deque);
 - **Uso em Coleções do java.util.concurrent**: Esses iteradores são comuns em coleções projetadas para uso concorrente, como ConcurrentHashMap e ConcurrentSkipListMap.
 - **Vantagens**: Eles são úteis em ambientes multithread, onde a coleção pode ser acessada e modificada por vários threads simultaneamente. Oferecem um bom equilíbrio entre performance e consistência de dados em tais cenários.
 - **Performance**: Geralmente, oferecem melhor desempenho em comparação com iteradores fail-safe que operam em cópias da coleção, especialmente para coleções grandes.
-  - [Iterable](#iterable)
-  - [Iterator](#iterator)
-  - [Exceções](#exceções)
-  - [Categorias de iteradores pela resposta as modificações](#categorias-de-iteradores-pela-resposta-as-modificações)
-  - [Iterator fail-fast](#iterator-fail-fast)
-  - [Iterator fail-safe](#iterator-fail-safe)
-  - [Iterator weakly consistent](#iterator-weakly-consistent)
-  - [ListIterator](#listiterator)
-  - [Iterator personalizado](#iterator-personalizado)
-  - [ListIterator personalizado](#listiterator-personalizado)
-
 
 ### ListIterator
 [[Topo]](#)<br />
@@ -305,114 +218,3 @@ O ListIterator é uma interface em Java que estende a interface Iterator, fornec
 - **Uso**: O ListIterator é comumente usado quando é necessário iterar sobre uma lista em ambas as direções, ou quando há necessidade de modificar a lista durante a iteração.
 **Obtenção do ListIterator**: Pode ser obtido chamando o método listIterator() em uma instância de List. Também é possível obter um ListIterator que começa a partir de um índice específico na lista.
 **Cuidados com Concorrência**: Assim como com outros iteradores, é importante considerar questões de concorrência. Se a lista for modificada por outra thread enquanto estiver sendo iterada, pode resultar em comportamento inesperado.
-
-  - [Iterable](#iterable)
-  - [Iterator](#iterator)
-  - [Exceções](#exceções)
-  - [Categorias de iteradores pela resposta as modificações](#categorias-de-iteradores-pela-resposta-as-modificações)
-  - [Iterator fail-fast](#iterator-fail-fast)
-  - [Iterator fail-safe](#iterator-fail-safe)
-  - [Iterator weakly consistent](#iterator-weakly-consistent)
-  - [ListIterator](#listiterator)
-  - [Iterator personalizado](#iterator-personalizado)
-  - [ListIterator personalizado](#listiterator-personalizado)
-
-### Iterator personalizado
-[[Topo]](#)<br />
-
-- Ver homework: [HW - Iterator and ListIterator](./07_arquivos/homework/HW%20-%20Iterator%20and%20ListIterator.pdf)
-
-**Implemente um iterador personalizado**
-
-- Extender a interface MyList que foi implementada durante a tarefa anterior
-  - Link: https://docs.google.com/document/d/1g5GRLOU4XRDCIp50n_-Dmnok-2EdoDTlAQdVm6XyBLo/edit?usp=sharing
-  - Veja a tarefa número 3.
-  - Com uma interface Iterable como essa:
-```java
-interface MyList extends Iterable<Object>
-```
-- Na classe DefaultMyList implemente o método iterador()
-```java
-public Iterator<Object> iterator() {
-  return new IteratorImpl();
-}
-```
-- Implemente a classe interna que deve implementar a interface Iterator
-```java
-private class IteratorImpl implements Iterator<Object> {
-  public boolean hasNext() {
-    // retorna true se a iteração ainda possui mais elementos
-  }
-  public Object next() {
-    // retorna o próximo elemento na iteração
-  }
-  public void remove() {
-    // remove da coleção interna o último elemento retornado por este iterador
-  }
-}
-```
-- O método remove() deve lançar uma exceção IllegalStateException no caso do método remove ter sido chamado sem chamar o método next(). Ou no caso dele ter sido chamado 2 vezes em sequência.
-  - Nota técnica: para lançar uma exceção IllegalStateException escreva o seguinte código
-```java
-throw new IllegalStateException();
-```
-- No caso de não houver elementos: Deve ser lançado NoSuchElementException.
-  - Nota técnica: para lançar uma exceção NoSuchElementException escreva o seguinte código
-```java
-throw new NoSuchElementException();
-```
-- O iterador deve funcionar com tipos Integer e String.
-  - [Iterable](#iterable)
-  - [Iterator](#iterator)
-  - [Exceções](#exceções)
-  - [Categorias de iteradores pela resposta as modificações](#categorias-de-iteradores-pela-resposta-as-modificações)
-  - [Iterator fail-fast](#iterator-fail-fast)
-  - [Iterator fail-safe](#iterator-fail-safe)
-  - [Iterator weakly consistent](#iterator-weakly-consistent)
-  - [ListIterator](#listiterator)
-  - [Iterator personalizado](#iterator-personalizado)
-  - [ListIterator personalizado](#listiterator-personalizado)
-
-### ListIterator personalizado
-[[Topo]](#)<br />
-
-- Ver homework: [HW - Iterator and ListIterator](./07_arquivos/homework/HW%20-%20Iterator%20and%20ListIterator.pdf)
-
-**Implemente um ListIterator personalizado**
-
-- Declare a interface ListIterator dessa maneira
-```java
-interface ListIterator extends Iterator<Object> { // java.util.Iterator
-  boolean hasPrevious(); // retorna true se o list iterator tem mais elementos ao atravessar a lista na direção inversa
-  Object previous(); // retorna o elemento anterior na lista e move a posição do cursor para trás
-  void set(Object e); // substitui o último elemento retornado por next ou previous
-  void remove(); // remove da lista o último elemento retornado por next ou previous
-}
-```
-- Os métodos set() ou remove() devem ser chamados apenas após a invocação de next() ou previous(), caso contrário, lançar IllegalStateException.
-- Declare a interface ListIterable
-```java
-interface ListIterable {
-  ListIterator listIterator();
-}
-```
-- Adicione a implementação de ListIterable na classe DefaultMyList
-```java
-class DefaultMyList implements MyList, ListIterable {...}
-```
-- Adicione o método a classe DefaultMyList
-```java
-public ListIterator listIterator() {
-  return new ListIteratorImpl();
-}
-```
-- Crie uma classe interna ListIteratorImpl
-```java
-private class ListIteratorImpl extends IteratorImpl implements ListIterator {
-  // Implemente todos os métodos aqui
-}
-```
-- Implemente todos os métodos da interface personalizada de ListIterator na classe interna
-- Commit para verificar apenas as alterações realizadas: https://github.com/AndriiPiatakha/learnit_java_core/commit/a3fedfdc067b969bcfdd1159956d14ec0b3b0e6f
-
-> Exercício 2 (Iterator, Iterable e ListIterator): [07_arquivos/exercicio_02](./07_arquivos/exercicio_02/)

@@ -4,20 +4,14 @@
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Diretório de arquivos: [06_arquivos](./06_arquivos/)
-- Homework
-  - [Arquivo: HW - Comparator](./06_arquivos/homework/HW%20-%20Comparator.pdf)
-  - [Comparator em produtos](#comparator-em-produtos)
 - Projetos
   - [Projeto 1](./06_arquivos/proj_01/) [(iniciado em)](#comparator)
-- Exercícios
-  - [Exercício 1](./06_arquivos/exercicio_01/) ([enunciado](#comparator-em-produtos))
 - Conteúdo
   - [Comparator](#comparator)
   - [Ordenar elementos em List](#ordenar-elementos-em-list)
   - [Comparable](#comparable)
   - [compareTo VS compare](#compareto-vs-compare)
   - [Algoritmo de ordenação rápida (quick sort)](#algoritmo-de-ordenação-rápida-quick-sort)
-  - [Comparator em produtos](#comparator-em-produtos)
 
 ### Comparator
 [[Topo]](#)<br />
@@ -214,31 +208,3 @@ public class QuickSort {
 ```
 
 Este exemplo ilustra a implementação básica do Quick Sort. No entanto, em ambientes de produção, detalhes adicionais como a escolha do pivô e o tratamento de listas pequenas podem ser otimizados para melhor desempenho.
-
-### Comparator em produtos
-
-- Ver homework: [HW - Comparator](./06_arquivos/homework/HW%20-%20Comparator.pdf)
-
-Crie um tipo Comparator para o tipo Product que ordenará por nome de categoria. No caso em que as categorias forem as mesmas, os produtos com o menor valor devem vir primeiro. No caso de o preço ser o mesmo, ordene pelos nomes dos produtos.
-
-- Para implementar esta tarefa, por favor use o seguinte:
-  - Interface Product: https://github.com/AndriiPiatakha/learnit_java_core/blob/master/src/com/itbulls/learnit/javacore/jcf/hw/onlinestore/withlist/enteties/Product.java
-  - Implementação de Product: https://github.com/AndriiPiatakha/learnit_java_core/blob/master/src/com/itbulls/learnit/javacore/jcf/hw/onlinestore/withlist/enteties/impl/DefaultProduct.java
-  - A lista de Product a seguir:
-```java
-new ArrayList<>(Arrays.asList(
-new DefaultProduct(1, "Hardwood Oak Suffolk Internal Door", "Doors", 109.99),
-new DefaultProduct(2, "Oregon Cottage Interior Oak Door", "Doors", 109.99),
-new DefaultProduct(3, "Oregon Cottage Horizontal Interior White Oak Door", "Doors", 189.99),
-new DefaultProduct(4, "4 Panel Oak Deco Interior Door", "Doors", 209.09),
-new DefaultProduct(5, "Worcester 2000 30kW Ng Combi Boiler Includes Free Comfort+ II controller", "Boilers", 989.99),
-new DefaultProduct(6, "Glow-worm Betacom 4 30kW Combi Gas Boiler ERP", "Boilers", 787.99),
-new DefaultProduct(7, "Worcester 2000 25kW Ng Combi Boiler with Free Comfort+ II controller", "Boilers", 859.99),
-new DefaultProduct(8, "Wienerberger Terca Class B Engineering Brick Red 215mm x 102.5mm x 65mm (Pack of 504)", "Bricks", 402.99),
-new DefaultProduct(9, "Wienerberger Terca Engineering Brick Blue Perforated Class B 65mm (Pack of 400)", "Bricks", 659.99),
-new DefaultProduct(10, "Wienerberger Engineering Brick Red Smooth Class B 73mm - Pack of 368", "Bricks", 523.99)
-```
-  - Nota técnica: o Comparator deve ser implementado em um arquivo separado, em uma classe separada com o nome CustomProductComparator.
-  - Commit para verificar apenas as alterações realizadas: https://github.com/AndriiPiatakha/learnit_java_core/commit/eca9bbe5d1522b28b3aa3faf15e88607cfb2ba87
-
-> Exercício 1 (Comparator e Comparable): [06_arquivos/exercicio_01](./06_arquivos/exercicio_01/)

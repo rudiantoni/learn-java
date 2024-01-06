@@ -4,13 +4,8 @@
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Diretório de arquivos: [01_arquivos](./01_arquivos/)
-- Homework
-  - [HW - Enum](./01_arquivos/homework/HW%20-%20Enum.pdf)
-  - [Homework: Enum por propriedade](#homework-enum-por-propriedade)
 - Projetos
   - [Projeto 1](./01_arquivos/proj_01/) [(iniciado em)](#o-tipo-enum)
-- Exercícios
-  - [Exercício 1](./01_arquivos/exercicio_01/) ([enunciado](#homework-enum-por-propriedade))
 - Conteúdo
   - [O tipo Enum](#o-tipo-enum)
   - [Declaração](#declaração)
@@ -142,30 +137,3 @@ if (mes.ehVerao()) {
   System.out.println(mes + " não é um mês de verão.");
 }
 ```
-
-### Homework: Enum por propriedade
-[[Topo]](#)<br />
-
-- Ver homework: [HW - Enum](./01_arquivos/homework/HW%20-%20Enum.pdf)
-
-Implemente um programa de console que atenda aos seguintes requisitos:
-- O programa inicia e pede ao usuário para inserir o tipo de mensagem.
-- Apenas os tipos de mensagem 'A', 'B', 'C' ou 'D' são permitidos.
-- Caso o usuário insira um tipo de mensagem inválido, o programa solicita que ele insira o tipo de mensagem novamente.
-- Quando um tipo de mensagem válido for inserido, o programa imprime a prioridade do tipo de mensagem no console.
-- Prioridade e Tipo de Mensagem implementados como tipos enumerados (enum).
-- Os tipos de mensagem têm as seguintes prioridades:
-  - A = ALTA
-  - B = MÉDIA
-  - C = BAIXA
-  - D = BAIXA
-- O enum MessageType possui o seguinte método:
-
-
-```java
-public Priority getPriority() {
-  // <escreva seu código aqui>
-}
-```
-
-> Exercício 1 (O Enum): [01_arquivos/exercicio_01](./01_arquivos/exercicio_01/)

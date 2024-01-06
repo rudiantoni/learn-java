@@ -1,27 +1,22 @@
 # Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808
 
-## Exame e homework para o tópico POO
+## Exercícios - 15. Exames de Programação Orientada a Objetos - Aplicações de console comerciais
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
-- Diretório de arquivos: [01_arquivos](./01_arquivos/)
 - Homework
-  - [Arquivo: HW - OOP](./01_arquivos/homework/HW%20-%20OOP.pdf)
-  - [Classes](#classes)
-  - [Herança e Polimorfismo](#herança-e-polimorfismo)
-  - [Classes internas e aninhadas](#classes-internas-e-aninhadas)
-  - [EXAME: Loja Online](#exame-loja-online)
+  - [15.1. Exame e homework para o tópico POO](#151-exame-e-homework-para-o-tópico-poo)
+    - [Arquivo: HW - OOP](./01_arquivos/homework/HW%20-%20OOP.pdf)
 - Exercícios
-  - [Exercício 1](./01_arquivos/exercicio_01/) ([enunciado](#classes))
-  - [Exercício 2](./01_arquivos/exercicio_02/) ([enunciado](#herança-e-polimorfismo))
-  - [Exercício 3](./01_arquivos/exercicio_03//) ([enunciado](#classes-internas-e-aninhadas))
-  - [Exercício 4](./01_arquivos/exercicio_04/) ([enunciado](#exame-loja-online))
-- Conteúdo
-  - [Classes](#classes)
-  - [Herança e Polimorfismo](#herança-e-polimorfismo)
-  - [Classes internas e aninhadas](#classes-internas-e-aninhadas)
-  - [EXAME: Loja Online](#exame-loja-online)
+  - [15.1. Exame e homework para o tópico POO](#151-exame-e-homework-para-o-tópico-poo)
+    - [Exercício 1](./exercicio_01/) ([enunciado](#classes))
+    - [Exercício 2](./exercicio_02/) ([enunciado](#herança-e-polimorfismo))
+    - [Exercício 3](./exercicio_03/) ([enunciado](#classes-internas-e-aninhadas))
+    - [Exercício 4](./exercicio_04/) ([enunciado](#exame-loja-online))
 
-### Classes
+### 15.1. Exame e homework para o tópico POO
+[[Topo]](#)<br />
+
+#### Classes
 [[Topo]](#)<br />
 
 - Ver homework: [HW - OOP](./01_arquivos/homework/HW%20-%20OOP.pdf)
@@ -88,9 +83,9 @@ new Book(4, "Book_4", new Author[] { new Author(4, "Craig", "Gregory") }, new Pu
 
 Crie uma instância do tipo BookService e demonstre o funcionamento dos métodos de BookService, ou seja, filterBooksByAuthor, filterBooksByPublisher, filterBooksAfterSpecifiedYear.
 
-> Exercício 1 (Exame e homework para o tópico POO): [01_arquivos/exercicio_01](./01_arquivos/exercicio_01/)
+> Exercício 1 (Exame e homework para o tópico POO): [exercicio_01](./exercicio_01/)
 
-### Herança e Polimorfismo
+#### Herança e Polimorfismo
 [[Topo]](#)<br />
 
 - Ver homework: [HW - OOP](./01_arquivos/homework/HW%20-%20OOP.pdf)
@@ -129,9 +124,9 @@ public Sweet[] getSweets() {
 }
 ```
 
-> Exercício 2 (Exame e homework para o tópico POO): [01_arquivos/exercicio_02](./01_arquivos/exercicio_02/)
+> Exercício 2 (Exame e homework para o tópico POO): [exercicio_02](./exercicio_02/)
 
-### Classes internas e aninhadas
+#### Classes internas e aninhadas
 [[Topo]](#)<br />
 
 - Ver homework: [HW - OOP](./01_arquivos/homework/HW%20-%20OOP.pdf)
@@ -157,7 +152,7 @@ Implemente a classe Transaction (Transação) aninhada, que possui os seguintes 
 
 Na classe Account, implemente os seguintes métodos:
 
-> Exercício 3 (Exame e homework para o tópico POO): [01_arquivos/exercicio_03](./01_arquivos/exercicio_03/)
+> Exercício 3 (Exame e homework para o tópico POO): [exercicio_03](./exercicio_03/)
 
 ```java
 public void sendMoneyToAccount(Account accountTo, double moneyAmount) {
@@ -175,7 +170,7 @@ public Transaction[] getTransactions() {
 
 Preste atenção que quando dinheiro é enviado de uma conta para outra, uma transação MONEY_TRANSFER_SEND (Enviar dinheiro) é criada em uma conta, e a segunda transação MONEY_TRANSFER_RECEIVE (Receber dinheiro) é criada na outra conta.
 
-### EXAME: Loja Online
+#### EXAME: Loja Online
 [[Topo]](#)<br />
 
 - Ver homework: [HW - OOP](./01_arquivos/homework/HW%20-%20OOP.pdf)
@@ -193,9 +188,9 @@ Você tem que implementar um backend para uma loja online. O sistema deve suport
 
 Este código será usado na educação continuada e nos próximos tópicos e acabará com a criação do seu aplicativo de comércio eletrônico na web.
 
-#### NAVEGAÇÃO DO MENU
+##### NAVEGAÇÃO DO MENU
 
-##### Cenário: menu principal
+###### Cenário: menu principal
 - DADO: Sou um usuário do app
 - QUANDO: Executo o programa
 - ENTÃO: Vejo o menu principal
@@ -210,21 +205,21 @@ Este código será usado na educação continuada e nos próximos tópicos e aca
     - "6. Lista de Clientes"
   - Quando o usuário estiver logado, então o item 2 deve ser alterado para Logout.
 
-##### Cenário: parar o programa
+###### Cenário: parar o programa
 - DADO: Sou um usuário do app
 - E: Estou no menu principal
 - QUANDO: Digito `exit` no console
 - ENTÃO: A execução do programa é finalizada
 
-##### Cenário: manipulação de entrada incorreta
+###### Cenário: manipulação de entrada incorreta
 - DADO: Sou um usuário do app
 - QUANDO: Digito qualquer digito exceto 1, 2, 3, 4, 5 ou 6.
 - ENTÃO: Vejo a mensagem de erro: "Apenas 1, 2, 3, 4, 5, 6 é permitido. Tente novamente."
 - E: Sou redirecionado para o menu principal
 
-#### REGISTRO DE USUÁRIO
+##### REGISTRO DE USUÁRIO
 
-##### Cenário: registro de novo usuário
+###### Cenário: registro de novo usuário
 - DADO: Sou um usuário do app
 - E: Vejo o menu principal no console
 - QUANDO: Digito 1 no console
@@ -243,7 +238,7 @@ Este código será usado na educação continuada e nos próximos tópicos e aca
   - Cada novo usuário deve ter um ID.
   - O número do ID deve ser automaticamente incrementado para cada novo usuário (campo contador static deve ser parte da classe DefaultUser)
 
-##### Cenário: registro de novo usuário - validação de email com sucesso: email é único 
+###### Cenário: registro de novo usuário - validação de email com sucesso: email é único 
 - DADO: Sou um usuário do app
 - E: Vejo o menu principal no console
 - QUANDO: Digito 1 no console
@@ -258,7 +253,7 @@ Este código será usado na educação continuada e nos próximos tópicos e aca
 - E: Sou redirecionado para o menu principal
 - E: Ao invés de "Entrar" vejo o rótulo "Sair"
 
-##### Cenário: registro de novo usuário - validação de email com falha: email não é único 
+###### Cenário: registro de novo usuário - validação de email com falha: email não é único 
 - DADO: Sou um usuário do app
 - E: Vejo o menu principal no console
 - QUANDO: Digito 1 no console
@@ -272,7 +267,7 @@ Este código será usado na educação continuada e nos próximos tópicos e aca
 - E: Vejo mensagem "Este email já está em uso por outro usuárioo. Por favor, use outro email."
 - E: Sou redirecionado para o menu principal
 
-##### Cenário: registro de novo usuário - validação de email com falha: email vazio
+###### Cenário: registro de novo usuário - validação de email com falha: email vazio
 - DADO: Sou um usuário do app
 - E: Vejo o menu principal no console
 - QUANDO: Digito 1 no console
@@ -286,9 +281,9 @@ Este código será usado na educação continuada e nos próximos tópicos e aca
 - E: Vejo mensagem "Você deve inserir um email para se registrar. Por favor, tente novamente."
 - E: Sou redirecionado para o menu principal
 
-#### ENTRAR
+##### ENTRAR
 
-##### Cenário: entrar com sucesso
+###### Cenário: entrar com sucesso
 - DADO: Sou um usuário do app
 - E: Vejo o menu principal no console
 - QUANDO: Digito 2 no console
@@ -301,7 +296,7 @@ Este código será usado na educação continuada e nos próximos tópicos e aca
 - E: Vejo o menu principal
 - E: Ao invés de "Entrar" vejo o rótulo "Sair"
 
-##### Cenário: entrar com falha
+###### Cenário: entrar com falha
 - DADO: Sou um usuário do app
 - E: Vejo o menu principal no console
 - QUANDO: Digito 2 no console
@@ -316,9 +311,9 @@ Este código será usado na educação continuada e nos próximos tópicos e aca
 - Notas técnicas:
   - Credenciais "NÃO válidas" significa que ou o usuário não existe, ou a senha está errada.
 
-#### SAIR
+##### SAIR
 
-##### Cenário: sair com sucesso
+###### Cenário: sair com sucesso
 - DADO: Sou um usuário do app
 - E: Entrei
 - E: Navego para o menu principal
@@ -328,9 +323,9 @@ Este código será usado na educação continuada e nos próximos tópicos e aca
 - E: Vejo o menu principal
 - E: Ao invés de "Sair" vejo o rótulo "Entrar"
 
-#### CATÁLOGO DE PRODUTOS
+##### CATÁLOGO DE PRODUTOS
 
-##### Cenário: listar produtos
+###### Cenário: listar produtos
 - DADO: Sou um usuário do app
 - QUANDO: Digito 3 no console
 - E: Seleciono "Catálogo de Produtos" no menu principal
@@ -343,13 +338,13 @@ Este código será usado na educação continuada e nos próximos tópicos e aca
     - String categoryName
     - double price
 
-##### Cenário: navegar de volta ao menu principal
+###### Cenário: navegar de volta ao menu principal
 - DADO: Sou um usuário do app
 - E: Naviguei para o menu "Catálogo de Produtos"
 - QUANDO: Digito "menu" no console
 - ENTÃO: Sou redirecionado para o menu principal.
 
-##### Cenário: adicionar um produto ao carrinho
+###### Cenário: adicionar um produto ao carrinho
 - DADO: Sou um usuário do app
 - E: Entrei
 - E: Digito 3 no console
@@ -360,7 +355,7 @@ Este código será usado na educação continuada e nos próximos tópicos e aca
 - ENTÃO: Vejo mensagem "Produto [nome produto] foi adicionado ao seu carrinho. Se você quiser adicionar um novo produto, digite o id do produto. Se você quiser proceder com a finalização da compra, digite "checkout" no console
 - E: Vejo a lista de produtos novamente.
 
-##### Cenário: adicionar um produto ao carrinho: manipulação de erros
+###### Cenário: adicionar um produto ao carrinho: manipulação de erros
 - DADO: Sou um usuário do app
 - E: Entrei
 - E: Digito 3 no console
@@ -371,9 +366,9 @@ Este código será usado na educação continuada e nos próximos tópicos e aca
 - ENTÃO: Vejo mensagem: "Por favor, digite um id de produto se você quiser adicionar um produto ao carrinho. Ou digite "checkout" se você quiser prosseguir com a finalização da compra. Ou digite "menu" se você quiser navegar de volta para o menu principal.
 - E: Vejo a lista de produtos novamente
 
-#### FINALIZAR COMPRA
+##### FINALIZAR COMPRA
 
-##### Cenário: finalização de compra bem-sucedida
+###### Cenário: finalização de compra bem-sucedida
 - DADO: Sou um usuário do app
 - E: Entrei
 - E: Digito 3 no console
@@ -391,7 +386,7 @@ Este código será usado na educação continuada e nos próximos tópicos e aca
 - Notas técnicas:
   - O carrinho deve ser esvaziado após a criação do pedido
 
-##### Cenário: manipulação de erros: carrinho vazio
+###### Cenário: manipulação de erros: carrinho vazio
 - DADO: Sou um usuário do app
 - E: Entrei
 - E: Digito 3 no console
@@ -403,7 +398,7 @@ Este código será usado na educação continuada e nos próximos tópicos e aca
 - ENTÃO: Vejo a mensagem: "Seu carrinho está vazio. Por favor, adicione produtos ao seu carrinho antes de tentar finalizar a compra."
 - E: Vejo a lista de produtos novamente
 
-##### Cenário: manipulação de erros: usuário não logado
+###### Cenário: manipulação de erros: usuário não logado
 - DADO: Sou um usuário do app
 - E: NÃO entrei
 - E: Digito 3 no console
@@ -414,7 +409,7 @@ Este código será usado na educação continuada e nos próximos tópicos e aca
 - ENTÃO: Vejo mensagem: "Você não entrou. Por favor entre ou crie uma nova conta.
 - E: Sou redirecionado para o menu principal.
 
-##### Cenário: manipulação de erros: cartão de crédito inválido
+###### Cenário: manipulação de erros: cartão de crédito inválido
 - DADO: Sou um usuário do app
 - E: Entrei
 - E: Digito 3 no console
@@ -433,9 +428,9 @@ Este código será usado na educação continuada e nos próximos tópicos e aca
   - Implementar a validação de um cartão de crédito: qualquer 16 dígitos.
   - Por segurança, limitar a quantidade máxima de tentativas para 3. Caso falhe, não realizar o procedimento e retornar ao "Catálogo de Produtos".
 
-#### MEUS PEDIDOS
+##### MEUS PEDIDOS
 
-##### Cenário: listar meus pedidos
+###### Cenário: listar meus pedidos
 - DADO: Sou um usuário do app
 - E: Entrei
 - E: Digito 4 no console
@@ -444,7 +439,7 @@ Este código será usado na educação continuada e nos próximos tópicos e aca
 - E: Vejo a lista de todas as minhas compras
 - E: Sou redirecionado para o menu principal.
 
-##### Cenário: listar meus pedidios - manipulação de erro - usuário não entrou
+###### Cenário: listar meus pedidios - manipulação de erro - usuário não entrou
 - DADO: Sou um usuário do app
 - E: NÃO Entrei
 - E: Digito 4 no console
@@ -452,7 +447,7 @@ Este código será usado na educação continuada e nos próximos tópicos e aca
 - ENTÃO: Vejo mensagem: "Por favor, entre ou crie uma nova conta para ver a listagem de seus pedidos."
 - E: Sou redirecionado para o menu principal.
 
-##### Cenário: listar meus pedidios - manipulação de erro - pedido vazio
+###### Cenário: listar meus pedidios - manipulação de erro - pedido vazio
 - DADO: Sou um usuário do app
 - E: Entrei
 - E: Não tenho nenhuma compra registrada ainda
@@ -462,9 +457,9 @@ Este código será usado na educação continuada e nos próximos tópicos e aca
 - E: Vejo mensagem: "Infelizmente, você não realizou nenhum pedido ainda. Volte para o menu principal para fazer um pedido."
 
 
-#### CONFIGURAÇÕES
+##### CONFIGURAÇÕES
 
-##### Cenário: alterar senha
+###### Cenário: alterar senha
 - DADO: Sou um usuário do app
 - E: Entrei
 - QUANDO: Digito 5 no console
@@ -477,7 +472,7 @@ Este código será usado na educação continuada e nos próximos tópicos e aca
 - ENTÃO: Vejo mensagem: "Sua senha foi alterada com sucesso".
 - E: Sou redirecionado para o menu principal.
 
-##### Cenário: alterar email
+###### Cenário: alterar email
 - DADO: Sou um usuário do app
 - E: Entrei
 - QUANDO: Digito 5 no console
@@ -490,7 +485,7 @@ Este código será usado na educação continuada e nos próximos tópicos e aca
 - ENTÃO: Vejo mensagem: "Seu email foi alterado com sucesso".
 - E: Sou redirecionado para o menu principal.
 
-##### Cenário: configurações - manipulação de erros - opção inválida
+###### Cenário: configurações - manipulação de erros - opção inválida
 - DADO: Sou um usuário do app
 - E: Entrei
 - QUANDO: Digito 5 no console
@@ -500,7 +495,7 @@ Este código será usado na educação continuada e nos próximos tópicos e aca
 - ENTÃO: Vejo mensagem "Apenas 1 e 2 é permitido. Tente novamente."
 - E: Vejo o menu de configurações novamente.
 
-##### Cenário: configurações - navegar de volta ao menu principal
+###### Cenário: configurações - navegar de volta ao menu principal
 - DADO: Sou um usuário do app
 - E: Entrei
 - QUANDO: Digito 5 no console
@@ -508,7 +503,7 @@ Este código será usado na educação continuada e nos próximos tópicos e aca
 - QUANDO: Digito "menu"
 - ENTÃO: Navego de volta ao menu principal
 
-##### Cenário: configurações - manipulação de erros - usuário não entrou
+###### Cenário: configurações - manipulação de erros - usuário não entrou
 - DADO: Sou um usuário do app
 - E: NÃO Entrei
 - QUANDO: Digito 5 no console
@@ -516,9 +511,9 @@ Este código será usado na educação continuada e nos próximos tópicos e aca
 - ENTÃO: Vejo mensagem: "Por favor, entre ou cria uma nova conta para alterar suas configurações."
 - E: Sou redirecionado para o menu principal.
 
-#### LISTA DE CLIENTES
+##### LISTA DE CLIENTES
 
-##### Cenário: Imprimir lista de clientes para o console
+###### Cenário: Imprimir lista de clientes para o console
 - DADO: Sou um usuário do app
 - E: Entrei
 - QUANDO: Digito 6 no console
@@ -531,7 +526,7 @@ Este código será usado na educação continuada e nos próximos tópicos e aca
   - Nós não devemos imprimir a senha do cliente.
 
 
-#### Detalhes técnicos
+##### Detalhes técnicos
 
 - A instância de cada serviço (UserManagementService, OrderManagementService, ProductManagementService, ApplicationContext) existem em uma única cópia durante a execução do programa. O acesso a esta cópia única é possível via o método estático getInstance() do tipo específico. E não posso criar objetos com estes tipos via um construtor.
 
@@ -649,4 +644,4 @@ javacore/oop/exam/templates/onlineshop
 A solução para essa tarefa do exame está aqui: https://github.com/AndriiPiatakha/learnit_java_core/tree/master/src/com/itbulls/learnit/javacor
 e/oop/exam/onlineshop
 
-> Exercício 4 (EXAME: Loja Online): [01_arquivos/exercicio_04](./01_arquivos/exercicio_04/)
+> Exercício 4 (Exame e homework para o tópico POO): [exercicio_04](./exercicio_04/)
