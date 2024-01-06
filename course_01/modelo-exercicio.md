@@ -1,9 +1,9 @@
 # Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808
 
-## x. (nome da unidade, divisão principal)
+## Exercícios - x. (nome da unidade, divisão principal)
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
-- (se existir homework) Homework
+- (se existir homework parte com exercícios) Homework
   - [x.x. xxx-nome_secao](#content_link)
     - [Arquivo: file_name_no_extension](file_link)
   - ...
