@@ -4,19 +4,13 @@
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Homework
-  - [Arquivo: HW - Operators - Practical Tasks](./06_arquivos/homework/HW%20-%20Operators%20-%20Practical%20Tasks.pdf)
-    - [Calculadora de inteiros de console simples](#calculadora-de-inteiros-de-console-simples)
-    - [Calcular a área de um triângulo](#calcular-a-área-de-um-triângulo)
-    - [Circunferência de um círculo](#circunferência-de-um-círculo)
-- (se existir exercícios) Exercícios
-  - [Exercício 1](./exercicio_01/) ([enunciado](#calculadora-de-inteiros-de-console-simples))
-  - [Exercício 2](./exercicio_02/) ([enunciado](#calcular-a-área-de-um-triângulo))
-  - [Exercício 3](./exercicio_03/) ([enunciado](#circunferência-de-um-círculo))
-- Conteúdo
   - [5.6. Ler entrada do usuário pelo console](#56-ler-entrada-do-usuário-pelo-console)
-    - [Calculadora de inteiros de console simples](#calculadora-de-inteiros-de-console-simples)
-    - [Calcular a área de um triângulo](#calcular-a-área-de-um-triângulo)
-    - [Circunferência de um círculo](#circunferência-de-um-círculo)
+    - [Arquivo: HW - Operators - Practical Tasks](./06_arquivos/homework/HW%20-%20Operators%20-%20Practical%20Tasks.pdf)
+- Exercícios
+  - [5.6. Ler entrada do usuário pelo console](#56-ler-entrada-do-usuário-pelo-console)
+    - [Exercício 1](./exercicio_01/) ([enunciado](#calculadora-de-inteiros-de-console-simples))
+    - [Exercício 2](./exercicio_02/) ([enunciado](#calcular-a-área-de-um-triângulo))
+    - [Exercício 3](./exercicio_03/) ([enunciado](#circunferência-de-um-círculo))
 
 ### 5.6. Ler entrada do usuário pelo console
 [[Topo]](#)<br />
@@ -43,7 +37,7 @@ Implemente um programa de console que atenda aos seguintes requisitos:
 
 Para converter argumentos em formato de texto (String) para inteiros, considere o seguinte exemplo: `int i = Integer.parseInt("1");`.
 
-> Exercício 1 (Calculadora de inteiros de console simples): [exercicio_01](./exercicio_01/)
+> Exercício 1 (Ler entrada do usuário pelo console): [exercicio_01](./exercicio_01/)
 
 #### Calcular a área de um triângulo
 [[Topo]](#)<br />
@@ -58,7 +52,7 @@ Implemente um programa de console que atenda aos seguintes requisitos:
 4. Usando a fórmula de Heron (https://www.mathopenref.com/heronsformula.html), o programa calcula a área do triângulo e a exibe para o usuário.
 5. Caso esse triângulo não exista, imprima 'NaN' no console.
 
-> Exercício 2 (Calcular a área de um triângulo): [exercicio_02](./exercicio_02/)
+> Exercício 2 (Ler entrada do usuário pelo console): [exercicio_02](./exercicio_02/)
 
 #### Circunferência de um círculo
 [[Topo]](#)<br />
@@ -70,5 +64,5 @@ Implemente um programa de console que atenda aos seguintes requisitos:
 1. O programa inicia e pede ao usuário para inserir o raio do círculo.
 2. O programa calcula a circunferência do círculo e a exibe para o usuário.
 
-> Exercício 3 (Circunferência de um círculo): [exercicio_03](./exercicio_03/)
+> Exercício 3 (Ler entrada do usuário pelo console): [exercicio_03](./exercicio_03/)
 
