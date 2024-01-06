@@ -1,6 +1,6 @@
 # Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808
 
-## Arrays
+## 3.3. Arrays
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Diretório de arquivos: [03_arquivos](./03_arquivos//)

@@ -1,6 +1,6 @@
 # Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808
 
-## Comparar tipos primitivos e tipos de referência e Java Memory Model (Modelo de Memória Java)
+## 5.5. Comparar tipos primitivos e tipos de referência e Java Memory Model (Modelo de Memória Java)
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Diretório de arquivos: [05_arquivos](./05_arquivos/)
