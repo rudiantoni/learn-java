@@ -141,10 +141,12 @@ Aplicações utilizadas:
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/30340854)\] [20.3. Function e BiFunction: teoria e prática](xxx.md)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/30340880)\] [20.4. Consumer, BiConsumer, Predicate e BiPredicate: teoria e prática](xxx.md)
 
+21. Stream API
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/30340954)\] [20.1. Sobre a Stream API](xxx.md)
+
 x. xxx
   - \[[Ref](xxx)\] [x.x. xxx](xxx.md)
 
 
-TODO: remover todos os exercícios e colocá-los em arquivos separados dentro da mesma seção
-- EXEMPLO: em 5.6 (Ler entrada do usuário pelo console): os exercicios 1, 2 e 3 tem suas pastas, as pastam vão para dentro do 5 e o enunciado vira um readme (exercicios.md) separado dentro do 05_operadores_e_opera..., a aula/vídeo deu origem aquele exercício deve ser referenciado dentro do readme dos exercicios sem dividir em seções para isso, usando apenas níveis de títulos: 5.6, 5.7, 5.8...
+
 TODO: atualizar com os arquivos md se a estrutura continuar a mesma
