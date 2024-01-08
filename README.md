@@ -144,6 +144,11 @@ Aplicações utilizadas:
 21. Stream API
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/30340954)\] [20.1. Sobre a Stream API](xxx.md)
 
+22. Programação Funcional - Preparação para a entrevista
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35078968?)\] [22.1. Como se preparar](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35079002)\] [22.2. Programação funcional parte 1: Perguntas e respostas](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35079148)\] [22.3. Programação funcional parte 2: Perguntas e respostas](xxx.md)
+
 x. xxx
   - \[[Ref](xxx)\] [x.x. xxx](xxx.md)
 
