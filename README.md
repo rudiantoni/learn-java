@@ -153,6 +153,9 @@ Aplicações utilizadas:
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/28051506)\] [23.1. Padrões de tempo (GMT, UTC), Date, Calendar e TimeZone](xxx.md)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/28128436)\] [23.2. Instant, LocalDateTime e ZonedDateTime](xxx.md)
 
+24. Java Reflection API e Anotações
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/28272484)\] [24.1. Java Reflection API](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/28452586)\] [24.2. Anotações](xxx.md)
 
 x. xxx
   - \[[Ref](xxx)\] [x.x. xxx](xxx.md)
