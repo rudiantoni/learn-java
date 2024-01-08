@@ -149,9 +149,12 @@ Aplicações utilizadas:
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35079002)\] [22.2. Programação funcional parte 1: Perguntas e respostas](xxx.md)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35079148)\] [22.3. Programação funcional parte 2: Perguntas e respostas](xxx.md)
 
+23. Data e Hora no JDK
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/28051506)\] [23.1. Padrões de tempo (GMT, UTC), Date and Calendar](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/28128436)\] [23.2. Instant, LocalDateTime, ZonedDateTime](xxx.md)
+
+
 x. xxx
   - \[[Ref](xxx)\] [x.x. xxx](xxx.md)
-
-
 
 TODO: atualizar com os arquivos md se a estrutura continuar a mesma
