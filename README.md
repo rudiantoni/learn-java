@@ -151,7 +151,7 @@ Aplicações utilizadas:
 
 23. Data e Hora no JDK
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/28051506)\] [23.1. Padrões de tempo (GMT, UTC), Date, Calendar e TimeZone](xxx.md)
-  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/28128436)\] [23.2. Instant, LocalDateTime, ZonedDateTime](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/28128436)\] [23.2. Instant, LocalDateTime e ZonedDateTime](xxx.md)
 
 
 x. xxx
