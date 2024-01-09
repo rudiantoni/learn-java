@@ -108,6 +108,9 @@ Se exercício:
 > Exercício N ((nome do vídeo, aula, etc)): [caminho](exercicio_nn)
 
 Enunciado de pesquisa:
-- Usando Java 8 como base, me explique o que é xxx?(com exemplos de código)...
-- xxx?
-- xxx?
+- Usando Java 8 como base, me explique o que é xxx com exemplos de código
+- Usando Java 8 como base, me explique o que é xxx com exemplos de código
+- Usando Java 8 como base, me explique o que é xxx com exemplos de código
+- Usando Java 8 como base, me explique o que é xxx com exemplos de código
+- Usando Java 8 como base, me explique o que é xxx com exemplos de código
+- Usando Java 8 como base, me explique o que é xxx com exemplos de código
