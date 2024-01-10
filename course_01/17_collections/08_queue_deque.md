@@ -1,6 +1,6 @@
 # Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808
 
-## Queue e Deque
+## 17.8. Queue e Deque
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Diretório de arquivos: [08_arquivos](./08_arquivos/)

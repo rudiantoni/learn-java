@@ -1,6 +1,6 @@
 # Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808
 
-## Interface funcional, funções lambda e referência de métodos
+## 20.2. Interface funcional, funções lambda e referência de métodos
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Diretório de arquivos: [02_arquivos](./02_arquivos/)

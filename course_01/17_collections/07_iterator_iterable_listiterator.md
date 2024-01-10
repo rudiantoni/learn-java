@@ -1,6 +1,6 @@
 # Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808
 
-## Iterator, Iterable e ListIterator
+## 17.7. Iterator, Iterable e ListIterator
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Diretório de arquivos: [07_arquivos](./07_arquivos/)

@@ -1,6 +1,6 @@
 # Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808
 
-## Encapsulamento
+## 13.8. Encapsulamento
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Diretório de arquivos: [08_arquivos](./08_arquivos/)

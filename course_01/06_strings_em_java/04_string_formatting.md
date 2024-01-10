@@ -1,6 +1,6 @@
 # Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808
 
-## Formatação de strings
+## 6.4. Formatação de strings
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Diretório de arquivos: [04_arquivos](./04_arquivos/)

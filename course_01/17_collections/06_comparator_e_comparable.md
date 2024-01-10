@@ -1,6 +1,6 @@
 # Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808
 
-## Comparator e Comparable
+## 17.6. Comparator e Comparable
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Diretório de arquivos: [06_arquivos](./06_arquivos/)

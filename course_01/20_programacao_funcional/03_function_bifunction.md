@@ -1,6 +1,6 @@
 # Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808
 
-## Function e BiFunction: teoria e prática
+## 20.3. Function e BiFunction: teoria e prática
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Diretório de arquivos: [03_arquivos](./03_arquivos/)

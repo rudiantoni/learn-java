@@ -1,6 +1,6 @@
 # Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808
 
-## LinkedList vs ArrayList, e notação Big O
+## 17.5. LinkedList vs ArrayList, e notação Big O
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Diretório de arquivos: [05_arquivos](./05_arquivos/)

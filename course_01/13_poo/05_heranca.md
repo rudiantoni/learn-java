@@ -1,6 +1,6 @@
 # Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808
 
-## Herança
+## 13.5. Herança
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Diretório de arquivos: [05_arquivos](./05_arquivos/)

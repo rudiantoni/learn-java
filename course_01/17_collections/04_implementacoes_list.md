@@ -1,6 +1,6 @@
 # Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808
 
-## Implementações de List: ArrayList, Vector, CopyOnWriteArrayList e Stack
+## 17.4. Implementações de List: ArrayList, Vector, CopyOnWriteArrayList e Stack
 
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 

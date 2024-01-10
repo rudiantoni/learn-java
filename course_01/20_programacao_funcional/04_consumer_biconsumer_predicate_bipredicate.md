@@ -1,6 +1,6 @@
 # Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808
 
-## Consumer, BiConsumer, Predicate e BiPredicate: teoria e prática
+## 20.4. Consumer, BiConsumer, Predicate e BiPredicate: teoria e prática
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Diretório de arquivos: [04_arquivos](./04_arquivos/)

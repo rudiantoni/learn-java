@@ -1,6 +1,6 @@
 # Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808
 
-## Hash tables e HashMap
+## 17.10. Hash tables e HashMap
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Diretório de arquivos: [10_arquivos](./10_arquivos/)

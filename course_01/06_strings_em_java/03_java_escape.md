@@ -1,6 +1,6 @@
 # Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808
 
-## Sequências de escape em Java
+## 6.3. Sequências de escape em Java
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - Diretório de arquivos: [03_arquivos](./03_arquivos/)
