@@ -1,6 +1,6 @@
 # Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808
 
-## 25.1. Aplicação modular
+## 25.1. StringBuilder e StringBuffer
 [[Home - Curso 1]](../../README.md#curso-1)<br />
 
 - (se existir diretório de arquivos com documentos, etc) Diretório de arquivos: [folder_name-nn_arquivos](folder_link)
@@ -108,8 +108,10 @@ Se exercício:
 > Exercício N ((nome do vídeo, aula, etc)): [caminho](exercicio_nn)
 
 Enunciado de pesquisa:
-- Usando Java 8 como base, me explique o que é xxx com exemplos de código
-- Usando Java 8 como base, me explique o que é xxx com exemplos de código
+- Usando Java 8 como base, me explique o que é StringBuilder com exemplos de código
+- Usando Java 8 como base, me explique o que é StringBuffer com exemplos de código
+- Usando Java 8 como base, me forneça diferenças entre StringBUilder e StringBuffer
+
 - Usando Java 8 como base, me explique o que é xxx com exemplos de código
 - Usando Java 8 como base, me explique o que é xxx com exemplos de código
 - Usando Java 8 como base, me explique o que é xxx com exemplos de código

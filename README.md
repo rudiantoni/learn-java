@@ -158,8 +158,9 @@ Aplicações utilizadas:
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/28452586)\] [24.2. Anotações](xxx.md)
 
 25. JDK API
-  - \[[Ref](xxx)\] [25.1. Aplicação modular](xxx.md)
-  - \[[Ref](xxx)\] [25.2. Migração para uma aplicação modular](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/27833110)\] [25.1. StringBuilder e StringBuffer](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/28182786)\] [25.2. Optional no Java](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/41325992)\] [25.3. Programação Reativa](xxx.md)
 
 x. xxx
   - \[[Ref](xxx)\] [x.x. xxx](xxx.md)
