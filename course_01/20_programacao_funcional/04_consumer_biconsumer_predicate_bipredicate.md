@@ -124,7 +124,7 @@ Em Java 8, várias novas funcionalidades foram introduzidas para melhorar a mani
 
 O método `forEachRemaining()` foi adicionado à interface `Iterator` em Java 8. Este método permite que você execute uma ação para cada elemento restante na iteração, até que todos os elementos tenham sido processados. É particularmente útil quando você já começou a iteração usando `next()` e deseja continuar processando os elementos restantes.
 
-**Exemplo:**
+**Exemplo**:
 
 ```java
 import java.util.Arrays;
@@ -151,7 +151,7 @@ public class ForEachRemainingExample {
 
 O método `forEach()` em `Map` permite que você itere sobre pares de chave-valor do mapa de maneira concisa. Este método aceita um `BiConsumer` que você pode usar para processar as chaves e valores.
 
-**Exemplo:**
+**Exemplo**:
 
 ```java
 import java.util.HashMap;
@@ -249,7 +249,7 @@ Aqui, um `BiPredicate<String, String>` é usado para verificar se uma string com
 
 O método `and()` combina dois predicados usando um operador lógico E (AND). Se ambos os predicados retornam `true`, o resultado combinado também será `true`.
 
-**Exemplo:**
+**Exemplo**:
 
 ```java
 import java.util.function.Predicate;
@@ -271,7 +271,7 @@ public class PredicateAndExample {
 
 O método `or()` combina dois predicados usando um operador lógico OU (OR). Se qualquer um dos predicados retornar `true`, o resultado combinado será `true`.
 
-**Exemplo:**
+**Exemplo**:
 
 ```java
 import java.util.function.Predicate;
@@ -293,7 +293,7 @@ public class PredicateOrExample {
 
 O método `negate()` inverte o resultado de um predicado.
 
-**Exemplo:**
+**Exemplo**:
 
 ```java
 import java.util.function.Predicate;
@@ -313,7 +313,7 @@ public class PredicateNegateExample {
 
 O método estático `isEqual()` retorna um predicado que testa a igualdade de um objeto com o valor fornecido.
 
-**Exemplo:**
+**Exemplo**:
 
 ```java
 import java.util.function.Predicate;
@@ -332,7 +332,7 @@ public class PredicateIsEqualExample {
 
 O método estático `not()` (introduzido no Java 11) inverte um predicado. Funciona de maneira similar a `negate()`, mas pode ser mais legível em alguns contextos.
 
-**Exemplo:**
+**Exemplo**:
 
 ```java
 import java.util.function.Predicate;

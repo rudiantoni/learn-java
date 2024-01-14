@@ -25,7 +25,8 @@ Implemente um programa de console que atenda aos seguintes requisitos:
 - 3 - O programa ordena o array colocando em primeiro lugar as strings que têm mais caracteres e colocando no final as strings com menor comprimento
 - 4 - O programa imprime no console o array ordenado
 
-**Exemplo:**
+**Exemplo**:
+
 Entrada do usuário:
 ```
 apple windows oracle microsoft Apple zpple

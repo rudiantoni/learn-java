@@ -79,7 +79,7 @@ No Java Collection Framework, tanto Collection quanto Map são interfaces fundam
 
 **Collection**
 
-- **Natureza:** A interface Collection representa um grupo de objetos, conhecidos como seus elementos. É a raiz da hierarquia de coleção no Java (excluindo mapas).
+- **Natureza**: A interface Collection representa um grupo de objetos, conhecidos como seus elementos. É a raiz da hierarquia de coleção no Java (excluindo mapas).
 - **Estruturas de Dados**: Inclui várias estruturas de dados como List, Set e Queue, cada uma com suas próprias características. Por exemplo, List mantém a ordem de inserção, enquanto Set não permite elementos duplicados.
 - **Elemento Único**: Cada item na Collection é considerado um elemento único. Mesmo que possam existir valores duplicados (como em uma List), cada ocorrência é tratada como um elemento individual.
 - **Operações Básicas**: Inclui operações como adição, remoção, iteração e verificação de tamanho.
@@ -87,7 +87,7 @@ No Java Collection Framework, tanto Collection quanto Map são interfaces fundam
 
 **Map**
 
-- **Natureza:** A interface Map não é uma verdadeira coleção, mas faz parte do Collection Framework. Ela representa um mapeamento de chaves únicas para valores.
+- **Natureza**: A interface Map não é uma verdadeira coleção, mas faz parte do Collection Framework. Ela representa um mapeamento de chaves únicas para valores.
 - **Pares Chave-Valor**: Em um Map, cada valor é associado a uma chave única. A chave é usada para acessar ou modificar seu valor correspondente.
 - **Sem Duplicatas de Chaves**: Enquanto os valores podem ser duplicados, as chaves em um Map são únicas. Tentar inserir uma chave duplicada resultará na substituição do valor anterior associado àquela chave.
 - **Operações Específicas**: Inclui operações específicas como colocar, obter por chave, remover por chave, e verificar se uma chave ou valor está presente.

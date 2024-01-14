@@ -331,7 +331,7 @@ Este arquivo de texto simples deve estar no diretório META-INF/services do clas
 #### Client Module
 Este módulo consome o serviço através do Service Locator.
 
-**Cliente.java:**
+**Cliente.java**:
 
 ```java
 public class Cliente {
