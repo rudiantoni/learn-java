@@ -176,6 +176,17 @@ Aplicações utilizadas:
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/34988366)\] [27.7. Java Core parte 6: Perguntas e respostas](xxx.md)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35078818)\] [27.8. Java Core parte 7: Perguntas e respostas](xxx.md)
 
+28. Novas versões do Java
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/41284718)\] [28.1. Java 8](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/41414418)\] [28.2. Java 9 parte 1](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/41414648)\] [28.3. Java 9 parte 2](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/41444492)\] [28.4. Java 9 parte 3](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/41450802)\] [28.5. Java 9 parte 4](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/41481658)\] [28.6. Java 9 parte 5](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/41558926)\] [28.7. Java 10 parte 1](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/41558968)\] [28.8. Java 10 parte 2](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/41683552)\] [28.9. Java 11](xxx.md)
+
 x. xxx
   - \[[Ref](xxx)\] [x.x. xxx](xxx.md)
 
