@@ -163,8 +163,19 @@ Aplicações utilizadas:
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/41325992)\] [25.3. Programação Reativa (Java 9+)](xxx.md)
 
 26. Módulos em Java (Java 9+)
-  - \[[Ref](xxx)\] [26.1. Aplicação modular](xxx.md)
-  - \[[Ref](xxx)\] [26.2. Migração para uma aplicação modular](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/28528783)\] [26.1. Aplicação modular](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/29347814)\] [26.2. Migração para uma aplicação modular](xxx.md)
+
+27. Java Core - Preparação para a entrevista
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/34988314)\] [27.1. Como se preparar](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/34988348)\] [27.2. Java Core parte 1: Perguntas e respostas](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/34988354)\] [27.3. Java Core parte 2: Perguntas e respostas](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/34988356)\] [27.4. Java Core parte 3: Perguntas e respostas](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/34988360)\] [27.5. Java Core parte 4: Perguntas e respostas](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/34988364)\] [27.6. Java Core parte 5: Perguntas e respostas](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/34988366)\] [27.7. Java Core parte 6: Perguntas e respostas](xxx.md)
+  - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35078818)\] [27.8. Java Core parte 7: Perguntas e respostas](xxx.md)
+
 
 x. xxx
   - \[[Ref](xxx)\] [x.x. xxx](xxx.md)
