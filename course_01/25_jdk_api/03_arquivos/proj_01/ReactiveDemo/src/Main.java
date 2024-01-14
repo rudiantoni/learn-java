@@ -3,6 +3,9 @@ import java.util.concurrent.TimeUnit;
 
 public class Main {
   public static void main(String[] args) throws InterruptedException {
+    /*
+    * Usar Java 9+
+    */
     System.out.println("===== Iniciando publisher =====");
     SubmissionPublisher<Integer> publisher = new SubmissionPublisher<>();
     MySubscriber subscriber = new MySubscriber();
