@@ -176,7 +176,6 @@ Aplicações utilizadas:
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/34988366)\] [27.7. Java Core parte 6: Perguntas e respostas](xxx.md)
   - \[[Ref](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/learn/lecture/35078818)\] [27.8. Java Core parte 7: Perguntas e respostas](xxx.md)
 
-
 x. xxx
   - \[[Ref](xxx)\] [x.x. xxx](xxx.md)
 
