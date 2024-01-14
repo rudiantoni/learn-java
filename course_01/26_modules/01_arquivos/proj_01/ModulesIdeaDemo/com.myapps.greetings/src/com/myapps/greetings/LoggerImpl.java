@@ -1,6 +1,6 @@
 package com.myapps.greetings;
 
-public class LoggerImpl implements Logger{
+public class LoggerImpl implements Logger {
   @Override
   public void log() {
     System.out.println("LOG - Módulo ativado e funcionando");

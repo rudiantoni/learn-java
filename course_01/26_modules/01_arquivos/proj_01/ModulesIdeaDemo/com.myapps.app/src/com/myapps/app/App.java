@@ -13,10 +13,17 @@ public class App {
 
     // Exemplo de consumir serviço
     System.out.println("\n========== Exemplo de consumir serviço ==========");
+    /**
+     * Para que seja possível utilizar o serviço dessa maneira, deve ser adicionado
+     * em META-INF/services
+     * sendo:
+     *   - Nome do arquivo: caminho completo da interface no módulo de origem
+     *   - Conteúdo: caminho completo da implementação a ser usada
+     *
+     */
     Iterable<Logger> services = ServiceLoader.load(Logger.class);
     Logger service = services.iterator().next();
     service.log();
     service.log("Teste de log");
-
   }
 }

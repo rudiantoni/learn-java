@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="com.myapps.app:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/com_myapps_app_jar</output-path>
+    <root id="root">
+      <element id="archive" name="com.myapps.app.jar">
+        <element id="module-output" name="com.myapps.app" />
+        <element id="module-output" name="com.myapps.greetings" />
+      </element>
+    </root>
+  </artifact>
+</component>
