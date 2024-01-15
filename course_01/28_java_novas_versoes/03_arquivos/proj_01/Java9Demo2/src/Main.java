@@ -18,8 +18,8 @@ public class Main {
 //        processHandle.destroy(); // Gracefully terminate the process
 //        processHandle.destroyForcibly(); // Forcefully terminate the process
 
-    System.out.println();
-    System.out.println("===== new methods in CompletableFuture API (delay, timeout, etc.)");
+    // Exemplo das atualizações da CompletableFuture API
+    System.out.println("========== Exemplo das atualizações da CompletableFuture API ==========");
     CompletableFuture<Void> delayedFuture = CompletableFuture.runAsync(() -> {
       // Some asynchronous operation
       System.out.println("Async operation");
