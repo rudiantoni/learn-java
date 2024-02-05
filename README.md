@@ -9,6 +9,7 @@ Todos os comandos, quando não especificados, foram realizados em Linux. Leia at
 
 Aplicações utilizadas:
 - Java 8
+- IntelliJ
 
 - Site: [Udemy](https://www.udemy.com/)
 - Curso: [Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808](https://www.udemy.com/course/oracle-certification-1z0-808-and-1z0-811-learnit/)
